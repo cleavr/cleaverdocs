@@ -1,0 +1,25 @@
+{
+  "name": "cleavrdocs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@nuxtjs/markdownit": "^1.2.10",
+    "@tailwindcss/ui": "^0.7.2",
+    "autoprefixer": "^9.8.6",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.3.3",
+    "@tailwindcss/forms": "^0.2.1"
+  }
+}
