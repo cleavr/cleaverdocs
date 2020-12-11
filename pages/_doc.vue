@@ -4,10 +4,10 @@
     <div v-html="this.page" class="prose" />
     <div class="mt-24">
       <a :href="`https://github.com/LittleBets/cleaverdocs/blob/master/pages/${doc}.md`"
-         class="text-indigo-600 text-sm hover:text-indigo-700"
+         class="text-yellow-600 text-sm hover:text-yellow-700"
          target="_blank"
       >
-        Want to make this page better? Edit it on GitHub ->
+        Want to make this page even better? Edit it on GitHub ->
       </a>
     </div>
   </div>

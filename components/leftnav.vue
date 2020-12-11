@@ -4,8 +4,8 @@
     <a href="/flash-deployments" class="text-gray-500 hover:text-gray-700 group flex items-center pb-1 pr-5">
       Flash Deployments
     </a>
-    <a href="/there" class="text-gray-500 hover:text-gray-700 group flex items-center py-1 pr-5">
-      Web Apps
+    <a href="/providers" class="text-gray-500 hover:text-gray-700 group flex items-center py-1 pr-5">
+      Providers
     </a>
   </div>
 
