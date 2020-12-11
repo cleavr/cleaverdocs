@@ -7,13 +7,11 @@
       <desktopsidebar />
       <div class="flex flex-col w-0 flex-1">
         <mainHeader @openMobileMenu="showMobileMenu = true" />
-        <main class="flex-1 relative focus:outline-none" tabindex="0">
+        <main class="flex-1 mt-24 relative focus:outline-none" tabindex="0">
           <div class="py-6">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
               <h1 class="text-2xl font-semibold text-gray-900">Getting Started</h1>
-            </div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-                <Nuxt />
+              <Nuxt />
             </div>
           </div>
         </main>
