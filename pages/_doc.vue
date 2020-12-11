@@ -16,7 +16,7 @@
 <script>
 export default {
   async asyncData({ params }) {
-    const doc = params.doc
+    const doc = await params.doc
     const page = await import(`./${doc}.md`).then(result => result.default)
     return { doc, page }
   },

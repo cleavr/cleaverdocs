@@ -31,14 +31,14 @@ export default {
   components: {Desktopsidebar, Mobilesidebar, mainHeader, Search, Logo, Sectionsnav},
   data () {
     return {
-      showMobileMenu: false
+      showMobileMenu: false,
+      current: null
     }
   },
   methods: {
     closeMobileMenu () {
-      console.log("hey")
       this.showMobileMenu = false
-    }
+    },
   }
 }
 </script>
