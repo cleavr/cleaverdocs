@@ -10,15 +10,17 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.11.1",
-    "@tailwindcss/ui": "^0.7.2",
     "@nuxtjs/tailwindcss": "^3.3.3",
+    "@tailwindcss/typography": "^0.2.0",
+    "@tailwindcss/ui": "^0.7.2",
     "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "postcss": "^7.0.35",
-    "@tailwindcss/typography": "^0.2.0"
+    "tailwindcss-aspect-ratio": "^3.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^3.3.3"
+    "@nuxtjs/tailwindcss": "^3.3.3",
+    "tailwindcss-responsive-embed": "^1.0.0"
   }
 }

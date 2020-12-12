@@ -1,8 +1,11 @@
 <template>
   <div>
     <h1 class="text-3xl font-semibold text-gray-900 pb-8 capitalize">{{ doc.title }}</h1>
-
     <NuxtContent :document="doc" class="prose" />
+    <div class="flex">
+     <!-- <page-contents :doc="doc" />-->
+    </div>
+
 
     <div class="mt-24">
       <a :href="`https://github.com/LittleBets/cleaverdocs/blob/master/pages/${doc}.md`"
@@ -51,10 +54,28 @@
 </template>
 
 <script>
+import PageContents from "~/components/PageContents";
 export default {
+  components: {
+    PageContents
+  },
   async asyncData({ $content, params }) {
     const doc = await $content(`documentation`, params.doc).fetch()
     return { doc }
   },
+  head() {
+    return {
+      title: this.doc.title + ' - Cleavr docs',
+      meta: [
+        {hid: 'description', name: 'description', content: this.doc.description},
+        // Open Graph
+        {hid: 'og:title', property: 'og:title', content: this.doc.title},
+        {hid: 'og:description', property: 'og:description', content: this.doc.description},
+        // Twitter Card
+        {hid: 'twitter:title', name: 'twitter:title', content: this.doc.title},
+        {hid: 'twitter:description', name: 'twitter:description', content: this.doc.description}
+      ]
+    }
+  }
 }
 </script>

@@ -1,5 +1,8 @@
 ---
+
 title: 'Providers'
+description: 'Add provider profiles to connect to your VPS, VC, backup, DNS, and communication accounts.'
+
 ---
 
 
@@ -12,7 +15,8 @@ The main provider to connect with to get the ball rolling the quickest is the Vi
 also know them by cloud provider, hosting provider, and other similar names. 
 
 ## VPS Profiles
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7UGfmjoe17M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<you-tube video="7UGfmjoe17M"></you-tube>
 
 Before you can add a VPS profile, you must first create an account with your cloud provider of choice. You will also 
 need to create an API token with that provider that you will add to Cleavr to connect your accounts.

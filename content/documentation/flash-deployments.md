@@ -1,10 +1,13 @@
 ---
+
 title: 'Flash Deployments'
+description: 'Flash deploy launches your apps quickly and effortlessly'
+
 ---
 
 Quickly provision a new server, set up, and deploy your app in one-fell-swoop - giving yourself more time for ☕️, 🚶‍♀️, or 👨🏾‍💻. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wbwQvp7GFag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<you-tube video="wbwQvp7GFag"></you-tube>
 
 ## In one-fell-swoop
 With Flash Deploy, tell Cleavr what you want to deploy and where to. Cleavr then takes over and - 
@@ -19,7 +22,7 @@ Click **Flash Deploy** from the main servers or web apps pages to get started!
 
 In just a few steps, Cleavr will be working hard for you, freeing up your time for other things. ☕️
 
-### WHAT ARE WE DEPLOYING?
+### What are we deploying?
 
 #### App Type
 
@@ -60,15 +63,15 @@ For NodeJS-based apps, including AdonisJS and NuxtJS, you'll also set the follow
 - Build command (for Node SSR and Static apps)
 - Artifact path (for Node SSR and Static apps)
 
-### WHERE ARE WE DEPLOYING TO?
+### Where are we deploying to?
 
 #### Server Provider
 
 Select a VPS Provider that Cleavr will provision a new server on. You can choose an existing VPS Provider that you have connected with Cleavr, choose
-to connect to a provider at this time, or select Custom Server if you'd prefer to use a provider Cleavr does not currently integrate with. 
+to connect to a provider at this time, or select <nuxt-link to="custom-servers">Custom Server</nuxt-link> if you'd prefer to use a provider Cleavr does not currently integrate with. 
 
 <base-alert>
-If you select custom, then you will be asked to run a script on the server and add ther server's public IP. 
+If you select <nuxt-link to="custom-servers">custom</nuxt-link>, then you will be asked to run a script on the server and add that server's public IP. 
 </base-alert>
 
 #### Server Plan
@@ -81,7 +84,7 @@ Just a reminder, you will be billed separately by the provider for the plan you 
 
 Select which server region to provision a server at. 
 
-### HOW ARE WE PERSISTING DATA?
+### How Are We Persisting Data?
 
 Many dynamic apps require a database to connect to. You can have Cleavr also install a database server on your new server, create a new database, 
 and a new database user. Cleavr will also take care of adding variables to your production .env file. 
@@ -90,7 +93,7 @@ Choose from either a MySQL style database (Maria, MySQL) or a PostgreSQL databas
 
 Cleavr will create random database name, user name, and password. However, you can choose to change them if you'd like. 
 
-### ANY ADDITIONAL VARIABLES NEEDED?
+### Any Additional Variables Needed?
 
 #### Server name 
 
@@ -105,7 +108,7 @@ A free cleavr.rocks domain will be created for your site. But, don't worry! You 
 If your app type requires an .env file, we'll pre-populate one for you based on your selected app type. If any additional environment
 variables are required for your app in production, please add them here. You can always modify these variables later in the `web app > environment` section. 
 
-### DEPLOY! 🚀
+### Deploy! 🚀
 
 When you're done with the settings, deploy away!
 
