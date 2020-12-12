@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Sectionsnav from "~/components/sectionsnav";
+import Sectionsnav from "~/components/SectionsNav";
 export default {
   components: {Sectionsnav},
   methods: {

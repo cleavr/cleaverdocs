@@ -10,7 +10,7 @@
   </div>
 </template>
 <script>
-import Leftnav from "~/components/leftnav";
+import Leftnav from "~/components/LeftNav";
 import Logo from "~/components/Logo";
 export default {
   components: {Logo, Leftnav},

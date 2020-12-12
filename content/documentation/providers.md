@@ -1,7 +1,12 @@
+---
+title: 'Providers'
+---
+
+
 Cleavr is a server management console that connects multiple process flows together. For a fluid experience, we offer integrations with 
 multiple VPS, VC, DNS, storage, and communication providers.  
 
-Manage your various providers in the **Provider** section of Cleavr.. 
+Manage your various providers in the **Provider** section of Cleavr.
 
 The main provider to connect with to get the ball rolling the quickest is the Virtual Private Server (VPS) Provider. You may
 also know them by cloud provider, hosting provider, and other similar names. 
@@ -22,9 +27,11 @@ For AWS, you will need an Access Key and the Secret key to create the profile in
 
 To create the keys in AWS, go to **Identity and Access Management (IAM) > Your Security Credentials > Access keys**.
 
-**Note** - this will create a root access key which gives users full access to your account. If you would like to provide more 
-granular access, you can create a new user under the IAM section and then apply the **AmazonEC2FullAccess** policy to the user 
+<base-alert>
+This will create a root access key which gives users full access to your account. If you would like to provide more 
+granular access, you can create a new user under the IAM section and then apply the <b>AmazonEC2FullAccess</b> policy to the user 
 and then use the provided access key and secret key for that user role. 
+</base-alert>
 
 #### [DigitalOcean](https://www.digitalocean.com/)
 

@@ -20,12 +20,12 @@
 </template>
 
 <script>
-import Sectionsnav from "~/components/sectionsnav";
+import Sectionsnav from "~/components/SectionsNav";
 import Logo from "~/components/Logo";
-import Search from "~/components/search";
-import mainHeader from "~/components/mainHeader";
-import Mobilesidebar from "~/components/mobilesidebar";
-import Desktopsidebar from "~/components/desktopsidebar";
+import Search from "~/components/Search";
+import mainHeader from "~/components/MainHeader";
+import Mobilesidebar from "~/components/MobileSidebar";
+import Desktopsidebar from "~/components/DesktopSidebar";
 
 export default {
   components: {Desktopsidebar, Mobilesidebar, mainHeader, Search, Logo, Sectionsnav},
@@ -44,6 +44,9 @@ export default {
 </script>
 
 <style>
+  .prose code {
+    color: orange;
+  }
   .prose a {
     color: #2563EB;
     text-decoration: none;

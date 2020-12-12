@@ -1,3 +1,7 @@
+---
+title: 'Flash Deployments'
+---
+
 Quickly provision a new server, set up, and deploy your app in one-fell-swoop - giving yourself more time for ☕️, 🚶‍♀️, or 👨🏾‍💻. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wbwQvp7GFag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -34,7 +38,9 @@ Select from any app type that is supported by Cleavr, including:
 If you have already tied your Cleavr account with a VC Provider, you can select it from the list. If not, you may also select the option to 
 connect to your GitHub, GitLab, or Bitbucket account.
 
-**Note** - this and the following steps are hidden if you've selected WordPress. 
+<base-info>
+This and the following steps are hidden if you've selected WordPress. 
+</base-info>
 
 #### Repository
 
@@ -61,7 +67,9 @@ For NodeJS-based apps, including AdonisJS and NuxtJS, you'll also set the follow
 Select a VPS Provider that Cleavr will provision a new server on. You can choose an existing VPS Provider that you have connected with Cleavr, choose
 to connect to a provider at this time, or select Custom Server if you'd prefer to use a provider Cleavr does not currently integrate with. 
 
-**Note** - if you select custom, then you will be asked to run a script on the server and add ther server's public IP. 
+<base-alert>
+If you select custom, then you will be asked to run a script on the server and add ther server's public IP. 
+</base-alert>
 
 #### Server Plan
 

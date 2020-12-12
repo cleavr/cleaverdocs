@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import Leftnav from "~/components/leftnav";
+import Leftnav from "~/components/LeftNav";
 export default {
   components: {Leftnav},
   data () {
