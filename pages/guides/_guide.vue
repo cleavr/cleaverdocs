@@ -20,8 +20,8 @@ export default {
     PageContents
   },
   async asyncData({ $content, params }) {
-    const currentPage = params.doc
-    const doc = await $content(`documentation`, currentPage).fetch()
+    const currentPage = params.guide
+    const doc = await $content(`guides`, currentPage).fetch()
     return { doc, currentPage }
   },
   head() {

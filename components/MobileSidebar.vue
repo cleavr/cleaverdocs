@@ -33,8 +33,9 @@
           </div>
           <logo />
           <div class="overflow-y-auto">
-            <sectionsnav class="flex-col justify-left px-5 pt-6" />
-            <leftnav class="px-6 pt-6" />
+            <sections-nav class="flex-col justify-left px-5 pt-6" />
+            <GuidesLeftNav v-if="isGuides" class="px-6 pt-6" />
+            <DocsLeftNav v-else class="px-6 pt-6" />
           </div>
         </div>
       </transition>
@@ -46,9 +47,12 @@
 </template>
 
 <script>
-import Leftnav from "~/components/LeftNav";
+import DocsLeftNav from "~/components/DocsLeftNav";
+import GuidesLeftNav from "~/components/GuidesLeftNav";
+import SectionsNav from "~/components/SectionsNav";
+
 export default {
-  components: {Leftnav},
+  components: {DocsLeftNav, SectionsNav, GuidesLeftNav},
   data () {
     return {
       display: null
@@ -59,6 +63,11 @@ export default {
     setTimeout(function(){
       self.display = true
     }, 100);
+  },
+  computed: {
+    isGuides () {
+      return this.$nuxt._route.name === 'guides-guide'
+    }
   },
   methods: {
     closeMobileMenu () {

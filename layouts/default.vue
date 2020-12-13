@@ -29,6 +29,11 @@ import Desktopsidebar from "~/components/DesktopSidebar";
 
 export default {
   components: {Desktopsidebar, Mobilesidebar, mainHeader, Search, Logo, Sectionsnav},
+  watch: {
+    '$route' () {
+      this.showMobileMenu = false
+    },
+  },
   data () {
     return {
       showMobileMenu: false,
