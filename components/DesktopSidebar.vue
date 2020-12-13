@@ -1,9 +1,7 @@
 <template>
   <div class="hidden bg-white md:flex md:flex-shrink-0 ">
     <div class="flex flex-col w-64">
-      <!-- Sidebar component, swap this element with another sidebar if you like -->
-      <div class="fixed pl-6 mt-16 py-3 pr-12 h-full overflow-y-auto">
-        <span class="text-sm text-gray-400 italic">Keep moving forward. 👟</span>
+      <div class="fixed pl-6 pt-16 pb-6 pr-12 h-full overflow-y-auto">
         <leftnav class="mt-6" />
       </div>
     </div>

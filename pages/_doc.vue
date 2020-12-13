@@ -2,11 +2,6 @@
   <div>
     <h1 class="text-3xl font-semibold text-gray-900 pb-8 capitalize">{{ doc.title }}</h1>
     <NuxtContent :document="doc" class="prose" />
-    <div class="flex">
-     <!-- <page-contents :doc="doc" />-->
-    </div>
-
-
     <div class="mt-24">
       <a :href="`https://github.com/LittleBets/cleaverdocs/blob/master/pages/${doc}.md`"
          class="text-yellow-600 text-sm hover:text-yellow-700"
