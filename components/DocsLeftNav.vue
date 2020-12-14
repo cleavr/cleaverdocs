@@ -46,6 +46,9 @@
       <nuxt-link to="/new-sites" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('new-sites')">
         Adding New Sites
       </nuxt-link>
+      <nuxt-link to="/change-domain" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('change-domain')">
+        Change Domain
+      </nuxt-link>
       <nuxt-link to="/authentication" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('authentication')">
         Authentication
       </nuxt-link>
@@ -131,11 +134,17 @@
       <nuxt-link to="/security-measures" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('security-measures')">
         Security Measures
       </nuxt-link>
+      <nuxt-link to="/deploy-with-cleavr" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('deploy-with-cleavr')">
+        Add Deploy button
+      </nuxt-link>
       <nuxt-link to="/update-avatar" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('update-avatar')">
         Update Avatar
       </nuxt-link>
       <nuxt-link to="/dark-mode" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('dark-mode')">
         Enable Dark Mode
+      </nuxt-link>
+      <nuxt-link to="/delete-account" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('delete-account')">
+        Delete Account
       </nuxt-link>
     </div>
 

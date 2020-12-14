@@ -14,6 +14,11 @@ issue on the <a href="https://forum.cleavr.io/">forum</a> or by <a href="mailto:
 ## Site and app setup
 Check the following common setup issues to see if they resolve your issue. 
 
+### Are you clearing cache correctly?
+If your route definitions are using closures or anonymous definitions, then this will impact clearing cache. You can run `php artisan route:list` and check the **Action** column to make sure no routes are listed using **Closure**.
+
+You'll want to either remove the routes with closures or move them to a controller. 
+
 ### Did you build production assets?
 
 #### Site cannot be reached 

@@ -1,9 +1,12 @@
 <template>
   <div>
     <div class="text-base">
-      <h3 class="uppercase text-gray-700 font-bold py-3">Getting Started</h3>
-      <nuxt-link to="guides/hello" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('hello')">
-        Hello
+      <h3 class="uppercase text-gray-700 font-bold py-3">Deploy</h3>
+      <nuxt-link to="guides/quasar-ssr" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('quasar-ssr')">
+        Quasar SSR
+      </nuxt-link>
+      <nuxt-link to="guides/statamic-cms" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('statamic-cms')">
+        Statamic CMS
       </nuxt-link>
     </div>
   </div>

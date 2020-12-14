@@ -19,7 +19,7 @@ export default {
   components: {SectionsNav, DocsLeftNav, GuidesLeftNav},
   computed: {
     isGuides () {
-      return this.$nuxt._route.name === 'guides-guide'
+      return this.$nuxt._route.name === 'guides-guide' || this.$nuxt._route.name === 'guides'
     }
   }
 }
