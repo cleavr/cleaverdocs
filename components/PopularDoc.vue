@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="linkTo" class="col-span-1 flex shadow-sm rounded-md text-white bg-gradient-to-tr
-            transform py-3 focus:outline-none bg-blue-600 hover:bg-green-200"
+            transform py-3 focus:outline-none" :class="backgroundColors"
   >
     <div class="flex-shrink-0 flex items-center justify-center w-16 text-sm font-medium rounded-l-md">
       <icon :name="icon" class="h-5 w-5 text-white fill-white" stroke="2" />
@@ -24,5 +24,10 @@
       docTitle: {type: String, required: true},
       linkTo: {type: String, required: true}
     },
+    computed: {
+      backgroundColors () {
+        return `from-${this.fromColor} to-${this.toColor} hover:from-${this.toColor} hover:to-${this.fromColor}`
+      }
+    }
   }
 </script>
