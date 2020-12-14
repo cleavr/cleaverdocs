@@ -7,14 +7,14 @@
       Popular
     </h2>
     <div>
-      <ul class="mt-3 grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="mt-3 grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <popular-doc icon="lightning" doc-title="Flash Deployments" from-color="orange-400" to-color="red-700" link-to="flash-deployments" />
         <popular-doc icon="providers" doc-title="Providers" from-color="teal-400" to-color="blue-700" link-to="providers" />
         <popular-doc icon="github" doc-title="GitHub Actions" from-color="gray-500" to-color="gray-700" link-to="github-actions" />
         <popular-doc icon="canary" doc-title="Canary" from-color="yellow-400" to-color="yellow-600" link-to="canary" />
         <popular-doc icon="hook" doc-title="Deployment Hooks" from-color="pink-400" to-color="purple-600" link-to="deployment-hooks" />
         <popular-doc icon="cogs" doc-title="Services" from-color="blue-400" to-color="blue-600" link-to="services" />
-      </ul>
+      </div>
     </div>
     <div class="mt-16">
       <div class="py-5">
