@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="linkTo" class="col-span-1 flex shadow-sm rounded-md text-white bg-gradient-to-tr
-            transform py-3 focus:outline-none transition duration-500"
+            transform py-3 focus:outline-none"
             :class="`from-${fromColor} to-${toColor} hover:from-${toColor} hover:to-${fromColor}`"
   >
     <div class="flex-shrink-0 flex items-center justify-center w-16 text-sm font-medium rounded-l-md">
