@@ -7,7 +7,7 @@ description: 'Flash deploy launches your apps quickly and effortlessly'
 
 Quickly provision a new server, set up, and deploy your app in one-fell-swoop - giving yourself more time for ☕️, 🚶‍♀️, or 👨🏾‍💻. 
 
-<you-tube video="wbwQvp7GFag"></you-tube>
+<YouTube video="wbwQvp7GFag"></YouTube>
 
 ## In one-fell-swoop
 With Flash Deploy, tell Cleavr what you want to deploy and where to. Cleavr then takes over and - 

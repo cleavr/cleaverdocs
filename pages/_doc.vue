@@ -19,6 +19,10 @@ export default {
     GithubEdit,
     PageContents
   },
+  transition: {
+    name: 'page',
+    mode: 'out-in'
+  },
   async asyncData({ $content, params }) {
     const currentPage = params.doc
     const doc = await $content(`documentation`, currentPage).fetch()
