@@ -20,13 +20,15 @@
     props: {
       fromColor: {type: String, required: true},
       toColor: {type: String, required: true},
+      toHoverColor: {type: String, required: true},
+      fromHoverColor: {type: String, required: true},
       icon: {type: String, required: true},
       docTitle: {type: String, required: true},
       linkTo: {type: String, required: true}
     },
     computed: {
       backgroundColors () {
-        return `from-${this.fromColor} to-${this.toColor} hover:from-${this.toColor} hover:to-${this.fromColor}`
+        return `${this.fromColor} ${this.toColor} ${this.toHoverColor} ${this.fromHoverColor}`
       }
     }
   }
