@@ -5,8 +5,8 @@
     <div class="flex-shrink-0 flex items-center justify-center w-16 text-sm font-medium rounded-l-md">
       <icon :name="icon" class="h-5 w-5 text-white fill-white" stroke="2" />
     </div>
-    <div class="flex-1 flex items-center justify-between rounded-r-md truncate">
-      <div class="flex-1 pr-4 py-2 font-semibold">
+    <div class="flex-1 flex items-center justify-between rounded-r-md">
+      <div class="flex-1 pr-4 py-2 font-semibold truncate">
         {{ docTitle }}
       </div>
     </div>
