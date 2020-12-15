@@ -10,6 +10,9 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
+    script: [
+      {hid:'plausible', src: 'https://insights.cleavr.io/js/plausible.js', 'data-domain':'docs.cleavr.io', async: true, defer: true},
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
