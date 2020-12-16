@@ -28,17 +28,6 @@ Common entry points for Adonis:
 
 Check your app's `package.json` file and see how the start script is configured. 
 
-Cleavr also supports running start scripts. For example, if your `package.json file` contains the following -
-
-```json
-"scripts": {
-  "dev": "nuxt",
-  "build": "nuxt build",
-  "start": "nuxt start",
-  "generate": "nuxt generate"
-}
-```
-
 then, you can simply add `npm` as the entry point and pass `start` as an argument. 
 
 ### Did you set up a database?
