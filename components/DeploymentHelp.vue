@@ -10,13 +10,13 @@
         </p>
       </div>
       <div class="mt-5 text-sm">
-        <nuxt-link to="/adonis-deployments" class="inline-flex items-center px-5 py-3 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <nuxt-link to="/adonis-deployments" class="mt-3 lg:mt-0 inline-flex items-center px-5 py-3 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
           Adonis deployments
         </nuxt-link>
-        <nuxt-link to="/nodejs-deployments" class="md:ml-5 inline-flex items-center px-5 py-3 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <nuxt-link to="/nodejs-deployments" class="mt-3 lg:mt-0 md:ml-5 inline-flex items-center px-5 py-3 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
           NodeJS deployments
         </nuxt-link>
-        <nuxt-link to="/laravel-deployments" class="md:ml-5 inline-flex items-center px-5 py-3 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <nuxt-link to="/laravel-deployments" class="mt-3 lg:mt-0 md:ml-5 inline-flex items-center px-5 py-3 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
           Laravel deployments
         </nuxt-link>
       </div>
