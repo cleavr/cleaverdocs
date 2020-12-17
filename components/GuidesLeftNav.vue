@@ -12,6 +12,32 @@
         Statamic CMS
       </nuxt-link>
     </div>
+
+    <div class="text-base">
+      <h3 class="uppercase text-gray-700 font-bold py-3">Server</h3>
+      <nuxt-link to="guides/ssh-server" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('ssh-server')">
+        Access via SSH
+      </nuxt-link>
+      <nuxt-link to="guides/putty-server" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('putty-server')">
+        Access via PuTTY
+      </nuxt-link>
+      <nuxt-link to="guides/ftp-server" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('ftp-server')">
+        Access via FTP
+      </nuxt-link>
+      <nuxt-link to="guides/point-domain" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('point-domain')">
+        Point domain
+      </nuxt-link>
+    </div>
+
+    <div class="text-base">
+      <h3 class="uppercase text-gray-700 font-bold py-3">Database</h3>
+      <nuxt-link to="guides/ssh-database" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('ssh-database')">
+        Access via SSH
+      </nuxt-link>
+      <nuxt-link to="guides/client-database" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('client-database')">
+        Access via client
+      </nuxt-link>
+    </div>
   </div>
 </template>
 
