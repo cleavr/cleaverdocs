@@ -1,6 +1,8 @@
 ---
 title: 'Update Avatar'
 description: 'Cleavr uses Gravatar for avatars.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 Cleavr uses Gravatar. If you don’t have an account created, go to [https://en.gravatar.com/](https://en.gravatar.com/) to create your Gravatar 

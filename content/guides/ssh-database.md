@@ -1,6 +1,8 @@
 ---
 title: 'Access database via SSH'
 description: 'How to access your database via SSH.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 To remote into the server, you will first need to add your [SSH key](/ssh-keys) and then SSH into the server using a command like:

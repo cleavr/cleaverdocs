@@ -1,6 +1,8 @@
 ---
 title: 'Authentication'
 description: 'Set up server level authentication to keep your site a secret from others.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 You can enable domain level authentication for your website. This authentication is at the server / domain level and 

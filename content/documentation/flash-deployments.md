@@ -2,6 +2,8 @@
 
 title: 'Flash Deployments'
 description: 'Flash deploy launches your apps quickly and effortlessly'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: 'https://youtu.be/wbwQvp7GFag'
 
 ---
 

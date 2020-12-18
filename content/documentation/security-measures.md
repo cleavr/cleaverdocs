@@ -1,6 +1,8 @@
 ---
 title: 'Security Measures'
 description: 'Security is top-of-mind.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 ## What security measures does Cleavr employ for provisioned servers?

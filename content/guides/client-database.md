@@ -1,6 +1,8 @@
 ---
 title: 'Access database via a client tool'
 description: 'How to access your database using a client tool.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 You can use a database client to access your database. We recommend **TablePlus** as it is compatible with all database types 

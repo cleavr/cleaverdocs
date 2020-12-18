@@ -1,6 +1,8 @@
 ---
 title: 'Deployments'
 description: 'Cleavr makes deployments effortless.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 ## What is a deployment?

@@ -1,6 +1,8 @@
 ---
 title: 'Adonis Deployments Troubleshooting'
 description: 'Troubleshoot common Adonis deployment issues.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 If your deployment has an error or you see a **502 Bad Gateway** error when navigating to your website, then it could be 

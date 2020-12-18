@@ -1,6 +1,8 @@
 ---
 title: 'Environment Variables'
 description: 'Manage production environment variables.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 ## What are environment variables?

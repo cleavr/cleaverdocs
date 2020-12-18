@@ -1,6 +1,8 @@
 ---
 title: 'Canary'
 description: 'Canary is your safegaurd for ensuring deployments will be as expected.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 Canary helps you ensure your deployments will be what you expect once they are made live. 

@@ -1,6 +1,8 @@
 ---
 title: 'Laravel Deployments Troubleshooting'
 description: 'Troubleshoot common Laravel deployment issues.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 The main reason for Laravel deployments failing is typically due to a required operation not being ran during the deployment process. Cleavr's deployment process is very flexible and typically all you need to do is enable a default deployment hook, such as Build Assets, or add a new custom deployment hook if your app requires customized scripts to run during deployment.

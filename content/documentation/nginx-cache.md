@@ -1,6 +1,8 @@
 ---
 title: 'NGINX Cache'
 description: 'Make your sites zoom with NGINX and FastCGI caching.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 <you-tube video="EuUNFxglPWA"></you-tube>

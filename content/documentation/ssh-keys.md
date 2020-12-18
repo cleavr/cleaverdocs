@@ -1,6 +1,8 @@
 ---
 title: 'SSH Keys'
 description: 'Set up and manage SSH keys for your servers.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 ## What is an SSH Key?

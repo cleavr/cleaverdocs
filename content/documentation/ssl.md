@@ -1,6 +1,8 @@
 ---
 title: 'SSL'
 description: 'Set up and manage Lets Encrypt and custom SSL certificates.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 ## What is a SSL Cert?

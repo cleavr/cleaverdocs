@@ -1,6 +1,8 @@
 ---
 title: 'Services'
 description: 'Manage services for your servers.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 The services section displays the services that have been installed on the server. 

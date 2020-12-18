@@ -1,6 +1,8 @@
 ---
 title: 'Managing DNS Records'
 description: 'Manage DNS records directly from within Cleavr.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 You can manage your DNS records from within Cleavr by enabling Cloudflare or DigitalOcean integrations by adding a DNS Profile. 

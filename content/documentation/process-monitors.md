@@ -1,6 +1,8 @@
 ---
 title: 'Process Monitors'
 description: 'Set up and manage process monitors for your servers.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 ## What is a process monitor?

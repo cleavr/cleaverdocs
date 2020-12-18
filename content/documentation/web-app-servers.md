@@ -1,6 +1,8 @@
 ---
 title: 'Web App Servers'
 description: 'Define the architecture for your web app.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 Navigate to your Web App, select Servers and you will see the list of servers for your web app. Select a server to access server settings.  

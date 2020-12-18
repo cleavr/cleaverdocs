@@ -1,6 +1,8 @@
 ---
 title: 'Web App Settings'
 description: 'Configure your web apps.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 In the instance that you need to update your web app settings, you can navigate to your web app and select Settings.

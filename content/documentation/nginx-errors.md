@@ -1,6 +1,8 @@
 ---
 title: 'NGINX Errors'
 description: 'Common NGINX Issues.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 Code **bmdpbnhyZWxvYWQ**

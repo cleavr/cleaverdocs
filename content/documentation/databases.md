@@ -1,6 +1,8 @@
 ---
 title: 'Databases'
 description: 'Set up and manage databases for your servers.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 

@@ -1,6 +1,8 @@
 ---
 title: 'Cron Jobs'
 description: 'Set up and manage cron jobs for your servers.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 ## What is a cron job?

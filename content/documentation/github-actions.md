@@ -1,6 +1,8 @@
 ---
 title: 'GitHub Actions'
 description: 'Integrate with GitHub Actions to use GHA as your dedicated build server.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 Cleavr integrates with [GitHub Actions](https://github.com/features/actions), an automated workflow feature by GitHub that allows 

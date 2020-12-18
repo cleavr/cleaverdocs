@@ -2,6 +2,8 @@
 
 title: 'Providers'
 description: 'Add provider profiles to connect to your VPS, VC, backup, DNS, and communication accounts.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: 'https://youtu.be/7UGfmjoe17M'
 
 ---
 

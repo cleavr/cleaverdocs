@@ -1,6 +1,8 @@
 ---
 title: 'Backups'
 description: 'Set up and manage automated backups for your servers.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 Database and Filesystem backups are encouraged so that you can quickly get your apps back up-and-running in case of 

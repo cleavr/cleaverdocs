@@ -1,6 +1,8 @@
 ---
 title: 'Grav CMS'
 description: 'Install Grav CMS with Cleavr.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 [Grav](https://getgrav.org/) is an open source, flat file CMS that is a breeze to use. You'll love it! 

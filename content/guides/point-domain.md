@@ -1,6 +1,8 @@
 ---
 title: 'How to point your domain to your server'
 description: 'How to point your domain to your server.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 ##  Check your DNS status 

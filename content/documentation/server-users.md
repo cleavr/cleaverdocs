@@ -1,6 +1,8 @@
 ---
 title: 'Server Users'
 description: 'Set up and manage server users for your servers.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 Server (or, webapp) users help with enabling site isolation for your servers. 

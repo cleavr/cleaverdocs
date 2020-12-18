@@ -1,6 +1,8 @@
 ---
 title: 'Deployment Hooks'
 description: 'Deployment hooks allow you to basically do whatever you want with your server.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 ## What is a deployment hook?

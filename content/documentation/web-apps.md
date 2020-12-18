@@ -1,6 +1,8 @@
 ---
 title: 'Adding New Web Apps'
 description: 'Add new web apps to Cleavr.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 ## What is a web app?

@@ -1,6 +1,8 @@
 ---
 title: 'Provision Servers'
 description: 'Take the hassle out of provisioning and configuring servers yourself. Cleavr makes it a breeze.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 Cleavr hooks up to several VPS providers to help you provision servers and do initial setup. 

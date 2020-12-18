@@ -1,6 +1,8 @@
 ---
 title: 'Delete Account'
 description: 'Request to delete your account.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 Want to delete your account? 

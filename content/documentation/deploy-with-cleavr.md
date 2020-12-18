@@ -1,6 +1,8 @@
 ---
 title: "Add a 'Deploy with Cleavr' button"
 description: 'Canary is your safegaurd for ensuring deployments will be as expected.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 You can create a **Deploy with Cleavr** button to add to your website or repo README file. This will open the Flash Deployment 

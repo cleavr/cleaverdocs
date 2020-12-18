@@ -1,6 +1,8 @@
 ---
 title: 'Adding New Domains'
 description: 'Connect Cleavr to your DNS Record management provider to make settng up new sites even more convenient.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 Add a new domain in DNS > Domains section. 

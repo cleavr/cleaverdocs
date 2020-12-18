@@ -1,6 +1,8 @@
 ---
 title: "Let's Encrypt Errors"
 description: 'Cleavr uses Gravatar for avatars.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 ## 😎 Check your DNS status 
 Use [DNS Checker](https://dnschecker.org/) to verify that your domain has successfully propagated before adding a site with SSL. 

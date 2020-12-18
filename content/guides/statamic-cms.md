@@ -1,6 +1,8 @@
 ---
 title: 'Deploy a Statamic CMS App'
 description: 'Deploy a Statamic CMS app with Cleavr.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 [Statamic](https://statamic.com/) is a pretty cool Laravel-based CMS for creating creative-looking sites.

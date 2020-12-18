@@ -1,6 +1,8 @@
 ---
 title: 'SSH Access Denied'
 description: 'Cleavr uses Gravatar for avatars.'
+image: 'https://docs.cleavr.io/images/newsite.png'
+video: ''
 ---
 
 Sometimes, Cleavr may be denied SSH access to your server to run necessary commands. Often, this occurs with customer 
