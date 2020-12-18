@@ -32,12 +32,12 @@ export default {
     return {
       title: this.doc.title + ' - Cleavr docs',
       meta: [
-        {hid: 'description', name: 'description', content: 'summary'},
+        {hid: 'description', name: 'description', content: this.doc.description},
         // Open Graph
         {hid: 'og:title', property: 'og:title', content: this.doc.title},
         {hid: 'og:description', property: 'og:description', content: this.doc.description},
         // Twitter Card
-        {hid: 'twitter:card', name: 'twitter:card', content: this.doc.image},
+        {hid: 'twitter:card', name: 'twitter:card', content: 'summary'},
         {hid: 'twitter:site', name: 'twitter:site', content: '@thecleavr'},
         {hid: 'twitter:title', name: 'twitter:title', content: this.doc.title},
         {hid: 'twitter:description', name: 'twitter:description', content: this.doc.description},
