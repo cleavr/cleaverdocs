@@ -1,6 +1,7 @@
 ---
 title: 'Deploy a Quasar SSR App'
 description: 'Deploy a Quasar SSR app with Cleavr.'
+image: 'https://docs.cleavr.io/images/newsite.png'
 video: 'https://www.youtube.com/embed/ierMKUKQ0b4'
 ---
 
