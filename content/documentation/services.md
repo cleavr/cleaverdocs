@@ -55,7 +55,7 @@ Some services allow you to configure settings, such as **PHP** and **NGINX**. To
 This section is often used for PHP as PHP's default settings are set low and may block certain things - such as uploading 
 files sizes larger than 2 mb. 
 
-## Repair Server
+## Repair Serverf
 
 If you're running into issues with your server, you can try the **Repair Server** option which will
 run through checks and update settings, such as file permission settings, to make sure Cleavr has

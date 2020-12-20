@@ -2,6 +2,9 @@
   <div>
     <div class="text-base">
       <h3 class="uppercase text-gray-700 font-bold py-3">Deploy</h3>
+      <nuxt-link to="guides/wordpress-multisite" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('wordpress-multisite')">
+        WordPress Multisite
+      </nuxt-link>
       <nuxt-link to="guides/drupal-cms" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('drupal-cms')">
         Drupal CMS
       </nuxt-link>
