@@ -1,11 +1,7 @@
 <template>
   <div>
-    <h1 class="text-3xl font-extrabold text-white sm:text-4xl">
-      <span class="text-gray-700">Learn. Then do!</span>
-    </h1>
-    <p class="font-semibold text-gray-800 mt-8">
-      We have a couple guides available now. Check back soon as we're adding more guides!
-    </p>
+    <guide-hero />
+    <guide-help />
    <!-- <div class="mt-3 grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
       <popular-doc icon="lightning" doc-title="Flash Deployments" from-color="from-orange-400" to-color="to-red-700" from-hover-color="hover:from-red-700" to-hover-color="hover:to-orange-400" link-to="flash-deployments" />
       <popular-doc icon="providers" doc-title="Providers" from-color="from-teal-400" to-color="to-blue-700" from-hover-color="hover:from-blue-700" to-hover-color="hover:to-teal-400" link-to="providers" />
@@ -19,12 +15,14 @@
 
 <script>
 import PopularDoc from "~/components/PopularDoc";
+import GuideHero from "@/components/global/GuideHero";
+import GuideHelp from "@/components/GuideHelp";
 
 export default {
   transition: {
     name: 'page',
     mode: 'out-in'
   },
-  components: {PopularDoc},
+  components: {GuideHelp, GuideHero, PopularDoc},
 }
 </script>
