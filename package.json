@@ -17,8 +17,11 @@
     "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
+    "nuxt-content-algolia": "^0.1.0",
     "postcss": "^7.0.35",
-    "tailwindcss-aspect-ratio": "^3.0.0"
+    "tailwindcss-aspect-ratio": "^3.0.0",
+    "vue": "^2.6.12",
+    "vue-instantsearch": "^3.4.3"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.3.4",
