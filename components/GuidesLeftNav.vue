@@ -36,6 +36,13 @@
     </div>
 
     <div class="text-base">
+      <h3 class="uppercase text-gray-700 font-bold py-3">Site</h3>
+      <nuxt-link to="guides/domain-aliases" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('domain-aliases')">
+        Domain Aliases
+      </nuxt-link>
+    </div>
+
+    <div class="text-base">
       <h3 class="uppercase text-gray-700 font-bold py-3">Database</h3>
       <nuxt-link to="guides/ssh-database" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('ssh-database')">
         Access via SSH
