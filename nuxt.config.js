@@ -47,13 +47,19 @@ export default {
     apiKey: process.env.ALGOLIA_API_KEY,
     paths: [
       {
-        name: 'cleavrdocs',
-        fields: ['title', 'description', 'bodyPlainText', 'tags'],
+        name:'documentation',
+        index: 'docs',
+        fields: ['title', 'description', 'toc', 'tags'],
+      },
+      {
+        name:'guides',
+        fields: ['title', 'description', 'toc', 'tags'],
       },
     ],
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    transpile: ['vue-instantsearch', 'instantsearch.js/es'],
   }
 }
