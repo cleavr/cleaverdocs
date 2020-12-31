@@ -31,17 +31,18 @@
                     Should there be? Let us know on the <a href="https://forum.cleavr.io" target="_blank" class="text-blue-500 hover:text-blue-400">forum</a>.
                   </p>
                 </div>
-                <ul v-if="currentRefinement" v-for="index in indices" :key="index.objectID" class="divide-y divide-blue-900">
-                  <li v-if="index.hits.length">
-                    <h2 class="uppercase text-orange-500">{{index.indexName}}</h2>
-                  </li>
-                  <li v-for="hit in index.hits" :key="hit.text" class="py-2">
-                    <nuxt-link :to="index.indexName === 'guides' ? `/guides/${hit.objectID}` : hit.objectID"  class="text-sm font-medium text-gray-100">
-                      <ais-highlight attribute="title" :hit="hit" />
-                    </nuxt-link>
-                  </li>
-                </ul>
-                <ais-powered-by theme="dark" />
+                <div v-if="currentRefinement" v-for="index in indices" :key="index.objectID" class="divide-y divide-blue-900">
+                  <div v-if="index.hits.length">
+                    <h2 class="uppercase text-orange-500 py-1 px-2">{{index.indexName}}</h2>
+                  </div>
+                  <nuxt-link :to="index.indexName === 'guides' ? `/guides/${hit.objectID}` : hit.objectID" v-for="hit in index.hits" :key="hit.text"
+                             class="block text-sm col-span-2 font-medium text-gray-100 py-2 hover:bg-blue-800 transition ease-in-out duration-150">
+
+                      <ais-highlight attribute="title" :hit="hit" class="px-2"/>
+
+                  </nuxt-link>
+                </div>
+                <ais-powered-by theme="dark" class="px-2" />
               </div>
             </div>
           </div>
