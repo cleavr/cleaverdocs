@@ -7,8 +7,9 @@
     <ais-index index-name="guides" />
     <ais-configure
       :hits-per-page.camel="4"
+      :attributesToSnippet="['bodyPlainText']"
     >
-      <ais-autocomplete :escape-html="false" v-click-outside="onClickOutside">
+      <ais-autocomplete v-click-outside="onClickOutside">
         <div slot-scope="{ currentRefinement, indices, refine }">
           <input
             type="search"
@@ -35,11 +36,13 @@
                   <div v-if="index.hits.length">
                     <h2 class="uppercase text-orange-500 py-1 px-2">{{index.indexName}}</h2>
                   </div>
-                  <nuxt-link :to="index.indexName === 'guides' ? `/guides/${hit.objectID}` : hit.objectID" v-for="hit in index.hits" :key="hit.text"
-                             class="block text-sm col-span-2 font-medium text-gray-100 py-2 hover:bg-blue-800 transition ease-in-out duration-150">
-
-                      <ais-highlight attribute="title" :hit="hit" class="px-2"/>
-
+                  <nuxt-link :to="index.indexName === 'guides' ? `/guides/${hit.objectID}` : hit.objectID" v-for="hit in index.hits" :key="hit.objectID"
+                             class="block text-sm col-span-2 py-2 hover:bg-blue-800 transition ease-in-out duration-150"
+                  >
+                    <div class="px-2">
+                      <ais-highlight attribute="title" :hit="hit" class="block text-blue-300 font-medium" />
+                      <ais-snippet attribute="bodyPlainText" :hit="hit" class="block text-gray-100 font-base" />
+                    </div>
                   </nuxt-link>
                 </div>
                 <ais-powered-by theme="dark" class="px-2" />
@@ -97,8 +100,6 @@ export default {
   methods: {
     onClickOutside () {
       this.showResults = false
-      console.log(document.getElementById('searchInput'))
-      this.$_ais_instantSearchInstance.clearRefinements()
     },
   }
 };
