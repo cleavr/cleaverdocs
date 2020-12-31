@@ -1,7 +1,7 @@
 ---
 title: 'SSH Access Denied'
 description: 'Cleavr uses Gravatar for avatars.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

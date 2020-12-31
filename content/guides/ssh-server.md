@@ -1,7 +1,7 @@
 ---
 title: 'Access Server Via SSH'
 description: 'How to access you server via SSH.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

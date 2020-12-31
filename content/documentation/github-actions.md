@@ -1,7 +1,7 @@
 ---
 title: 'GitHub Actions'
 description: 'Integrate with GitHub Actions to use GHA as your dedicated build server.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

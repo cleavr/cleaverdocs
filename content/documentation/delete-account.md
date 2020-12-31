@@ -1,7 +1,7 @@
 ---
 title: 'Delete Account'
 description: 'Request to delete your account.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'How to deploy Drupal CMS'
 description: 'How to deploy Drupal CMS with Cleavr.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

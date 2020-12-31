@@ -1,7 +1,7 @@
 ---
 title: 'Access database via SSH'
 description: 'How to access your database via SSH.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

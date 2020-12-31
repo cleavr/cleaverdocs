@@ -1,7 +1,7 @@
 ---
 title: 'Redirects'
 description: 'Set up and manage redirects for your sites.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

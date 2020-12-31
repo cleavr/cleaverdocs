@@ -1,7 +1,7 @@
 ---
 title: 'Authentication'
 description: 'Set up server level authentication to keep your site a secret from others.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

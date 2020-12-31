@@ -1,7 +1,7 @@
 ---
 title: 'Web App Settings'
 description: 'Configure your web apps.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

@@ -2,144 +2,104 @@
   <ais-instant-search
     :search-client="searchClient"
     index-name="docs"
-    class="absolute"
+    class="w-full"
   >
+    <ais-index index-name="guides" />
     <ais-configure
-      :hitsPerPage="5"
-      :restrictSearchableAttributes="['title']"
-    />
-    <ais-index index-name="docs" />
-    <ais-autocomplete>
-      <template slot-scope="{ currentRefinement, indices, refine }">
-        <vue-autosuggest
-          :suggestions="indicesToSuggestions(indices)"
-          @selected="onSelect"
-          :input-props="{
-                style: 'width: 100%',
-                onInputChange: refine,
-                placeholder: 'Search here…',
-              }"
-        >
-          <template slot-scope="{ suggestion }">
-            <nuxt-link :to="suggestion.item.objectID">{{ suggestion.item.title }}</nuxt-link>
-          </template>
-        </vue-autosuggest>
-      </template>
-    </ais-autocomplete>
+      :hits-per-page.camel="4"
+    >
+      <ais-autocomplete :escape-html="false" v-click-outside="onClickOutside">
+        <div slot-scope="{ currentRefinement, indices, refine }">
+          <input
+            type="search"
+            id="searchInput"
+            class="w-full py-2 px-3"
+            :value="currentRefinement"
+            :placeholder="searchPlaceholder"
+            autocomplete="off"
+            @input="refine($event.currentTarget.value)"
+            @focus="showResults = true"
+          >
+          <div v-if="currentRefinement.length && showResults" class="absolute z-10 transform mt-3 px-2 w-screen max-w-md sm:px-0">
+            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+              <div class="relative grid gap-6 bg-gray-900 text-gray-100 px-5 py-6 sm:gap-8 sm:p-8">
+                <div v-if="!indices[0].hits.length && !indices[1].hits.length" class="text-sm">
+                  <p>
+                    Nothing to show... 😞
+                  </p>
+                  <p class="mt-3">
+                    Should there be? Let us know on the <a href="https://forum.cleavr.io" target="_blank" class="text-blue-500 hover:text-blue-400">forum</a>.
+                  </p>
+                </div>
+                <ul v-if="currentRefinement" v-for="index in indices" :key="index.objectID" class="divide-y divide-blue-900">
+                  <li v-if="index.hits.length">
+                    <h2 class="uppercase text-orange-500">{{index.indexName}}</h2>
+                  </li>
+                  <li v-for="hit in index.hits" :key="hit.text" class="py-2">
+                    <nuxt-link :to="index.indexName === 'guides' ? `/guides/${hit.objectID}` : hit.objectID"  class="text-sm font-medium text-gray-100">
+                      <ais-highlight attribute="title" :hit="hit" />
+                    </nuxt-link>
+                  </li>
+                </ul>
+                <ais-powered-by theme="dark" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </ais-autocomplete>
+    </ais-configure>
   </ais-instant-search>
 </template>
 
 <script>
 import algoliasearch from 'algoliasearch/lite';
-import { VueAutosuggest } from 'vue-autosuggest';
-import 'instantsearch.css/themes/algolia.css';
+import vClickOutside from 'v-click-outside'
 
 export default {
-  components: { VueAutosuggest },
+  directives: {
+    clickOutside: vClickOutside.directive
+  },
   data() {
     return {
       searchClient: algoliasearch(
         'EVJH6MC2UJ',
         '2410e19a2c436d23c08935d012eeca29'
       ),
+      showResults: true
     };
   },
-  methods: {
-    onSelect(selected) {
-      console.log(selected)
-      if (selected) {
-        this.$nuxt.$route(selected.item.title);
-      }
+  mounted: function () {
+    this.$nextTick(function () {
+      window.addEventListener('keydown', event => {
+        if(event.metaKey && event.key === 'k'){
+          document.getElementById('searchInput').focus()
+        }
+      })
+    });
+  },
+  watch: {
+    '$route' () {
+      this.showResults = false
     },
-    indicesToSuggestions(indices) {
-      return indices.map(({hits}) => ({
-        data: hits,
-      }));
+  },
+  computed: {
+    searchPlaceholder () {
+      if (navigator.appVersion.indexOf('Mac')!==-1) {
+        return 'Search (⌘K)'
+      } else if (navigator.appVersion.indexOf('Win')!==-1) {
+        return 'Search (Win + K)'
+      } else {
+        return 'Search'
+      }
+    }
+  },
+  methods: {
+    onClickOutside () {
+      this.showResults = false
+      console.log(document.getElementById('searchInput'))
+      this.$_ais_instantSearchInstance.clearRefinements()
     },
   }
 };
 </script>
 
-<style>
-body,
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-}
-
-.ais-Highlight-highlighted {
-  background: cyan;
-  font-style: normal;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  min-height: 50px;
-  padding: 0.5rem 1rem;
-  background-image: linear-gradient(to right, #4dba87, #2f9088);
-  color: #fff;
-  margin-bottom: 1rem;
-}
-
-.header a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.header-title {
-  font-size: 1.2rem;
-  font-weight: normal;
-}
-
-.header-title::after {
-  content: ' ▸ ';
-  padding: 0 0.5rem;
-}
-
-.header-subtitle {
-  font-size: 1.2rem;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-#autosuggest input {
-  font: inherit;
-}
-
-.autosuggest__results-container {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-.autosuggest__results-container ul {
-  margin: 0;
-  padding: 0;
-}
-
-.autosuggest__results_item {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  list-style-type: none;
-  padding: 0.5em;
-  display: grid;
-  grid-template-columns: 5fr 1fr 1fr;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.autosuggest__results_item img {
-  height: 3em;
-}
-
-.autosuggest__results_item-highlighted {
-  background-color: rgba(0, 0, 0, 0.24);
-}
-</style>

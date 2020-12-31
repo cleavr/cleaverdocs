@@ -1,7 +1,7 @@
 ---
 title: 'Adding New Web Apps'
 description: 'Add new web apps to Cleavr.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 
