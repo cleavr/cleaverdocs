@@ -58,7 +58,7 @@
 export default {
   methods: {
     highlight (section) {
-      const current = this.$nuxt._route.params.doc
+      const current = this.$nuxt._route.params.guide
       if (section === current) {
         return 'text-pink-400 hover:text-pink-500'
       }

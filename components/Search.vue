@@ -77,6 +77,7 @@ export default {
       window.addEventListener('keydown', event => {
         if(event.metaKey && event.key === 'k'){
           document.getElementById('searchInput').focus()
+          event.preventDefault()
         }
       })
     });
