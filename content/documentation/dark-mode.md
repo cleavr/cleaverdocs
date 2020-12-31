@@ -1,7 +1,7 @@
 ---
 title: 'Dark Mode'
 description: 'Dont strain your eyes, turn on dark mode!'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 When you log into Cleavr, you will see either the light mode or dark mode theme depending on what you enabled for your device. 

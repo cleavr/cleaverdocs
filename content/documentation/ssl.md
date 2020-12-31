@@ -1,7 +1,7 @@
 ---
 title: 'SSL'
 description: 'Set up and manage Lets Encrypt and custom SSL certificates.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

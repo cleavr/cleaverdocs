@@ -1,7 +1,7 @@
 ---
 title: 'Services'
 description: 'Manage services for your servers.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'Access Server Via PuTTY'
 description: 'How to access you server via PuTTY.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'Change Domain'
 description: 'Change the free Cleavr domain to one of your own.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

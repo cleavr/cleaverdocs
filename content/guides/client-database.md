@@ -1,7 +1,7 @@
 ---
 title: 'Access database via a client tool'
 description: 'How to access your database using a client tool.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

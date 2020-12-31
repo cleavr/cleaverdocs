@@ -1,7 +1,7 @@
 ---
 title: 'Canary'
 description: 'Canary is your safegaurd for ensuring deployments will be as expected.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

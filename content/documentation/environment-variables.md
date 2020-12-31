@@ -1,7 +1,7 @@
 ---
 title: 'Environment Variables'
 description: 'Manage production environment variables.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

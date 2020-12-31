@@ -1,7 +1,7 @@
 ---
 title: 'Custom Servers'
 description: 'Take the hassle out of provisioning and configuring servers yourself. Cleavr makes it a breeze.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

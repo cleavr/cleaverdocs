@@ -1,7 +1,7 @@
 ---
 title: 'Web App Servers'
 description: 'Define the architecture for your web app.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

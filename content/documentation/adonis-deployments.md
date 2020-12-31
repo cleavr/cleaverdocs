@@ -1,7 +1,7 @@
 ---
 title: 'Adonis Deployments Troubleshooting'
 description: 'Troubleshoot common Adonis deployment issues.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

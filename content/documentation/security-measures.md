@@ -1,7 +1,7 @@
 ---
 title: 'Security Measures'
 description: 'Security is top-of-mind.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 

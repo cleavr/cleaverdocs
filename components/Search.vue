@@ -1,16 +1,105 @@
 <template>
-  <div class="flex">
-    <form class="w-full flex md:ml-0" action="#" method="GET">
-      <label for="search_field" class="sr-only">Search</label>
-      <div class="relative w-full text-gray-400 focus-within:text-gray-600">
-        <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none">
-          <!-- Heroicon name: search -->
-          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-          </svg>
+  <ais-instant-search
+    :search-client="searchClient"
+    index-name="docs"
+    class="w-full"
+  >
+    <ais-index index-name="guides" />
+    <ais-configure
+      :hits-per-page.camel="4"
+    >
+      <ais-autocomplete :escape-html="false" v-click-outside="onClickOutside">
+        <div slot-scope="{ currentRefinement, indices, refine }">
+          <input
+            type="search"
+            id="searchInput"
+            class="w-full py-2 px-3"
+            :value="currentRefinement"
+            :placeholder="searchPlaceholder"
+            autocomplete="off"
+            @input="refine($event.currentTarget.value)"
+            @focus="showResults = true"
+          >
+          <div v-if="currentRefinement.length && showResults" class="absolute z-10 transform mt-3 px-2 w-screen max-w-md sm:px-0">
+            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+              <div class="relative grid gap-6 bg-gray-900 text-gray-100 px-5 py-6 sm:gap-8 sm:p-8">
+                <div v-if="!indices[0].hits.length && !indices[1].hits.length" class="text-sm">
+                  <p>
+                    Nothing to show... 😞
+                  </p>
+                  <p class="mt-3">
+                    Should there be? Let us know on the <a href="https://forum.cleavr.io" target="_blank" class="text-blue-500 hover:text-blue-400">forum</a>.
+                  </p>
+                </div>
+                <ul v-if="currentRefinement" v-for="index in indices" :key="index.objectID" class="divide-y divide-blue-900">
+                  <li v-if="index.hits.length">
+                    <h2 class="uppercase text-orange-500">{{index.indexName}}</h2>
+                  </li>
+                  <li v-for="hit in index.hits" :key="hit.text" class="py-2">
+                    <nuxt-link :to="index.indexName === 'guides' ? `/guides/${hit.objectID}` : hit.objectID"  class="text-sm font-medium text-gray-100">
+                      <ais-highlight attribute="title" :hit="hit" />
+                    </nuxt-link>
+                  </li>
+                </ul>
+                <ais-powered-by theme="dark" />
+              </div>
+            </div>
+          </div>
         </div>
-        <input id="search_field" class="block w-full h-full pl-8 pr-3 py-2 border-transparent text-gray-900 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-0 focus:border-transparent sm:text-sm" placeholder="coming soon..." type="search" name="search">
-      </div>
-    </form>
-  </div>
+      </ais-autocomplete>
+    </ais-configure>
+  </ais-instant-search>
 </template>
+
+<script>
+import algoliasearch from 'algoliasearch/lite';
+import vClickOutside from 'v-click-outside'
+
+export default {
+  directives: {
+    clickOutside: vClickOutside.directive
+  },
+  data() {
+    return {
+      searchClient: algoliasearch(
+        'EVJH6MC2UJ',
+        '2410e19a2c436d23c08935d012eeca29'
+      ),
+      showResults: true
+    };
+  },
+  mounted: function () {
+    this.$nextTick(function () {
+      window.addEventListener('keydown', event => {
+        if(event.metaKey && event.key === 'k'){
+          document.getElementById('searchInput').focus()
+        }
+      })
+    });
+  },
+  watch: {
+    '$route' () {
+      this.showResults = false
+    },
+  },
+  computed: {
+    searchPlaceholder () {
+      if (navigator.appVersion.indexOf('Mac')!==-1) {
+        return 'Search (⌘K)'
+      } else if (navigator.appVersion.indexOf('Win')!==-1) {
+        return 'Search (Win + K)'
+      } else {
+        return 'Search'
+      }
+    }
+  },
+  methods: {
+    onClickOutside () {
+      this.showResults = false
+      console.log(document.getElementById('searchInput'))
+      this.$_ais_instantSearchInstance.clearRefinements()
+    },
+  }
+};
+</script>
+

@@ -1,7 +1,7 @@
 ---
 title: 'Log Reports'
 description: 'View production app log reports in a beautiful interface.'
-image: 'https://docs.cleavr.io/images/newsite.png'
+image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 
