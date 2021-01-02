@@ -2,9 +2,6 @@
   <div>
     <div class="text-base">
       <h3 class="uppercase text-gray-700 font-bold py-3">Deploy</h3>
-      <nuxt-link to="guides/wordpress-multisite" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('wordpress-multisite')">
-        WordPress Multisite
-      </nuxt-link>
       <nuxt-link to="guides/drupal-cms" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('drupal-cms')">
         Drupal CMS
       </nuxt-link>
@@ -49,6 +46,22 @@
       </nuxt-link>
       <nuxt-link to="guides/client-database" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('client-database')">
         Access via client
+      </nuxt-link>
+    </div>
+
+    <div class="text-base">
+      <h3 class="uppercase text-gray-700 font-bold py-3">WordPress</h3>
+      <nuxt-link to="guides/wordpress-create" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('wordpress-create')">
+        Create
+      </nuxt-link>
+      <nuxt-link to="guides/wordpress-advanced-configs" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('wordpress-advanced-configs')">
+        Advanced Configs
+      </nuxt-link>
+      <nuxt-link to="guides/wordpress-upload-limits" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('wordpress-upload-limits')">
+        Upload Limits
+      </nuxt-link>
+      <nuxt-link to="guides/wordpress-multisite" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('wordpress-multisite')">
+        Multisite
       </nuxt-link>
     </div>
   </div>
