@@ -13,7 +13,7 @@ If you're a Mac user, SSH access is straightforward. Windows users, view the gui
 
 ## Add SSH Key to your server
 
-The firs thing to do is create your SSH keys if you don't already have them. 
+The first thing to do is create your SSH keys if you don't already have them. 
 
 In your terminal, run the following command: 
 

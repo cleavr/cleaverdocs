@@ -13,7 +13,7 @@ video: ''
 - Your server's public IP
 
 <base-info>
-Clever requires SFTP access, which utilizes SSH keys. This is to provide additional security. 
+Cleavr requires SFTP access, which utilizes SSH keys. This is to provide additional security. 
 </base-info>
 
 ## To Connect
