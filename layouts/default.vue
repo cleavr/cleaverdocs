@@ -2,9 +2,7 @@
   <div class="max-w-6xl mx-auto">
     <mainHeader @openMobileMenu="showMobileMenu = true" />
     <div class="h-screen flex">
-      <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
       <mobilesidebar v-if="showMobileMenu" @closeMobileMenu="closeMobileMenu" :openMobileMenu="showMobileMenu" />
-      <!-- Static sidebar for desktop -->
       <desktopsidebar />
       <div class="flex flex-col w-0 flex-1">
         <main class="flex-1 mt-16 relative focus:outline-none" tabindex="0">

@@ -25,3 +25,14 @@ Be very careful using root user as this may produce unintended consequences.
 The frequency section uses cron job formatting but includes hint text beneath it that lets you know how the job will be 
 scheduled in clear words. See the following wikipedia article on how you can work with the scheduling format if you are unfamiliar with it. 
 [https://en.wikipedia.org/wiki/Cron](https://en.wikipedia.org/wiki/Cron) 
+
+## Example Cron Jobs
+
+### Laravel Schedule
+
+`/usr/bin/php /home/<server user>/<site name>/current/artisan schedule:run > /dev/null 2>&1`
+
+Where `/usr/bin/php` is the path to where PHP is installed. Run `which php` command on your server to find exact path. 
+
+And, replace `/<server user>/<site name>` with the correct server user, `cleavr` by default, and site name that make up the path
+for where your app is located. 

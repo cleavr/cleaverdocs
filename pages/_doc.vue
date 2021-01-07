@@ -26,7 +26,6 @@ export default {
   async asyncData({ $content, params }) {
     const currentPage = params.doc
     const doc = await $content(`documentation`, currentPage).fetch()
-    console.log(doc)
     return { doc, currentPage }
   },
   head() {

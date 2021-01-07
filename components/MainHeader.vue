@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed w-full max-w-6xl z-10 flex-shrink-0 flex h-16 bg-white border-b-2 border-gray-100">
+  <div class="fixed flex flex-shrink-0 h-16 w-full max-w-6xl z-10 bg-white border-b-2 border-gray-100">
     <button @click="showMobileMenu" class="px-4 border-r border-gray-200 text-gray-500 focus:outline-none md:hidden">
       <span class="sr-only">Open sidebar</span>
       <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -23,9 +23,8 @@
 </template>
 
 <script>
-import Sectionsnav from "~/components/SectionsNav";
+
 export default {
-  components: {Sectionsnav},
   methods: {
     showMobileMenu () {
       this.$emit('openMobileMenu', true)
