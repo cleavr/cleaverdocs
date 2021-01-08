@@ -21,6 +21,9 @@ Add a new site to a server and select the **Enable Multisite** option.
 - If you intend to use **sub-domains** Multisite type, you'll need to enable the **Allow wildcard subdomains** option
 - If you intend to use **sub-directories** Multisite type, then do not enable the Allow wildcard subdomains option. 
 
+If you enable **Let's Encrypt** AND **Enable Multisite**, you will first need to add a DNS Records for your root domain and an 
+additional DNS 'A' Record for `*` wildcard. They must both point to the server's public IP.  
+
 ## Set up WordPress and install Multisite
 
 Once Cleavr has completed adding your new WordPress site, go to the domain for the site and complete the initial 
