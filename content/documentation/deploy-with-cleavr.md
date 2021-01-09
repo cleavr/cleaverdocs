@@ -62,6 +62,13 @@ As an example, here is what the URL would look like for deploying an Adonis task
 
 [https://cleavr.io/flash?vc-provider=github&webapp=adonis&repository=armgitaar/taskist&branch=master&vps-region=sfo2&db-server=mysql57&vps-provider=digitalocean&vps-plan=s-1vcpu-1gb&flash=true](https://cleavr.io/flash?vc-provider=github&webapp=adonis&repository=armgitaar/taskist&branch=master&vps-region=sfo2&db-server=mysql57&vps-provider=digitalocean&vps-plan=s-1vcpu-1gb&flash=true)
 
+## Button for Markdown - such as for GitHub README pages
+
+```markdown
+[<img src="https://docs.cleavr.io/images/deploy-with-cleavr.png" />](https://cleavr.io)
+```
+
+
 ## Button HTML Code
 
 ```html
