@@ -28,7 +28,7 @@ free to use one of the more economic plans.
 3. In the **Web App** section, click to complete the setup
 4. On the **Code Repository** tab, select the **VC Provider** and **Repository** your project is located at
 5. On the **NPM Build** tab, set **Entry Point** to `npm`, **Arguments** to `start`, **Build Commands** to `npm run build --production`, and **Artifacts Path** to `build`
-6. If you selected GitHub as your VC Provider and want to utilize GitHub Actions to build you app, then click **GitHub Actions** tab and click to enable 
+6. If you selected GitHub as your VC Provider and want to utilize GitHub Actions to build your app, then click **GitHub Actions** tab and click to enable 
 7. In **Environment**, add the env variables for your project, including the database details added in step 2
 8. Deploy!
 
