@@ -24,7 +24,6 @@ your app and adds a GitHub secret to keep your deployment hook private.
 - Nuxt - Server Side Rendered
 - Nuxt - Static
 - Adonis
-- Strapi (coming soon) 
 - NodeJS - Server Side Rendered
 - NodeJS - Static
 
