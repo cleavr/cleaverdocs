@@ -18,7 +18,7 @@ VPS providers offer. The build process for Strapi takes a lot of processing powe
 to handle. You'll also need to take into consideration how many other apps are being hosted on the server as they will impact 
 available processing power during the build run as well. 
 
-Luckily, another option is to utilize Cleavr's GitHub Actions integration to have GitHub build Strapi for you. This way, you can then be 
+Luckily, another option is to utilize Cleavr's [GitHub Actions](/github-actions) integration to have GitHub build Strapi for you. This way, you can then be 
 free to use one of the more economic plans. 
 
 ## Set up
