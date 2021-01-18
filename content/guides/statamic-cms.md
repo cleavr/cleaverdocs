@@ -80,5 +80,21 @@ Some users with older Statamic versions experienced circular issues during deplo
 If you have this issue, SSH into your machine and install version 1 by executing: <b>composer self-update --1</b>
 </base-alert>
 
+## GitHub Integration
 
+If you integrate with GitHub and have **push-to-deploy** enabled, you may want to check to see what the new commit is
+before deploying to production as the new commit may already be in production. 
 
+To watch for these instances, you can create a new deployment hook to check the commit message for the presence of `[BOT]` 
+and stop the deployment process when present. 
+
+In the `web app > deployment hooks` section, add a new deployment hook and add im the following script: 
+
+```bash
+if [[ "{{ commitMessage }}" =~ "[BOT]" ]]; then
+    echo 'AUTO-COMMITTED ON PRODUCTION. NOTHING TO DEPLOY.'
+    exit 1
+fi
+```
+
+Place the new hook after the `Copy Project` deployment step. 
