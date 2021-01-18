@@ -25,13 +25,19 @@ Add your project to GitHub / Bitbucket / GitLab.
 ## Deploy with Cleavr
 Let's deploy using **Flash Deploy**.
 
-When setting up the app type, be sure to select **Laravel** and also install a **MySQL** database server.
+![Statmic CMS flash deployment](/images/statamic/flash.png)
+
+When setting up the app type, be sure to select **Laravel** and, define the repository your project is at, and install a **MySQL** database server. 
 
 Flash deploy, in fell-swoop, will -
 - Provision a new server
 - Install app dependencies
 - Create new site
 - Deploy the site
+
+Once completed, you should see the following - 
+
+![Statmic CMS flash deployment complete landing page](/images/statamic/landing.png)
 
 ## Add a user
 Once you deploy the site, cick on the URL and you'll see the login screen. In order to log in, you'll need to add a user.
@@ -57,11 +63,15 @@ Next, run the commands to create a new super user per the Quick Start commands.
 php please make:user
 ```
 
+![Statmic CMS terminal create new user](/images/statamic/terminal.png)
+
 Now, head back to the Statamic dashboard and log in.
 
 <base-alert>
 If you get a 500 error after attempting to login; it’s likely a cache issue. You can clear the cache by modifying the webapp > env and enabling clear cache option. Or, just redeploy. The deployment is pretty quick.
 </base-alert>
+
+![Statmic CMS admin screen](/images/statamic/admin.png)
 
 🎉 That’s it! Pretty easy. 
 
