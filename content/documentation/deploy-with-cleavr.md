@@ -5,8 +5,11 @@ image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 
-You can create a **Deploy with Cleavr** button to add to your website or repo README file. This will open the Flash Deployment 
+You can create a **Deploy with Cleavr** or **Deployed with Cleavr** button to add to your website or repo README file. This will open the Flash Deployment 
 setup page in Cleavr and compile the form with the details of the deployment. 
+
+**Deploy with Cleavr** is meant to point to the flash deploy section with query string parameters that will pre-populate the flash
+deployment with criteria to deploy your app. 
 
 <a href="https://cleavr.io" target="_blank"
    style="background-color: #0058F3; color: white; display: inline-flex; align-items: center; padding: 5px 15px 5px 6px; border-radius: 5px; font-family: Helvetica, Arial, sans-serif; font-size: 15px">
@@ -42,6 +45,11 @@ setup page in Cleavr and compile the form with the details of the deployment.
   <span style="margin-left:5px; letter-spacing: 0.05em;">Deploy with Cleavr</span>
 </a>
 
+**Deployed with Cleavr** is meant to be added to pages as a notice that the app was deployed with Cleavr and provides a link back to 
+cleavr.io.
+
+[<img src="https://docs.cleavr.io/images/deployed-with-cleavr.png" />](https://cleavr.io)
+
 ## Flash Deployment URL
 Use the following template to create the Flash Deployment URL. 
 
@@ -62,12 +70,19 @@ As an example, here is what the URL would look like for deploying an Adonis task
 
 [https://cleavr.io/flash?vc-provider=github&webapp=adonis&repository=armgitaar/taskist&branch=master&vps-region=sfo2&db-server=mysql57&vps-provider=digitalocean&vps-plan=s-1vcpu-1gb&flash=true](https://cleavr.io/flash?vc-provider=github&webapp=adonis&repository=armgitaar/taskist&branch=master&vps-region=sfo2&db-server=mysql57&vps-provider=digitalocean&vps-plan=s-1vcpu-1gb&flash=true)
 
-## Button for Markdown - such as for GitHub README pages
+## Buttons for Markdown - such as for GitHub README pages
+
+### Deploy with Cleavr
 
 ```markdown
 [<img src="https://docs.cleavr.io/images/deploy-with-cleavr.png" />](https://cleavr.io)
 ```
 
+### Deployed with Cleavr
+
+```markdown
+[<img src="https://docs.cleavr.io/images/deployed-with-cleavr.png" />](https://cleavr.io)
+```
 
 ## Button HTML Code
 
