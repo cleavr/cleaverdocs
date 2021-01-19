@@ -58,6 +58,14 @@ Made with developers in mind, Linode provides several options and server centers
 To create a key, go to **My Profile > API Tokens > Add a Personal Access Token**. You will need to give the ‘Domains’, 
 ‘Linodes’ and ‘StackScripts’ options Read/Write access.
 
+#### [UpCloud](https://upcloud.com/)
+
+With a focus on small / medium businesses and with developer productivity in mind, UpCloud is a great VPS provider
+for your needs. 
+
+When adding an UpCloud profile in Cleavr, you'll simply add your UpCloud login credentials. In your UpCloud account, you'll
+ need to enable the **Allow API connections** option in your user profile. 
+
 #### [Vultr](https://www.vultr.com/)
 
 Vultr is another option with global options at great prices.
