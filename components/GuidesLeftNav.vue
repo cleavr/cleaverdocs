@@ -33,6 +33,9 @@
       <nuxt-link to="guides/point-domain" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('point-domain')">
         Point domain
       </nuxt-link>
+      <nuxt-link to="guides/volume-storage" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('volume-storage')">
+        Volume Storage
+      </nuxt-link>
     </div>
 
     <div class="text-base">
