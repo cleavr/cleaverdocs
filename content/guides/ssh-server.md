@@ -34,6 +34,12 @@ ssh cleavr@<server public ip>
 ```
 Replace `<server public ip>` with the public IP for the target server you are SSH'ing into. 
 
+Note - if the above doesn't work, it may be that you need to include the path to the private key as well as the name. 
+
+```
+ssh cleavr@<server public ip> -i ~/path/to/key/key_name
+```
+
 `Cleavr` is the server user added during all server provisionings. You can add an additional [server user](/server-users) to your server
 and replace `cleavr` with the created server user to access your server as that user. 
 

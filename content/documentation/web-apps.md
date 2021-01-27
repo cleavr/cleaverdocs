@@ -25,3 +25,7 @@ the **repository** information, enter the **branch** to deploy, whether or not y
 when a commit to the branch is submitted, Cleavr will automatically deploy the new commit), select the **server(s)** for you app 
 (at minimum, it’s the server that you setup the site you are creating a web app for), and then select the **site** for your web app 
 and select **Add** to create the new web app.
+
+<base-alert>
+If you update the repository name in your VC provider, please remember to also update the repository in the web app's settings.
+</base-alert>
