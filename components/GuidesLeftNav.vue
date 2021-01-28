@@ -21,6 +21,9 @@
 
     <div class="text-base">
       <h3 class="uppercase text-gray-700 font-bold py-3">Server</h3>
+      <nuxt-link to="guides/load-balancer" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('load-balancer')">
+        Load Balancers
+      </nuxt-link>
       <nuxt-link to="guides/ssh-server" class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5" :class="highlight('ssh-server')">
         Access via SSH
       </nuxt-link>
