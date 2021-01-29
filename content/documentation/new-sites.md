@@ -67,6 +67,11 @@ target="_blank">rate limits</a>
 ### Additional Options
 
 #### Wildcard subdomains
+
+**Before proceeding with enabling wildcard subdomains, you must first have a [DNS Profile](/providers#dns-profiles) setup in Cleavr.**
+
+In your DNS Records, you must also have a the hostname and a wildcard (*) A-record that points to your server's public IP address. 
+
 If you want to use wildcard subdomains with your app, you must enable this feature during site creation. You cannot add it afterwards. 
 
 Enabling wildcard allows you to handle wildcard domains with your application. For WordPress multi-site, you'll want to enable wildcards if you 

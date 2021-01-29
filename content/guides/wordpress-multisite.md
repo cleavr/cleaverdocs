@@ -12,6 +12,17 @@ If you're enabling Multisite, be sure to follow the instructions exactly. Otherw
 get a 'too many redirects' error when attempting to access your WordPress site.
 </base-alert>
 
+## Prerequisites
+
+Before proceeding, you must have a [DNS Profile](/providers#dns-profiles) setup in Cleavr if you plan to use WordPress'
+subdomain multisite option. 
+
+In your DNS profile, add the appropriate records: 
+
+- Hostname (@) pointing to your server's public IP address
+- Wildcard (*) A-record pointing to your server's public IP address
+
+
 ## Create new WordPress site in Cleavr
 
 ![Enable Multisite](/images/enable-multisite.png)
