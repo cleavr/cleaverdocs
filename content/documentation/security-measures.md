@@ -22,6 +22,7 @@ In addition to security measures taken by your chosen cloud provider(s), Cleavr 
 - Installs [fail2ban](https://www.fail2ban.org/wiki/index.php/Main_Page) - an intrusion prevention framework that helps prevent servers from brute-force attacks
 - Configures [Uncomplicated Firewall](https://help.ubuntu.com/community/UFW) (UFW) - a firewall config tool that comes standard with Ubuntu, by opening ports 80, 443, and 22 and denying all other incoming connections and enables logging
 - Sets up [SSH private and public keys](https://www.ssh.com/ssh/key/) to allow for secured remote connections
+- Configures server to automatically install server level security updates
  
 
 ## What additional security measures does Cleavr employ?
