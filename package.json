@@ -31,8 +31,11 @@
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
+    "babel-eslint": "^10.1.0",
     "@nuxtjs/tailwindcss": "^3.3.4",
     "css-loader": "^5.0.1",
+    "eslint": "^7.19.0",
+    "eslint-plugin-vue": "^7.5.0",
     "style-loader": "^2.0.0",
     "tailwindcss-responsive-embed": "^1.0.0"
   }
