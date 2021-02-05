@@ -68,10 +68,10 @@ it by default. If your app requires assets to be built, enable Build Assets in w
 
 ### Did you set up a database?
 
-#### Site cannot be reached  | Various issues
+#### Site cannot be reached  | 502 Error | Various issues
 
 If an app has a database dependency and the database is not setup or is not correctly associated to your app, then it may 
-appear the site is broken when visiting your website. 
+appear the site is broken when visiting your website. For some frameworks, such as Strapi, this may result in a 502 error. 
 
 If your app requires a database, make sure you set up the correct database type, that you have added a database name, user, 
 and password and that your app's database connection variables match how you setup your database. 
