@@ -97,7 +97,13 @@ npm install
 
 Ensure the web deployment hooks are in the following order - 
 
-![meteor deployment hooks](/images/meteor/meteor-hooks.png)
+- Copy Project
+- Install Packages
+- Build Assets
+- Extract bundle
+- Npm Install
+- Activate New Deployment
+- Clean Old Deployments
 
 ## Deploy! 
 
