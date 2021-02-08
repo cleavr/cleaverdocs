@@ -1,7 +1,7 @@
 ---
 title: "Deploy a Nuxt SSR or Static app"
 description: 'Deploy a NuxtJS SSR or Static web application.'
-image: 'https://docs.cleavr.io/images/strapi-cms.png'
+image: 'https://docs.cleavr.io/images/nuxt.png'
 video: ''
 ---
 

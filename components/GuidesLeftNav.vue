@@ -5,6 +5,13 @@
         Deploy
       </h3>
       <nuxt-link
+        to="guides/meteor"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('meteor')"
+      >
+        Nuxt
+      </nuxt-link>
+      <nuxt-link
         to="guides/nuxt"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('nuxt')"
