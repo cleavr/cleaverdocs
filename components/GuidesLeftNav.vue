@@ -60,6 +60,13 @@
       >
         Statamic CMS
       </nuxt-link>
+      <nuxt-link
+        to="guides/hapi"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('hapi')"
+      >
+        Hapi JS
+      </nuxt-link>
     </div>
 
     <div class="text-base">
