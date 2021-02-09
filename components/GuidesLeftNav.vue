@@ -4,13 +4,13 @@
       <h3 class="uppercase text-gray-700 font-bold py-3">
         Deploy
       </h3>
-      <nuxt-link
+      <!-- <nuxt-link
         to="guides/meteor"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('meteor')"
       >
         Meteor
-      </nuxt-link>
+      </nuxt-link>-->
       <nuxt-link
         to="guides/nuxt"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
