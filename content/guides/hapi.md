@@ -5,7 +5,7 @@ image: 'https://docs.cleavr.io/images/hapi.png'
 video: ''
 ---
 
-Hapi is a popular Node framework that gets you quickly started making robust, powerful REST APIs. Hapi is intuitive, scalable, and maintainable and is a more
+[Hapi](https://hapi.dev/) is a popular Node framework that gets you quickly started making robust, powerful REST APIs. Hapi is intuitive, scalable, and maintainable and is a more
 opinionated offshoot of the Express framework.  
 
 ## Prerequisite - ensure Port is not hardcoded

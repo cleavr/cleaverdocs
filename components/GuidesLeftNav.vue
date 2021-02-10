@@ -67,6 +67,13 @@
       >
         Hapi JS
       </nuxt-link>
+      <nuxt-link
+        to="guides/foal"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('foal')"
+      >
+        Foal TS
+      </nuxt-link>
     </div>
 
     <div class="text-base">
