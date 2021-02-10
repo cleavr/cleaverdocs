@@ -10,7 +10,7 @@ video: ''
 ## Prerequisite
 
 ### Install Foal on server
-When building you app in production, depending on how you have your build script setup in `package.json`, you may need to install Foal's CLI on your 
+When building your app in production, depending on how you have your build script setup in `package.json`, you may need to install Foal's CLI on your 
 server. If so, SSH into your server and run the following: 
 
 ```bashscript

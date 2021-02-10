@@ -33,6 +33,13 @@
         Strapi CMS
       </nuxt-link>
       <nuxt-link
+        to="guides/loopback"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('loopback')"
+      >
+        Loopback
+      </nuxt-link>
+      <nuxt-link
         to="guides/drupal-cms"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('drupal-cms')"
