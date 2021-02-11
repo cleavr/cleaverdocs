@@ -23,12 +23,12 @@ You'll see a web app type option for Nuxt. Clicking on the ellipses will allow y
 
 ### Which option should you choose?
 
-Which option you select depends on how you have your app configured in the `tailwind.config.js` file AND how you want your site to operate in production. 
+Which option you select depends on how you have your app configured in the `nuxt.config.js` file AND how you want your site to operate in production. 
 
 SSR is the more common, as well as the default, mode of Nuxt where the server dynamically serves HTML to clients when requested. Static mode will convert your whole app to pure HTML files
 at the time of generation, which happens during the deployment process. 
 
-In your `tailwind.config.js` file, check to see if you have the following listed: 
+In your `nuxt.config.js` file, check to see if you have the following listed: 
 
 ```javascript
 target: 'static'
