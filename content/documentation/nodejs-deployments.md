@@ -59,7 +59,7 @@ sudo lsof -i -P -n | grep LISTEN
 
 This will display all of the active ports. Check to see that your **node** app is running on the assigned port. 
 
-![used ports](/images/used-port.png)
+![used ports](/images/used-ports.png)
 
 If the app is running on port 3000, you will need to update the Port Number to refer to the port assigned by Cleavr. 
 
