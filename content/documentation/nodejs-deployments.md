@@ -22,7 +22,7 @@ The following are the most common reasons for 502 errors:
 
 <base-point>
 Check the <a href="/guides">guides</a> section to see if the app you are deploying has an associated guide. The guides will help you
-correctly delpoy you apps. 
+correctly delpoy your apps. 
 </base-point>
 
 ## Site and app setup
@@ -49,7 +49,7 @@ async function bootstrap() {
 To double check if your app is running on the correct port, first check the port Cleavr assigned your app. You can do this by clicking on the site name on the server list
 to view additional info about the app, including the assigned port number. 
 
-![assigned port](/imgages/app-port.png)
+![assigned port](/images/app-port.png)
 
 Then, SSH into your server and run the following command:
 
@@ -59,7 +59,7 @@ sudo lsof -i -P -n | grep LISTEN
 
 This will display all of the active ports. Check to see that your **node** app is running on the assigned port. 
 
-![used ports](/imgages/used-port.png)
+![used ports](/images/used-port.png)
 
 If the app is running on port 3000, you will need to update the Port Number to refer to the port assigned by Cleavr. 
 
