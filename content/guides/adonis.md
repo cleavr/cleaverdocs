@@ -10,7 +10,7 @@ Cleavr gives extra treatment for Adonis so that you can easily deploy your Adoni
 On top of that, Cleavr also automatically installs and configures PM2 to run your app and to keep it up. Further to that, 
 Cleavr sets PM2 to run in cluster mode to take advantage of available cores for added site performance.  
 
-You can add you Adonis app either in one fell-swoop with flash-deploy or add your app to an existing server. In this guide, we'll 
+You can add your Adonis app either in one fell-swoop with flash-deploy or add your app to an existing server. In this guide, we'll 
 add a Adonis app to an existing server. 
 
 ## Add an Adonis site
@@ -41,7 +41,7 @@ in the Web App > Environment section.
 
 After the site has successfully installed, you'll now need to create a web app and deploy out your app. 
 
-In the web app section, you'll notice that a new web app was automatically created after the Nuxt site was added. This is a basic web app shell
+In the web app section, you'll notice that a new web app was automatically created after the Adonis site was added. This is a basic web app shell
 that you can use to complete the setup of your web app. Click on **Complete Setup** on the web app. 
 
 <base-info>
@@ -53,9 +53,13 @@ Configure the **VC Provider**, **Repository**, and **Branch To Deploy** fields o
 
 From here, you may have additional configurations to make depending on how you set up your web app: 
 
-- In Settings > NPM Build, the `npm start` script in Entry Point and Arguments will work for the majority of situations, you may need to define an entry point if you have it configured different to the standard
 - If you are using GitHub for the VC Provider, consider enabling the GitHub Actions integration in the settings area so that you can use GitHub to build your app, which frees up your server's resources during deployments
-- The Hooks section has default deployment hooks to deploy your SSR and Static apps. If you have additional commands to run during deployment, create a custom deployment hook and add it to the correct order placement that it should run in during deployments
+- The Hooks section has default deployment hooks to deploy your apps. If you have additional commands to run during deployment, create a custom deployment hook and add it to the correct order placement that it should run in during deployments
 - You may also want to enable **Migrate Database** in the deployment hooks section for your initial deployment run
 
 If everything looks good, go to the deployments section and deploy! 🚀
+
+<base-info>
+<strong>Deployment issues?</strong> Check out the <a href="/adonis-deployments">Adonis deployments troubleshooting docs</a> for common deployment
+issues and tips for troubleshooting and fixing. 
+</base-info>

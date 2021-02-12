@@ -11,7 +11,8 @@ that you have missed a step setting up your site/app or when deploying your web 
 <base-info>
 This guide lists many of the common reasons why Adonis deployments fail. If these troubleshooting tips do not work for 
 your case, check to see if a similar issue to yours was raised on the forum. If not, raise your 
-issue on the <a href="https://forum.cleavr.io/">forum</a> or by <a href="mailto:hello@cleavr.io">email</a>. 
+issue on the <a href="https://forum.cleavr.io/">forum</a> or by <a href="mailto:hello@cleavr.io">email</a>. Also, you can check out the
+ <a href="/guides/adonis">Adonis deployment guide</a> for guidance on standard Adonis app setup and deployments. 
 </base-info>
 
 ## Site and app setup

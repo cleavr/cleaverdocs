@@ -10,7 +10,7 @@ Cleavr gives extra treatment for NuxtJS so that you can easily deploy your Nuxt 
 On top of that, Cleavr also automatically installs and configures PM2 to run your app and to keep it up. Further to that, 
 Cleavr sets PM2 to run in cluster mode to take advantage of available cores for added site performance.  
 
-You can add you Nuxt app either in one fell-swoop with flash-deploy or add your app to an existing server. In this guide, we'll 
+You can add your Nuxt app either in one fell-swoop with flash-deploy or add your app to an existing server. In this guide, we'll 
 add a Nuxt app to an existing server. 
 
 ## Add a Nuxt site
@@ -65,3 +65,8 @@ From here, you may have additional configurations to make depending on how you s
 - The Hooks section has default deployment hooks to deploy your SSR and Static apps. If you have additional commands to run during deployment, create a custom deployment hook and add it to the correct order placement that it should run in during deployments
 
 If everything looks good, go to the deployments section and deploy! 🚀
+
+<base-info>
+<strong>Deployment issues?</strong> Check out the <a href="/nodejs-deployments">NodeJS deployments troubleshooting docs</a> for common deployment
+issues and tips for troubleshooting. 
+</base-info>
