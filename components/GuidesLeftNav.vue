@@ -169,6 +169,13 @@
       >
         Access via client
       </nuxt-link>
+      <nuxt-link
+        to="guides/mongo"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('mongo')"
+      >
+        Mongo databases
+      </nuxt-link>
     </div>
 
     <div class="text-base">
