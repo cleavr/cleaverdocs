@@ -56,8 +56,10 @@ Click **Update**.
 Click on the **Deployment Hooks** section and add the following deployment hook: 
 
 **Docker compose up**
+```bashscript
 cd {{ releasePath }}
 docker-compose up -d
+```
 
 Place this deployment hook directly after Build Assets. 
 

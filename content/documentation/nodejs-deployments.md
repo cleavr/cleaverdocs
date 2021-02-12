@@ -14,6 +14,17 @@ your case, check to see if a similar issue to yours was raised on the forum. If 
 issue on the <a href="https://forum.cleavr.io/">forum</a> or by <a href="mailto:hello@cleavr.io">email</a>. 
 </base-info>
 
+The following are the most common reasons for 502 errors: 
+
+- PORT Address in code is hard coded
+- Database connection not established
+- Entry point and artifact paths not correctly defined
+
+<base-point>
+Check the <a href="/guides">guides</a> section to see if the app you are deploying has an associated guide. The guides will help you
+correctly delpoy you apps. 
+</base-point>
+
 ## Site and app setup
 
 #### Did you set up your port address? 
@@ -22,6 +33,35 @@ issue on the <a href="https://forum.cleavr.io/">forum</a> or by <a href="mailto:
 Cleavr automatically assigns a port number when you create a new site. You can see the assigned port number by clicking site the info box.
 
 For many NodeJS frameworks, including NuxtJS, Cleavr is able to automatically assign the port to the app and successfully activate it. 
+
+Many frameworks "Quick Start" applications will hard code the Port Number; often set to 3000. Typically, the port number is set in the index.js/ts, 
+server.js/ts, or main.js/ts files. Check where the port number is identified and update the code to look first to `process.env.PORT`. 
+
+For example, in a Nest JS app, you'd update the `main.ts` file as follows: 
+
+```typescript
+async function bootstrap() {
+  const app = await NestFactory.create(AppModule);
+  await app.listen(process.env.PORT || 3000);
+}
+```
+
+To double check if your app is running on the correct port, first check the port Cleavr assigned your app. You can do this by clicking on the site name on the server list
+to view additional info about the app, including the assigned port number. 
+
+![assigned port](/imgages/app-port.png)
+
+Then, SSH into your server and run the following command:
+
+```bashscript
+sudo lsof -i -P -n | grep LISTEN
+```
+
+This will display all of the active ports. Check to see that your **node** app is running on the assigned port. 
+
+![used ports](/imgages/used-port.png)
+
+If the app is running on port 3000, you will need to update the Port Number to refer to the port assigned by Cleavr. 
 
 ### Did you designate the correct entry point?
 #### 502 Bad Gateway 
@@ -84,6 +124,9 @@ It can be that the app setup and deployment are all configured and deployed succ
 If the above troubleshooting tips do not help solve the issue, then go to web app > logs and fetch your production app logs 
 from the server to see if there are any app specific issues. 
 
+The app log report is typically good at letting you know what the issue is. However, it can sometimes be opaque. Such as, you may not see an error 
+around a lack of database connection; however, the lack of database connection can indeed be the root cause for the errors. 
+
 ## Deployment step errors
 The following are how you can troubleshooting common deployment step **errors**. 
 
@@ -105,5 +148,3 @@ have some unique needs or steps that need to occur during deployment for your ap
 **Custom deployment** hooks can be created and enabled in Cleavr to help cover your specific cases. In the web app > deployment 
 section, you can add new deployment hooks with custom scripts to run. You can then order the hooks to run in the required order. 
 Refer to the [deployment hooks section](/deployment-hooks) for more info on setting up and configuring custom deployment hooks. 
-
-
