@@ -10,7 +10,7 @@ video: ''
 
 ## Prerequisite
 
-### Install Foal on server
+### Install Loopback on server
 When building your app in production, depending on how you have your build script setup in `package.json`, you may need to install Loopback's CLI on your 
 server. If so, SSH into your server and run the following: 
 

@@ -1,47 +1,40 @@
 ---
-title: "Deploy a Nuxt SSR or Static app"
-description: 'Deploy a NuxtJS SSR or Static web application.'
-image: 'https://docs.cleavr.io/images/nuxt.png'
+title: "Deploy an Adonis JS app"
+description: 'Deploy an Adonis web application.'
+image: 'https://docs.cleavr.io/images/adonis.png'
 video: ''
 ---
 
-Cleavr gives extra treatment for NuxtJS so that you can easily deploy your Nuxt SSR and Static (JAMstack) applications with just a couple of clicks.
+Cleavr gives extra treatment for Adonis so that you can easily deploy your Adonis v4 and v5 apps with just a couple of clicks.
 
 On top of that, Cleavr also automatically installs and configures PM2 to run your app and to keep it up. Further to that, 
 Cleavr sets PM2 to run in cluster mode to take advantage of available cores for added site performance.  
 
-You can add you Nuxt app either in one fell-swoop with flash-deploy or add your app to an existing server. In this guide, we'll 
-add a Nuxt app to an existing server. 
+You can add you Adonis app either in one fell-swoop with flash-deploy or add your app to an existing server. In this guide, we'll 
+add a Adonis app to an existing server. 
 
-## Add a Nuxt site
+## Add an Adonis site
 
 On an existing server, click **Add Site** to add a new site to your server. 
 
-You'll see a web app type option for Nuxt. Clicking on the ellipses will allow you to select between a Nuxt SSR app and a Nuxt Static app. 
-
-![select your nuxt app type](/images/nuxt/nuxt-select.png)
+You'll see a web app type option for Adonis. Clicking on the ellipses will allow you to select between version 4 or version 5 of Adonis. 
 
 ### Which option should you choose?
 
-Which option you select depends on how you have your app configured in the `nuxt.config.js` file AND how you want your site to operate in production. 
+Which option you select depends on which version of Adonis you are using for your app. 
 
-SSR is the more common, as well as the default, mode of Nuxt where the server dynamically serves HTML to clients when requested. Static mode will convert your whole app to pure HTML files
-at the time of generation, which happens during the deployment process. 
+If you are unsure, you can check the version number in your project's `package.json` file. Under dependencies, check the version number for
+`adonisjs/core`. 
 
-In your `nuxt.config.js` file, check to see if you have the following listed: 
+### Add site with database
 
-```javascript
-target: 'static'
-```
+In all likelihood, you'll be using a database with your application. When creating a site, select the option to **Set up database**. You can then choose to install
+a database server if one has not already been installed on your server and you can edit the database name, user, and password that will be used for your app. 
 
-If `target: 'static` is present, then you'll want to select the **Nuxt Static** option in Cleavr. Otherwise, select the **Nuxt SSR** option. 
-
-Next, fill out the hostname you'd like to use and select any additional desired options. Then, select **Add** to add the new site to your server. 
-
-<base-point>
-Don't worry about trying to figure out what environments need to be installed on your server. Cleavr will add any missing environment 
-dependencies based on the new app type you've added. 
-</base-point>
+<base-info>
+When setting up a database using this method, Cleavr will also automatically add the database variables to the .env file. You can see and edit the variables
+in the Web App > Environment section. 
+</base-info>
 
 
 ## Add a Web App
@@ -63,5 +56,6 @@ From here, you may have additional configurations to make depending on how you s
 - In Settings > NPM Build, the `npm start` script in Entry Point and Arguments will work for the majority of situations, you may need to define an entry point if you have it configured different to the standard
 - If you are using GitHub for the VC Provider, consider enabling the GitHub Actions integration in the settings area so that you can use GitHub to build your app, which frees up your server's resources during deployments
 - The Hooks section has default deployment hooks to deploy your SSR and Static apps. If you have additional commands to run during deployment, create a custom deployment hook and add it to the correct order placement that it should run in during deployments
+- You may also want to enable **Migrate Database** in the deployment hooks section for your initial deployment run
 
 If everything looks good, go to the deployments section and deploy! 🚀

@@ -19,6 +19,13 @@
         Nuxt
       </nuxt-link>
       <nuxt-link
+        to="guides/adonis"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('adonis')"
+      >
+        Adonis
+      </nuxt-link>
+      <nuxt-link
         to="guides/nest"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('nest')"
