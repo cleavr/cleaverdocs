@@ -96,6 +96,13 @@
         Hapi JS
       </nuxt-link>
       <nuxt-link
+        to="guides/total"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('total')"
+      >
+        Total JS
+      </nuxt-link>
+      <nuxt-link
         to="guides/foal"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('foal')"
