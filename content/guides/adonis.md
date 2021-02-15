@@ -5,7 +5,7 @@ image: 'https://docs.cleavr.io/images/adonis.png'
 video: ''
 ---
 
-Cleavr gives extra treatment for Adonis so that you can easily deploy your Adonis v4 and v5 apps with just a couple of clicks.
+Cleavr gives extra treatment for [Adonis](https://adonisjs.com/) so that you can easily deploy your Adonis v4 and v5 apps with just a couple of clicks.
 
 On top of that, Cleavr also automatically installs and configures PM2 to run your app and to keep it up. Further to that, 
 Cleavr sets PM2 to run in cluster mode to take advantage of available cores for added site performance.  
