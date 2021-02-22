@@ -32,4 +32,11 @@ If you need to disable Cache, all you need to do is select **Disable Cache**.
 You may need to clear your cache from time-to-time; especially, after deploy updates that will require the old-cached items 
 to be cleared so they are no longer served. You can also clear cache via deployment hooks to make the process more expedient during deployments. 
 
+## Clear Cache Trigger Hook
+Use the provided trigger hook to clear your site's cache. You can use this in a POST request to clear cache. 
+
+<base-alert>
+Do not openly share your trigger hook URL as this can be used by others outside of your control. 
+</base-alert>
+
 Simply select **Clear Cache** to clear the cache for your site. 
