@@ -42,6 +42,8 @@ Once the database server is installed, add a new database. Remember the database
 ## Setup the web app
 In the web app section, select **Complete Setup** for the web app that was created for the site created earlier. 
 
+### Enter repository
+
 On the **Code Repository** tab, enter the following: 
 
 **Version Control Provider:** GitHub
@@ -58,6 +60,8 @@ Click **Update**.
 You will need a GitHub VC provider account created for this step.
 </base-info>
 
+### Set up NPM Build
+
 Click on the **NPM Build** tab and fill in the following: 
 
 **Entry Porint:** npm
@@ -69,6 +73,8 @@ Click on the **NPM Build** tab and fill in the following:
 ![Add repo](/images/umami/entry.png)
 
 Click **Update**.
+
+### Add env variables
 
 Click on the **Environments** section and add in the following environment variables: 
 
@@ -82,6 +88,8 @@ hash salt.
 ![Add repo](/images/umami/env-variables.png)
 
 Click on **Sync**.
+
+### Create deployment hook
 
 We'll also need to have a command ran to migrate the database tables. We'll use a deployment hook to achieve this. 
 
