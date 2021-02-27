@@ -116,6 +116,13 @@
       >
         Foal TS
       </nuxt-link>
+      <nuxt-link
+        to="guides/umami"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('umami')"
+      >
+        Umami
+      </nuxt-link>
     </div>
 
     <div class="text-base">
