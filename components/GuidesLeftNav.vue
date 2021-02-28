@@ -262,7 +262,7 @@
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('cloudflare-proxy')"
       >
-        Load Balancers
+        Cloudflare Proxy
       </nuxt-link>
     </div>
   </div>
