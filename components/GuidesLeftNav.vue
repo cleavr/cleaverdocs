@@ -253,6 +253,18 @@
         FastCGI Cache
       </nuxt-link>
     </div>
+    <div class="text-base">
+      <h3 class="uppercase text-gray-700 font-bold py-3">
+        NGINX
+      </h3>
+      <nuxt-link
+        to="guides/cloudflare-proxy"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('cloudflare-proxy')"
+      >
+        Load Balancers
+      </nuxt-link>
+    </div>
   </div>
 </template>
 
