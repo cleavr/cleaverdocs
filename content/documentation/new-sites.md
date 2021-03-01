@@ -113,7 +113,7 @@ Cleavr has your back! If you forgot to install a dependency while adding a site,
 ## WWW and non-WWW rules
 When you add a domain / hostname, it is your choice to add `www` or not. 
 
-Many websites now leave out `www`; however, you choose to make that your root domain if you'd like. 
+Many websites now leave out `www`; however, you can choose to make that your root domain if you'd like. 
 
 ### Redirects
 If you add  `www`, such as `www.example.com`, then Cleavr will automatically redirect incoming `example.com` requests to `www.example.com`. 
@@ -129,7 +129,7 @@ If you choose to take advantage of the `www` to `non-www` redirects, or vice-ver
 
 By default, when enabling LetsEncrypt during site creation, Cleavr will add a cert for the domain you are creating your site with. To add both, go to the
 **SSL** section for your site, remove the existing cert if you had one added during creation, and then add a new LetsEncrypt cert, or custom if you choose, and
-add both hostnames in the **Domains** entry filed. For example, add `example.com, www.example.com`. Use a comma to separate domains.  
+add both hostnames in the **Domains** entry field. For example, add `example.com, www.example.com`. Use a comma to separate domains.  
 
 Click **Activate** to add new SSL certs. 
 
