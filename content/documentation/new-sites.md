@@ -55,7 +55,7 @@ Looking to rock pure vanilla HTML, CSS, and JavaScript? You don’t need to inst
 2. Select **Sites**
 3. Select **Add a new site**
 4. Select your desired site type
-5. Fill in the domain name or select the option to use a free, SSL enabled Cleavr provided subdomain. 
+5. Fill in the domain name or select the option to use a free, SSL enabled Cleavr provided subdomain. [See www and non-www rules](#www-and-non-www-rules)
 6. Select whether or not you want to secure your site with SSL certificates - you can secure now or you can secure afterwards; if you secure after site creation, you have the additional option of applying a custom SSL certificate, such as one from Cloudflare for example
 
 <base-alert>
@@ -109,3 +109,27 @@ smooth and convenient.
 
 ## What if I forget to add an environment dependency before creating a site?
 Cleavr has your back! If you forgot to install a dependency while adding a site, then Cleavr will detect which dependencies are required and will install the latest version for you so that you can keep moving forward with little fuss. 
+
+## WWW and non-WWW rules
+When you add a domain / hostname, it is your choice to add `www` or not. 
+
+Many websites now leave out `www`; however, you choose to make that your root domain if you'd like. 
+
+### Redirects
+If you add  `www`, such as `www.example.com`, then Cleavr will automatically redirect incoming `example.com` requests to `www.example.com`. 
+
+Similarly, if you do not add `www`, such as `example.com`, then Cleavr will automatically redirect incoming `www.example.com` requests to `example.com`.
+
+### DNS Records
+For the redirects to take place, you will also need to ensure the DNS records for the root `@` record and the `www` A record both point to the server's public IP that your
+site is listed on. 
+
+### SSL Certs
+If you choose to take advantage of the `www` to `non-www` redirects, or vice-versa, we advise that you also add SSL certs for both records.
+
+By default, when enabling LetsEncrypt during site creation, Cleavr will add a cert for the domain you are creating your site with. To add both, go to the
+**SSL** section for your site, remove the existing cert if you had one added during creation, and then add a new LetsEncrypt cert, or custom if you choose, and
+add both hostnames in the **Domains** entry filed. For example, add `example.com, www.example.com`. Use a comma to separate domains.  
+
+Click **Activate** to add new SSL certs. 
+
