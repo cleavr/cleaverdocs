@@ -264,6 +264,13 @@
       >
         Cloudflare Proxy
       </nuxt-link>
+      <nuxt-link
+        to="guides/nginx-tips-tricks"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('nginx-tips-tricks')"
+      >
+        Tips and Tricks
+      </nuxt-link>
     </div>
   </div>
 </template>
