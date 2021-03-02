@@ -43,8 +43,11 @@ You may need to supply this directory for certain WordPress NGINX Cache Plugins.
 
 ### Cleavr Cache Clear
 We created a variation of the popular **NGINX Cache** plugin that better works with Cleavr's setup 
-and is something that we'll be expanding functionality for. One of the key features is that it allows for
-clearing cache for sites assigned to server users in addition to the **cleavr** user. 
+and is something that we'll be expanding functionality for. 
+
+The plugin is called [Cleavr Clear Cache](https://wordpress.org/plugins/cleavr-clear-cache/) and is available in the WordPress plugin library. 
+
+One of the key features is that it allows for clearing cache for sites assigned to server users in addition to the **cleavr** user. 
 
 You'll need to provide the **Clear Cache Trigger Hook** when setting up this plugin. 
 
