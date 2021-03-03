@@ -185,6 +185,13 @@
         Domain Aliases
       </nuxt-link>
       <nuxt-link
+        to="guides/stage-sites"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('stage-sites')"
+      >
+        Stage New Sites
+      </nuxt-link>
+      <nuxt-link
         to="guides/expose-local-sites"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('expose-local-sites')"

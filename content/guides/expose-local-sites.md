@@ -10,7 +10,7 @@ There are several use cases where you might have an internal process, app, or se
 Often, these internal services have a UI that is available. Such as, the Bull Board UI and Laravel Horizon for queue management, Strapi's admin 
 portal, usage analytics, server monitoring apps, and so on. 
 
-You may programmatically create and expose a view for these use cases or even open the port and access via <IP Address>:<Port Number>. 
+You may programmatically create and expose a view for these use cases or even open the port and access via `<IP Address>:<Port Number>`. 
 
 Another viable option might be to add another site via Cleavr and update the `proxy_pass` setting to expose the site.
 
@@ -54,9 +54,9 @@ Make the port change and then click **Update**.
 
 Now, go to the server > services section and click the button to refresh **NGINX**. 
 
-After you refresh NGINX, also click on the heartbeat icon the make sure that NGINX didn't run across any errors. 
+After you refresh NGINX, also click on the heartbeat icon to make sure that NGINX didn't run across any errors. 
 
-If everything is green, then go to the URL you've assigned to the site and you should be able to see it. 🚀
+If everything is green, then go to the URL you've assigned to the site and you should be able to see it! 🚀
 
 ### Step 4: Enable authentication for the site (optional - but encouraged)
 If the app doesn't already have an authentication method, then we encourage you to add one. The quickest way would be to 
