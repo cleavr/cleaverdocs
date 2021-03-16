@@ -14,11 +14,11 @@ In this guide, we will setup and deploy the [demo blog application](https://gith
 ## Step 1: Install demo project on your local
 
 First, work through the instructions on the [demo project's readme file](https://github.com/symfony/demo) to copy the project
-to your local device. 
+to your local environment. 
 
 Run the app on your local to make sure it runs as expected. 
  
-Add the project to your favorite Git repo; make sure to not save the .env file to your repo. 
+Add the project to your favorite Git repo; make sure to not save the `.env` file to your repo. 
 
 ## Step 2: Provision new server
 
