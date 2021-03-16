@@ -33,6 +33,13 @@
         ExpressJS
       </nuxt-link>
       <nuxt-link
+        to="guides/symfony"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('symfony')"
+      >
+        Symfony
+      </nuxt-link>
+      <nuxt-link
         to="guides/nest"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('nest')"
