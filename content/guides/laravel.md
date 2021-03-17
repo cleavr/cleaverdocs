@@ -42,7 +42,7 @@ Cleavr will automatically configure a base .env file for your application and fi
 In the Web App section, click **Complete Setup** for the web app that was automatically added after your site is successfully created. 
 
 ### Configure code repository
-The first step is to tie the app to where the Git repo that the code is stored on. 
+The first step is to tie the app to the Git repo that the code is stored on. 
 
 Once configured, click **Update**. 
 
@@ -50,7 +50,7 @@ Updating will then unlock additional areas for your web app.
 
 ### Configure environment variables
 
-Select the **Environment** tab. This will pull in the start .env file that Cleavr automatically generated on site creation. 
+Select the **Environment** tab. This will pull in the starter .env file that Cleavr automatically generated on site creation. 
 
 You'll notice Cleavr already filled in some required variables; including the database connection variables. 
 
