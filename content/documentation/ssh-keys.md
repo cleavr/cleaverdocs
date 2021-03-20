@@ -5,6 +5,10 @@ image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 
+<base-info>
+SSH access to servers require SSH private/public key usage. SSH using password authentication is disabled for increased security.
+</base-info>
+
 ## What is an SSH Key?
 Secure Shell (SSH) Keys allow you to establish a secure shell session connection with your server over an unsecured network 
 using a cryptographic network protocol. Think of it as a username and password on steroids that you can use to securely 

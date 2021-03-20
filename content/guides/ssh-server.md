@@ -5,7 +5,8 @@ image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 
-The most common way to access your server is by ssh.  
+The most common way to access your server is by SSH. Cleavr instills the private / public key method for SSH and password
+authentication is disabled to enhance server security.  
 
 <base-info>
 If you're a Mac user, SSH access is straightforward. Windows users, view the guide on accessing via PuTTY.
