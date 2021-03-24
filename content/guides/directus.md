@@ -5,9 +5,9 @@ image: 'https://docs.cleavr.io/images/directus/directus.png'
 video: ''
 ---
 
-[Directus](https://directus.io/) is and open source app that wraps your new or existing SQL database with a realtime GraphQL + REST API for developers, and an intuitive admin app for non-technical users. It supports PostgreSQL, MySQL, SQLite, Microsoft SQL Server, OracleDB, MariaDB, AWS Aurora and more.
+[Directus](https://directus.io/) is and open source app that wraps your new or existing SQL database with a realtime GraphQL+REST API for developers, and an intuitive admin app for non-technical users. It supports PostgreSQL, MySQL, SQLite, Microsoft SQL Server, OracleDB, MariaDB, AWS Aurora and more.
 
-Directus mirrors your custom database, with your schema and content stored pure and unaltered. When it comes time to ingest, fetch, or update your data, you can use our REST+GraphQL API, JavaScript SDK, or even pure SQL. Directus gives you plenty of access options to choose from.
+Directus mirrors your custom database, with your schema and content stored pure and unaltered. When it comes time to ingest, fetch, or update your data, you can use its REST+GraphQL API, JavaScript SDK, or even pure SQL. Directus gives you plenty of access options to choose from.
 
 ## Prepare the Directus package
 
