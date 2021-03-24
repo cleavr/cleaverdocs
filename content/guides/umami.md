@@ -100,7 +100,7 @@ Select **Hooks** and add a new hook.
 **Hook:**
 ```
 cd {{ releasePath }}
-mysql -u <db username> -p<db password> <dab name> < sql/schema.mysql.sql
+mysql -u<db username> -p<db password> <dab name> < sql/schema.mysql.sql
 ```
 
 Replace the `<>` accordingly with the database info. Take note that there is no space between `-p` and your password. 
