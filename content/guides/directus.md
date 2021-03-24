@@ -87,7 +87,7 @@ Once the database server is installed, add a new database. Remember the database
 
 ## Setup the web app
 
-In the web app section, select **Complete Setup** for the web app that was created for the site created earlier.
+In the web app section, select **Complete Setup** for the web app that was created for the site.
 
 ### Enter repository
 
@@ -104,7 +104,7 @@ On the **Code Repository** tab, enter the following:
 Click **Update**.
 
 <base-info>
-You will need a GitHub VC provider account created for this step. Select your repository you that you setup earlier.
+You will need a GitHub VC provider account created for this step. Select the repository that you set up earlier.
 </base-info>
 
 ### Set up NPM Build
