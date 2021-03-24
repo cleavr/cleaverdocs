@@ -5,13 +5,13 @@ image: 'https://docs.cleavr.io/images/directus/directus.png'
 video: ''
 ---
 
-[Directus](https://directus.io/) is and open source app that wraps your new or existing SQL database with a realtime GraphQL+REST API for developers, and an intuitive admin app for non-technical users. It supports PostgreSQL, MySQL, SQLite, Microsoft SQL Server, OracleDB, MariaDB, AWS Aurora and more.
+[Directus](https://directus.io/) is an open source app that wraps your new, or existing, SQL database with a realtime GraphQL+REST API for developers and an intuitive admin app for non-technical users. It supports PostgreSQL, MySQL, SQLite, Microsoft SQL Server, OracleDB, MariaDB, AWS Aurora and more.
 
 Directus mirrors your custom database, with your schema and content stored pure and unaltered. When it comes time to ingest, fetch, or update your data, you can use its REST+GraphQL API, JavaScript SDK, or even pure SQL. Directus gives you plenty of access options to choose from.
 
 ## Prepare the Directus package
 
-Create a new directory, and add a package.json by running the following command:
+Create a new directory on your local environment and add a package.json by running the following command:
 ```
 npm init -y
 ```
@@ -59,7 +59,7 @@ Push the package.json to your GitHub repository.
 
 ## Add new NodeJS SSR app
 
-On a new server, add a new site, select **NodeJS SSR** as the app type.
+On a new server, add a new site and select **NodeJS SSR** as the app type.
 
 ![Add new NodeJS SSR](/images/directus/new-ssr.png)
 
@@ -79,7 +79,7 @@ Click **Update**.
 
 ## Add a database
 
-On the same server you added the site, click on the database section to install a new MySQL (or optionally Postgres) database.
+On the same server you added the site, click on the database section to install a new MySQL or Postgres database.
 
 Once the database server is installed, add a new database. Remember the database name and database user credentials.
 
@@ -111,7 +111,7 @@ You will need a GitHub VC provider account created for this step. Select the rep
 
 Click on the NPM Build tab and fill in the following:
 
-Entry Porint: npm
+Entry Point: npm
 
 Arguments: start
 
@@ -164,7 +164,7 @@ EMAIL_SENDMAIL_PATH=/usr/sbin/sendmail
 
 ![Env Variables](/images/directus/env-variables.png)
 
-Replace the environment variables with the appropriate information for your database that you setup earlier as well as the random key and secret.
+Replace the environment variables with the appropriate information for your database that you set up earlier as well as the random key and secret.
 
 See [Directus Environment Variables](https://docs.directus.io/reference/environment-variables/) for all available variables.
 
