@@ -63,6 +63,13 @@ mount -o discard,defaults /dev/disk/by-id/<volume id> /home
 The above formats the drive, creates a new home directory, and mounts the drive to it. Swap out `<volume id>` with the
 ID of your Hetzner Volume. 
 
+#### Ensure your mount persists after a reboot
+
+For some services, such as DigitalOcean, you'll want to ensure that the mounted drive persists after a reboot. Here is an example command to make the mount persist after a reboot: 
+```
+/dev/disk/by-id/scsi-example /mnt/example-mount-point ext4 defaults,nofail,discard,noatime 0 2
+```
+
 ### Step 4: Move `/home2` contents to `/home`
 
 Lastly, we need to copy back the original home files to the new mounted `/home` directory. 
