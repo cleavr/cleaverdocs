@@ -5,7 +5,7 @@ image: 'https://docs.cleavr.io/images/next.png'
 video: ''
 ---
 
-[Next.js] is a React/JavaScript framework used for developing SSR and static websites. 
+[Next.js](https://nextjs.org/) is a React/JavaScript framework used for developing SSR and static websites. 
 
 [Cleavr](https://cleavr.io) deploys Next JS applications to your virtual private servers with minimal configurations required. 
 
