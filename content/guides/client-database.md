@@ -13,7 +13,7 @@ and versions Cleavr offers.
 - **Password**: db password
 - **Server**: server ip address
 - **User**: cleavr 
-- Use SSH key and point to public key on your machine - make sure you add your public key to Cleavr first
+- Use SSH key and point to private key on your machine - make sure you add your public key to Cleavr first
 
 <base-alert>
 When installing databases, Cleavr locks down root access to external client tools. This is for security. To access using a client tool, 
