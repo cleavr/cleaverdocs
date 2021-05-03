@@ -16,11 +16,13 @@ When selecting the **Custom** server option -
 4. Optionally, select server **environment**
 5. Click **Start Provisioning**
 
-<base-alert>
-To add a custom server, you must have Ubuntu 20.04x64 installed on the server and you must be able to SSH into the server as root user to run a command prior to Cleavr imaging the server.
+## Custom Server Considerations
+When connecting to a custom server, Cleavr will not have connectivity that Cleavr has with integrated VPS providers. There are some
+additional considerations to be aware of when using the Custom Server option. 
 
-Be aware that if you delete a custom server from Cleavr, this will not also destroy the server from the custom provider. Cleavr does not gain
-that level of access. If you remove a server from Cleavr you will also need to remove it from your customer provider. 
+- To add a custom server, you must have Ubuntu 20.04x64 installed on the server and you must be able to SSH into the server as root user to run a command prior to Cleavr imaging the server.
+- If you delete a custom server from Cleavr, this will not also destroy the server from the custom provider. Cleavr does not gain
+  that level of access. If you remove a server from Cleavr you will also need to remove it from your custom server provider. 
+- Some providers may block HTTPS access (Google Cloud, Lightsail) by default and you'll need to enable HTTPS for sites with SSL to render. 
 
-Lastly, be aware that if you are using a custom server, then some Cleavr functionality may not work as expected. 
-</base-alert>
+
