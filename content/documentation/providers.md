@@ -58,6 +58,9 @@ Made with developers in mind, Linode provides several options and server centers
 To create a key, go to **My Profile > API Tokens > Add a Personal Access Token**. You will need to give the ‘Domains’, 
 ‘Linodes’ and ‘StackScripts’ options Read/Write access.
 
+Wanting to set up your Linode Server to send emails? In an effort to reduce SPAM emails being sent from Linode servers, they
+have locked down port 25. [Follow their instructions to request ability to send mail.](https://www.linode.com/docs/guides/running-a-mail-server/#sending-email-on-linode)
+
 #### [UpCloud](https://upcloud.com/)
 
 With a focus on small / medium businesses and with developer productivity in mind, UpCloud is a great VPS provider
