@@ -21,3 +21,8 @@ and is receiving an invalid response. In other words, it is most likely that the
 to the server's public IP or that the record has not yet propagated to the verification service that is performing the verification check. 
 
 To resolve, verify the 'a' record points to the correct server public IP using DNS Checker and then attempt to re-create the site. 
+
+<base-alert>
+Using Cloudflare or a proxy server? If you are using Cloudflare, check the DNS record and make sure that the 'proxied' setting is turned off. If the IP is being proxied, then this can fail
+the domain verification and will then fail applying LetsEncrypt SSL certification. You can re-enable the proxy setting after LetsEncrypt SSL certificate has successfully been applied. 
+</base-alert>
