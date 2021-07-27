@@ -28,6 +28,12 @@ Cleavr makes SSL easy and free with Let's Encrypt. If you are enabling SSL durin
 certs from Let's Encrypt. Let's Encrypt certs expire after 90 days; however, we will automatically renew the certs for you are 
 long as the site is active. 
 
+There are some key things to keep in mind if you do choose to use Let's Encrypt. 
+1. When applying LetsEncrypt, you will first need to configure the DNS record to point to the public IP that the site is being hosted on
+2. Make sure to give time for the DNS record to propagate - Cleavr will perform an automatic check, but you can also use [DNS Checker](https://dnschecker.org/) as another reference point
+3. Any DNS proxy settings, such as Cloudflare's proxy, will need to be turned off as Let's Encrypt verifies the IP provided matches what their servers see for the domain
+4. For automatic renewals to work, the IP and site cannot be obfuscated with DNS proxies, IP filtering, etc because if Let's Encrypt cannot see the site and IP, then the certs will not automatically renew
+
 ### Custom SSL
 You can also apply your own SSL certs. To do this, do not enable SSL during site creation and apply SSL after the site has 
 been created. Select the custom cert option and then add in the certificate and the private key to apply the cert. 
