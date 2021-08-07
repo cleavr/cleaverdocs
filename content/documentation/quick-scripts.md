@@ -9,9 +9,11 @@ video: ''
 Think of Quick Scripts as a way to automate server tasks that you only need to periodically run. This can be used for additional config tweaks
 that you typically run after provisioning a new server or periodic tasks that you run for one of your web apps. 
 
-<base-point>
-We are currently working on a library of Quick Scripts for common server tasks. We'll post a link here once it's ready.
-</base-point>
+## Library
+
+We have a library of Quick Script available on our [Quick Scripts Repository](https://github.com/cleavr/quick-scripts).
+
+Feel free to submit a PR if you have quick scripts you've created that you'd like to share with others. 
 
 ## Create a new Quick Script
 In the Quick Script section, click **Add New Quick Script** to add a new script. 
