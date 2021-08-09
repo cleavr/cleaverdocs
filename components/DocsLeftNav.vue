@@ -135,6 +135,13 @@
       >
         Redirects
       </nuxt-link>
+      <nuxt-link
+        to="/staging"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('staging')"
+      >
+        Staging
+      </nuxt-link>
     </div>
 
     <div class="text-base mt-3">
