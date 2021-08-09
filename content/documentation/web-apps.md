@@ -29,3 +29,7 @@ and select **Add** to create the new web app.
 <base-alert>
 If you update the repository name in your VC provider, please remember to also update the repository in the web app's settings.
 </base-alert>
+
+<base-alert class="mt-10">
+To enable push to deploy, you must be an admin on the repository. Per Github: Only members with owner privileges for an organization or admin privileges for a repository can manage webhooks for an organization.
+</base-alert>
