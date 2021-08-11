@@ -16,6 +16,11 @@ This will provide the following abilities right off the bat:
 ### Clear Cache 
 Clicking this button will clear the cache for the site. 
 
+<base-info>
+If FastCGI cache is enabled and you clear cache using the hook or the Cleavr WordPress plugin, please note that you may see in the NGINX error log a related event that is logged that is marked critical. This is due to 
+NGINX not seeing the cache file when it is set to automatically clear the cache and as a result writes an error to the log. This error doesn't critically impact NGINX and can be ignored.
+</base-info>
+
 ### Clear Cache Trigger Hook
 You can use this hook to programmatically clear the site's cache. 
 
