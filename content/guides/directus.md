@@ -61,23 +61,9 @@ Push the package.json to your GitHub repository.
 
 ## Add new NodeJS SSR app
 
-On a new server, add a new site and select **NodeJS SSR** as the app type.
+On a new server, add a new site and select **NodeJS SSR** as the app type, expand **Advanced Options** and enter **8055** for **Port Number**.
 
 ![Add new NodeJS SSR](/images/directus/new-ssr.png)
-
-Once the site has been successfully added, go to the site's settings and click the **NGINX Config** tab.
-
-Since Directus, by default, is configured to run on port 8055, we will need to update the `proxy_pass` setting to reflect that.
-
-Find the `proxy_pass` setting and set the port number to `8055`.
-
-![Set proxy pass port number](/images/directus/proxy-pass.png)
-
-<base-info>
-Note that the port number for the app when you look at the site details will continue to display as the port number Cleavr automatically assigned. This will not impact deploying Directus.
-</base-info>
-
-Click **Update**.
 
 ## Add a database
 
