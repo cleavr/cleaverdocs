@@ -11,6 +11,8 @@ Directus mirrors your custom database, with your schema and content stored pure 
 
 ## Prepare the Directus package
 
+You may either do the below steps or use the `direcvit/directus` GitHub repo. If using `direcvit/directus`, skip this step.
+
 Create a new directory on your local environment and add a package.json by running the following command:
 ```
 npm init -y
@@ -95,7 +97,7 @@ On the **Code Repository** tab, enter the following:
 
 **Version Control Provider**: GitHub
 
-**Repository**: direcvit/directus
+**Repository**: direcvit/directus (or your repository you created in previous step)
 
 **Branch**: main
 
@@ -127,14 +129,14 @@ Click on the Environments section and add in the following environment variables
 
 ```
 PORT=8055
-PUBLIC_URL=/
+PUBLIC_URL=**enter your project's url**
 
-DB_CLIENT=mysql
-DB_HOST=127.0.01
-DB_PORT=3306
-DB_DATABASE=directus
-DB_USER=dbuser
-DB_PASSWORD=pswd1234
+DB_CLIENT=mysql #Or, pg if using postgres
+DB_HOST=127.0.0.1
+DB_PORT=3306 #Or, 5432 if using postgres
+DB_DATABASE=**database name** 
+DB_USER=**database username**
+DB_PASSWORD=**database password**
 
 RATE_LIMITER_ENABLED=true
 RATE_LIMITER_STORE=memory
@@ -147,8 +149,8 @@ STORAGE_LOCATIONS=local
 STORAGE_LOCAL_DRIVER=local
 STORAGE_LOCAL_ROOT=./uploads
 
-KEY=xxxxxxx-xxxxxx-xxxxxxxx-xxxxxxxxxx
-SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+KEY=**random key**
+SECRET=**random secret**
 ACCESS_TOKEN_TTL=15m
 REFRESH_TOKEN_TTL=7d
 REFRESH_TOKEN_COOKIE_SECURE=false
