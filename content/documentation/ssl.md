@@ -51,6 +51,6 @@ If you'd like to use Cloudflare's SSL certs, which are also free and can last up
 6. Copy the full **Origin Certificate** and **Private Key**; these will be added into Cleavr, then click on **OK** to create certificate
 7. Back in Cleavr, go to your **Site > SSL** and select the **Custom SSL** option 
 8. Paste the **Origin Certificate** and **Private key** into their respective areas and then click **Install** to add cert
-9. Lastly, go back to Cloudflare and then go to your **domain > SSL/TLS** and on the **Overview** tab, select **Full** (do not select the Full (strict) option for this setup, this option would require additional steps)
+9. Lastly, go back to Cloudflare and then go to your **domain > SSL/TLS** and on the **Overview** tab, select **Full**
 
 To test, simply open your domain in the browser and see if the site is now secured using https://
