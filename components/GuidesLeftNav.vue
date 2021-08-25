@@ -124,6 +124,13 @@
         Statamic CMS
       </nuxt-link>
       <nuxt-link
+        to="guides/lerna"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('lerna')"
+      >
+        Lerna
+      </nuxt-link>
+      <nuxt-link
         to="guides/koa"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('koa')"
