@@ -22,7 +22,7 @@ Set up a NodeJS SSR site in Cleavr. Once the site is setup, go to the Webapp sec
 When adding the new site, you may need to enter a port number. Many front-end NodeJS frameworks will hard code the port to 3000.
 </base-info>
 
-### Configure Web App
+### Configure Web App Build Settings
 
 In `settings > build`, set the Entry Point as `npm` and Arguments as `start`. 
 
@@ -58,6 +58,62 @@ On activation, this will run a chain reaction that will start the front-end and 
 
 Take note of the `--parallel` flag as this will be required to run processes in parallel. 
 
---- 
+### Configure Deployment Hooks
+
+You'll need to add some custom deployment hooks as well as disable the `Install NPM Packages` and `Build` hooks. 
+
+#### Add Install Hook
+
+Add the following custom install deployment hook. 
+
+```
+cd {{ releasePath }}/<front-end-app-directory>
+npx lerna bootstrap
+```
+
+#### Add Build Hook
+
+Add the following custom build deployment hook. 
+
+```
+cd {{ releasePath }}/<front-end-app-directory>
+npx lerna run build
+```
+
+#### Add Env Hook
+
+Add the following custom .env link deployment hook. 
+
+```
+cd {{ releasePath }}/<front-end-app-directory>
+npx lerna run build
+```
+cd {{ releasePath }}
+
+ENV_SRC_PATH="{{ projectPath }}/.env"
+ENV_PATH="{{ releasePath }}/.env"
+
+if [[  -f "$ENV_SRC_PATH" && ! -f "$ENV_PATH" ]]; then
+  ln -s "$ENV_SRC_PATH" "$ENV_PATH"
+  echo "Successfully linked $ENV_PATH to $ENV_SRC_PATH"
+fi
+
+#### Order Hooks
+
+Order as follows: 
+1. Copy Project
+1. Custom Install
+1. Custom Build
+1. Custom Env Link
+1. Activate New Deployment
+1. Clean Old Deployments 
+
+### Deploy! 🚀
+
+You show now be good to deploy!
+
+If troubleshooting is needed, check the deployment steps and see if they show any errors. Be sure to look even if they appear successful as sometimes error codes aren't actually returned. As with all NodeJs deployments, check PM2 logs for hints. 
+
+---
 
 We hope this helps with setting up a Lerna managed monorepo for deployment using Cleavr. If you have additional tips you'd like to share, please feel free to submit a PR. 
