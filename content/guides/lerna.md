@@ -85,9 +85,6 @@ npx lerna run build
 Add the following custom .env link deployment hook. 
 
 ```
-cd {{ releasePath }}/<front-end-app-directory>
-npx lerna run build
-```
 cd {{ releasePath }}
 
 ENV_SRC_PATH="{{ projectPath }}/.env"
@@ -97,6 +94,7 @@ if [[  -f "$ENV_SRC_PATH" && ! -f "$ENV_PATH" ]]; then
   ln -s "$ENV_SRC_PATH" "$ENV_PATH"
   echo "Successfully linked $ENV_PATH to $ENV_SRC_PATH"
 fi
+```
 
 #### Order Hooks
 
