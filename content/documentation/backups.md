@@ -13,10 +13,14 @@ To schedule a backup, you must first have a Backup Provider created.
 
 1. Select the backup profile to use 
 2. Add a label to refer to the backup as
-3. Set a frequency - this uses the standard cron job schema with times set to the server time
+3. Set a frequency - this uses the standard cron job schema with times set to the server time; [learn about cron schedule formatting](https://crontab.guru/)
 4. Select Filesystem or Database depending on which you are scheduling 
 5. If selecting Filesystem - enter the source path
 6. If selecting Database - select the database you are backing up
+
+<base-point>
+Pro tip! Space out backup run times if configuring multiple backups. If you set them to all of the same time, then they  may interfere with each other. 
+</base-point>
 
 ### Other Options
 - Destination folder is where backups will be placed (make sure the username you use has write access to the destination folder path you supply)
