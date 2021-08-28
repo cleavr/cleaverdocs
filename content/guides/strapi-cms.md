@@ -32,4 +32,28 @@ free to use one of the more economic plans.
 7. In **Environment**, add the env variables for your project, including the database details added in step 2
 8. Deploy!
 
+## Start Production mode via PM2
 
+If you are not keying off an environment variable in the `.env` file for production, you can use PM2 to start Strapi in production mode. 
+
+In the web app > settings > build tab, update the PM2 Ecosystem section by adding `"NODE_ENV":"production"` to the `env` section. 
+
+It should look something like the following: 
+
+```
+{
+  "name": "<site-name>",
+  "script": "npm",
+  "args": "start",
+  "log_type": "json",
+  "cwd": "/home/<server-user-name>/<site-name>/current",
+  "instances": "max",
+  "exec_mode" : "cluster",
+  "env": {
+    "NODE_ENV":"production",
+    "PORT": <port number>,
+    "CI": 1,
+  }
+}
+```
+After updating the PM2 Ecosystem, you'll need to redeploy the app for the changes to take effect. 
