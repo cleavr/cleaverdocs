@@ -18,6 +18,9 @@ issue on the <a href="https://forum.cleavr.io/">forum</a> or by <a href="mailto:
 ## Site and app setup
 Check the following common setup issues to see if they resolve your issue. 
 
+### Using the correct version of NodeJS?
+For Adonis version 5, it's recommended you use NodeJS 15.x.
+
 ### Did you designate the correct entry point?
 #### 502 Bad Gateway 
 
