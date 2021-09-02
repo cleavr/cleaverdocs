@@ -1,16 +1,13 @@
 ---
-title: 'Setting up a Load Balancer'
-description: 'How to set up a load balancer and configure your servers and web apps for this architecture type.'
+title: 'Setting up a Load Balancer with CloudFlare'
+description: 'How to set up a CloudFlare load balancer and configure your servers and web apps for this architecture type.'
 image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 
 You may be interested in setting up multiple app servers and a load balancer server to manage the traffic. 
 
-Cleavr does not currently support creating and managing load balance servers - however, this is on our roadmap. 
-
-What Cleavr can help you with is setting up the app servers and deployments. Our Web App feature and deployments are 
-already setup to handle multi-server deployments. 
+Cleavr can provision and configure a load balance server for you. [Click here to learn how](/load-balancer). 
 
 In this guide, we'll use [Cloudflare's](https://www.cloudflare.com/) Load Balancer solution and configure it to work with Cleavr provisioned app servers. 
 
