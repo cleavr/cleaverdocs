@@ -1,2 +1,12 @@
 .page-enter-active, .page-leave-active { transition: opacity .3s; }
 .page-enter, .page-leave-active { opacity: 0; }
+
+.icon.icon-link {
+  @apply absolute  opacity-0 h-4 -ml-6 w-10 bg-no-repeat;
+  background-image: url('/icons/link.svg');
+  margin-top: 6px
+}
+
+h2:hover .icon.icon-link, h3:hover .icon.icon-link, h4:hover .icon.icon-link, h5:hover .icon.icon-link {
+  @apply opacity-100;
+}

@@ -1,9 +1,14 @@
 <template>
   <div>
-    <h1 class="text-3xl font-semibold text-gray-900 pb-8 capitalize">{{ doc.title }}</h1>
-    <NuxtContent :document="doc" class="prose" />
+    <h1 class="text-3xl font-semibold text-gray-900 pb-8 capitalize">
+      {{ doc.title }}
+    </h1>
+    <NuxtContent
+      :document="doc"
+      class="prose"
+    />
     <div class="mt-24">
-      <github-edit :page="this.currentPage"/>
+      <github-edit :page="this.currentPage" />
       <cleavr-deploy />
     </div>
   </div>
