@@ -75,3 +75,6 @@ However, you may have some unique needs or steps that need to occur during deplo
 **Custom deployment hooks** can be created and enabled in Cleavr to help cover your specific cases. In the web app > deployment 
 section, you can add new deployment hooks with custom scripts to run. You can then order the hooks to run in the required order. 
 Refer to the [deployment hooks](/deployment-hooks) section for more info on setting up and configuring custom deployment hooks. 
+
+### Are your environment variables correct?
+Environment variables missing info or has wrong info (be sure to triple check because it can be easy to miss)
