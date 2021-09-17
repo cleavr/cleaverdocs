@@ -315,6 +315,13 @@
       >
         FastCGI Cache
       </nuxt-link>
+      <nuxt-link
+        to="guides/wordpress-load-balancer"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('wordpress-load-balancer')"
+      >
+        Load Balancing
+      </nuxt-link>
     </div>
     <div class="text-base">
       <h3 class="uppercase text-gray-700 font-bold py-3">
