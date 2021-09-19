@@ -10,3 +10,7 @@
 h2:hover .icon.icon-link, h3:hover .icon.icon-link, h4:hover .icon.icon-link, h5:hover .icon.icon-link {
   @apply opacity-100;
 }
+
+.prose img {
+  @apply shadow-md;
+}
