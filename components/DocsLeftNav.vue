@@ -2,21 +2,42 @@
   <div>
     <div class="text-base">
       <h3 class="uppercase text-gray-700 font-bold py-3">
-        Getting Started
+        Connections
       </h3>
       <nuxt-link
-        to="/flash-deployments"
+        to="/vps-profiles"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
-        :class="highlight('flash-deployments')"
+        :class="highlight('vps-profiles')"
       >
-        Flash Deployments
+        VPS
       </nuxt-link>
       <nuxt-link
-        to="/providers"
+        to="/vc-profiles"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
-        :class="highlight('providers')"
+        :class="highlight('vc-profiles')"
       >
-        Providers
+        Version Control (VC)
+      </nuxt-link>
+      <nuxt-link
+        to="/backup-profiles"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('backup-profiles')"
+      >
+        Backup
+      </nuxt-link>
+      <nuxt-link
+        to="/dns-profiles"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('dns-profiles')"
+      >
+        DNS Management
+      </nuxt-link>
+      <nuxt-link
+        to="/notification-profiles"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('notification-profiles')"
+      >
+        Notification
       </nuxt-link>
     </div>
 
