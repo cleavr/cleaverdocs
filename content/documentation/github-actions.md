@@ -5,7 +5,7 @@ image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 
-Cleavr integrates with [GitHub Actions](https://github.com/features/actions), an automated workflow feature by GitHub that allows 
+Cleavr integrates with [GitHub Actions](https://github.com/features/actions), an automated workflow feature from GitHub, that allows 
 you to perform several actions, such as building your app. 
 
 <base-info>
@@ -21,10 +21,10 @@ When you enable the integration, Cleavr will automatically update your GitHub re
 your app and adds a GitHub secret to keep your deployment hook private. 
 
 ## Available for the following app types
-- Nuxt - Server Side Rendered
+- Nuxt - Server Side Rendered (SSR)
 - Nuxt - Static
 - Adonis
-- NodeJS - Server Side Rendered
+- NodeJS - Server Side Rendered (SSR)
 - NodeJS - Static
 
 ## Comparison
@@ -40,7 +40,7 @@ output files and then activates the deployment.
 ## Advantages
 
 **Dedicated build server** - having GitHub act as a build server frees up memory from your server, letting it be more 
-stable for visitor traffic. 
+stable for visitor traffic
 
 **Run test scripts** - you can expand the workflow file run test automation 
 
@@ -58,17 +58,14 @@ GitHub Actions is only available for projects on your GitHub account. This integ
 that are not your own. 
 </base-info>
 
-To enable GitHub Actions, you may first need to re-authenticate your GitHub account with Cleavr. VC Profiles for GitHub 
-created after 22 November 2020 will have the necessary settings enabled. If you created your GitHub VC profile before this date, 
-go to Cleavr > Providers > VC Profile > select the GitHub VC Profile > click **Re-Authenticate**.  
+Navigate to the **Web App** you want to enable GitHub Actions for and then go to the **Settings** section. 
 
-<img src="/images/mceclip0.png" alt="comparison chart" />
+If you have not configured the settings for the web app, you will need to configure them first and click Update when completed. After 
+the web app has been configured, then enabling the integration will be available on the **GitHub Actions** tab. 
 
-Next, select the **Web App** you want to enable GitHub Actions for and then go to the **Settings** section. If you have 
-not configured the settings for the web app, you will need to configure them first and click Update when completed. After 
-the web app has been configured, then enabling the integration will be available on the Settings page. Click **Enable** to activate the integration. 
+Select the **GitHub Actions** switch to enable. 
 
-<img src="/images/mceclip1.png" alt="comparison chart" />
+![Enable GitHub Actions integration](/images/deployment/cleavr-node-enable-github-actions.png)
 
 
 <base-alert>
@@ -76,5 +73,5 @@ Enabling the GitHub Actions integration will automatically trigger a deployment 
 </base-alert>
 
 ## Disabling GitHub Actions
-You can disable the integration at any time from the Web Apps Settings page. If you disable, this will remove the secret key; 
-however, the workflow files will remai
+You can disable the integration at any time from the GitHub Actions tab. If you disable, this will remove the secret key; 
+however, the workflow files will remain.

@@ -277,6 +277,19 @@
 
     <div class="text-base mt-3">
       <h3 class="uppercase text-gray-700 font-bold py-3">
+        Quick Scripts
+      </h3>
+      <nuxt-link
+        to="/quick-scripts"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('quick-scripts')"
+      >
+        Setup
+      </nuxt-link>
+    </div>
+
+    <div class="text-base mt-3">
+      <h3 class="uppercase text-gray-700 font-bold py-3">
         Troubleshooting
       </h3>
       <nuxt-link
@@ -320,19 +333,6 @@
         :class="highlight('ssh-access-denied')"
       >
         SSH Access Denied
-      </nuxt-link>
-    </div>
-
-    <div class="text-base mt-3">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
-        Quick Scripts
-      </h3>
-      <nuxt-link
-        to="/quick-scripts"
-        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
-        :class="highlight('quick-scripts')"
-      >
-        Setup
       </nuxt-link>
     </div>
 

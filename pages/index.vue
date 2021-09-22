@@ -14,16 +14,16 @@
         to-color="to-red-700"
         from-hover-color="hover:from-red-700"
         to-hover-color="hover:to-orange-400"
-        link-to="deployments"
+        link-to="/deployments"
       />
       <popular-doc
         icon="providers"
-        doc-title="Providers"
+        doc-title="Connect VPS Provider"
         from-color="from-teal-400"
         to-color="to-blue-700"
         from-hover-color="hover:from-blue-700"
         to-hover-color="hover:to-teal-400"
-        link-to="providers"
+        link-to="/vps-profiles"
       />
       <popular-doc
         icon="github"
@@ -32,16 +32,16 @@
         to-color="to-gray-700"
         from-hover-color="hover:from-gray-700"
         to-hover-color="hover:to-gray-500"
-        link-to="github-actions"
+        link-to="/github-actions"
       />
       <popular-doc
-        icon="canary"
-        doc-title="Canary"
+        icon="terminal"
+        doc-title="Quick Scripts"
         from-color="from-yellow-400"
         to-color="to-yellow-600"
         from-hover-color="hover:from-yellow-600"
         to-hover-color="hover:to-yellow-400"
-        link-to="canary"
+        link-to="/quick-scripts"
       />
       <popular-doc
         icon="hook"
@@ -50,7 +50,7 @@
         to-color="to-purple-600"
         from-hover-color="hover:from-purple-600"
         to-hover-color="hover:to-pink-400"
-        link-to="deployment-hooks"
+        link-to="/deployment-hooks"
       />
       <popular-doc
         icon="cogs"
