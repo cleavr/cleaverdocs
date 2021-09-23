@@ -20,23 +20,38 @@ The following are the most common reasons for 502 errors:
 - Database connection not established
 - Entry point and artifact paths not correctly defined
 - Not using correct version of NodeJS 
-- Environment variables missing info or has wrong info (be sure to triple check because it can be easy to miss)
+- Environment variables missing values or using incorrect values (be sure to triple check because it can be easy to miss)
 
 <base-point>
 Check the <a href="/guides">guides</a> section to see if the app you are deploying has an associated guide. The guides will help you
 correctly delpoy your apps. 
 </base-point>
 
+## Check the logs
+#### Symptom(s): Site cannot be reached  | 502 | Various issues
+
+One of the first steps in troubleshooting is to look at the logs. If the site shows a 502 error, one of the best logs to look at is the PM2 log. 
+
+Here are the applicable logs to look at in Cleavr: 
+- **Logs Report** in the web app section display web app specific logs
+- **PM2 Logs** is typically the most helpful for 502 errors and can be found in: 
+    - In the deployment details page, click **View PM2 Logs**
+    - In the server > logs > select PM2 Logs
+    - in the server > services > select **Check Heartbeat** for the version of NodeJS that's installed
+- **NGINX Logs** show errors at the web server level and can be found in: 
+    - In the server > logs > NGINX errors
+    - In the server > services > NGINX heartbeat
+
 ## Site and app setup
 
-#### Did you set up your port address? 
-##### 502 Bad Gateway
+### Did you set up your port address? 
+#### Symptom(s): 502 Bad Gateway
 
-Cleavr automatically assigns a port number when you create a new site. You can see the assigned port number by clicking site the info box.
+Cleavr automatically assigns a port number when you create a new site. You can see the assigned port number by clicking site the info box. You may also desiginate a custom port for the app to run on when creating a new NodeJS app.
 
 For many NodeJS frameworks, including NuxtJS, Cleavr is able to automatically assign the port to the app and successfully activate it. 
 
-Many frameworks "Quick Start" applications will hard code the Port Number; often set to 3000. Typically, the port number is set in the index.js/ts, 
+Many framework's "Quick Start" applications will hard code the Port Number; often set to 3000. Typically, the port number is set in the index.js/ts, 
 server.js/ts, or main.js/ts files. Check where the port number is identified and update the code to look first to `process.env.PORT`. 
 
 For example, in a Nest JS app, you'd update the `main.ts` file as follows: 
@@ -48,10 +63,7 @@ async function bootstrap() {
 }
 ```
 
-To double check if your app is running on the correct port, first check the port Cleavr assigned your app. You can do this by clicking on the site name on the server list
-to view additional info about the app, including the assigned port number. 
-
-![assigned port](/images/app-port.png)
+To double check if your app is running on the correct port, first check the port Cleavr assigned your app. You find the assigned port in the **Site Details**. 
 
 Then, SSH into your server and run the following command:
 
@@ -66,15 +78,15 @@ This will display all of the active ports. Check to see that your **node** app i
 If the app is running on port 3000, you will need to update the Port Number to refer to the port assigned by Cleavr. 
 
 ### Did you designate the correct entry point?
-#### 502 Bad Gateway 
+#### Symptom(s): 502 Bad Gateway 
 
-For NodeJS apps, Cleavr defaults the entry point to index.js. However, this may not be the correct entry point for your app. 
+For NodeJS apps, Cleavr defaults the entry point to `index.js`. However, this may not be the correct entry point for your app. 
 
 Common entry points for NodeJS:
 
-- index.js
-- server.js
-- app.js
+- `index.js`
+- `server.js`
+- `app.js`
 
 For example, if your `package.json` file includes the following - 
 
@@ -97,10 +109,10 @@ Cleavr also supports running start scripts. For example, if your `package.json` 
 }
 ```
 
-then, you can simply add `npm` as the entry point and pass `start` as an argument. 
+Then, you can simply add `npm` as the entry point and pass `start` as an argument. 
 
 ### Did you build production assets?
-#### Site cannot be reached 
+#### Symptom(s): Site cannot be reached 
 
 If you go to your website and your browser says something such as "This site can't be reached", as is the message that may 
 appear in Chrome, then check to see if you need to build production assets.
@@ -110,24 +122,13 @@ it by default. If your app requires assets to be built, enable Build Assets in w
 
 ### Did you set up a database?
 
-#### Site cannot be reached  | 502 Error | Various issues
+#### Symptom(s): Site cannot be reached  | 502 Error | Various issues
 
 If an app has a database dependency and the database is not setup or is not correctly associated to your app, then it may 
 appear the site is broken when visiting your website. For some frameworks, such as Strapi, this may result in a 502 error. 
 
 If your app requires a database, make sure you set up the correct database type, that you have added a database name, user, 
 and password and that your app's database connection variables match how you setup your database. 
-
-### Check the app log report
-
-#### Site cannot be reached  | Various issues
-
-It can be that the app setup and deployment are all configured and deployed successfully. However, there are other issues afoot. 
-If the above troubleshooting tips do not help solve the issue, then go to web app > logs and fetch your production app logs 
-from the server to see if there are any app specific issues. 
-
-The app log report is typically good at letting you know what the issue is. However, it can sometimes be opaque. Such as, you may not see an error 
-around a lack of database connection; however, the lack of database connection can indeed be the root cause for the errors. 
 
 ## Deployment step errors
 The following are how you can troubleshooting common deployment step **errors**. 
@@ -150,3 +151,18 @@ have some unique needs or steps that need to occur during deployment for your ap
 **Custom deployment** hooks can be created and enabled in Cleavr to help cover your specific cases. In the web app > deployment 
 section, you can add new deployment hooks with custom scripts to run. You can then order the hooks to run in the required order. 
 Refer to the [deployment hooks section](/deployment-hooks) for more info on setting up and configuring custom deployment hooks. 
+
+## Environment variables
+
+There is an **Environment** section in web app where you can add `.env` variables. However, you need to make sure that your NodeJS app is setup to 
+retrieve environment variables from a file. 
+
+If you use a **dotenv** then you may need to update it to make sure that, in production, it reads from `.env` and is not looking to PM2 environment variables. 
+
+```javascript
+const path = require('path'); 
+require('dotenv').config({ path: path.join(__dirname, '.env') });
+``` 
+
+If the above is not an option for you, then you do have the ability to add environment variables to the PM2 startup script in web app > settings > build tab.
+![Cleavr PM2 Ecosystem](/images/deployment/cleavr-pm2-ecosystem.png)
