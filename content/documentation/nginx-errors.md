@@ -5,16 +5,6 @@ image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 
-Code **bmdpbnhyZWxvYWQ**
-
-This is an nginx error code. 
-
-## What went wrong? 
-This error code is due to nginx not functioning correctly. In the services section of the impacted server, click the 
-refresh button to restart the service and then attempt to create a site again. 
-
-Often times, NGINX just needs a good-ol-fashion power cycle. 
-
 ## Long Domain Names
 If you entered a very long domain name, such as more than 32 characters, then you will exceed naming limits placed by NGINX. 
 If this is the case, you will need to resolve the NGINX error by following the below instructions as this will cause NGINX to 

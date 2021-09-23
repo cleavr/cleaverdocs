@@ -13,8 +13,6 @@ Cleavr will perform a check before you attempt to add SSL certs to a domain. How
 Let's Encrypt and their servers will check to make sure the IP applying for SSL cert is the same that their servers identify during their
 verification process. 
 
-Error code **aXNzdWVzc2w** is an SSL certificate creation error. 
-
 ## What went wrong? 
 This error occurs when the Let's Encrypt services is attempting to verify that the domain is pointing to the correct IP 
 and is receiving an invalid response. In other words, it is most likely that the domain is not correctly directing traffic 
