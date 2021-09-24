@@ -284,7 +284,14 @@
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('quick-scripts')"
       >
-        Setup
+        Scripts
+      </nuxt-link>
+      <nuxt-link
+        to="/quick-commands"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('quick-commands')"
+      >
+        Commands
       </nuxt-link>
     </div>
 
