@@ -46,7 +46,15 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/redirect-module', {
+      redirect: [
+        { from: '^/providers#vps-providers', to: '/vps-profiles' },
+        { from: '^/providers#dns-providers', to: '/dns-profiles' },
+        { from: '^/providers#backup-profiles', to: '/backup-profiles' },
+        { from: '^/providers#notification-profiles', to: '/notification-profiles' }
+      ]
+    }
   ],
   nuxtContentAlgolia: {
     appId: process.env.ALGOLIA_APP_ID,

@@ -1689,6 +1689,11 @@
     consola "^2.12.1"
     feed "^4.2.0"
 
+"@nuxtjs/redirect-module@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/redirect-module/-/redirect-module-0.3.1.tgz#90a6986882337401cb0576cdf9479d4e3b552cce"
+  integrity sha512-yL2unrYfUSqs+4cUtkQvEQMsuTeCOlQd+Y5sTqMZzWBadF8h01tCVDG95zmOTNIiCupb+sQho2Tixwl1f826aw==
+
 "@nuxtjs/tailwindcss@^3.3.4":
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-3.3.4.tgz#650196b7ec9edb597a8e98dffe28071eda64c71e"
