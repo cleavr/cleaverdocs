@@ -316,6 +316,13 @@
         FastCGI Cache
       </nuxt-link>
       <nuxt-link
+        to="guides/woocommerce"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('woocommerce')"
+      >
+        WooCommerce
+      </nuxt-link>
+      <nuxt-link
         to="guides/wordpress-load-balancer"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('wordpress-load-balancer')"
