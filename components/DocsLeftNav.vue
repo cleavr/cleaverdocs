@@ -115,6 +115,13 @@
       >
         Process Monitors
       </nuxt-link>
+      <nuxt-link
+        to="/php-fpm"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('php-fpm')"
+      >
+        PHP-FPM Settings
+      </nuxt-link>
     </div>
 
     <div class="text-base mt-3">
@@ -154,7 +161,7 @@
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('nginx-cache')"
       >
-        NGINX Cache
+        Cache
       </nuxt-link>
       <nuxt-link
         to="/redirects"

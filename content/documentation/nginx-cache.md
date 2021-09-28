@@ -1,5 +1,5 @@
 ---
-title: 'NGINX Cache'
+title: 'Cache'
 description: 'Make your sites zoom with NGINX and FastCGI caching.'
 image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
@@ -40,3 +40,16 @@ Do not openly share your trigger hook URL as this can be used by others outside 
 </base-alert>
 
 Simply select **Clear Cache** to clear the cache for your site. 
+
+## NGINX unlink() error message
+
+If you enable caching and use the cleavr cache trigger hook, whether by clicking the 'Clear Cache' button in Cleavr, using the trigger hook in an external tool, or
+by using the Cleavr Clear Cache WordPress plugin, you may notice errors in the NGINX error log that look like the following: 
+
+```
+2020/09/20 12:30:42 [crit] 355564#355564: unlink() "/opt/cleavr/nginx/www.example.com/3/bf/e217a0f2cvv0fb5bbcf11cf0902cbbf3" failed (2: No such file or directory)
+```
+
+What is happening here is that NGINX will automatically clear cache on a set interval. If the cache was deleted by one of the above methods, then NGINX will throw the above error. 
+
+It is marked as 'critical' but is an expected error in this scenario. 
