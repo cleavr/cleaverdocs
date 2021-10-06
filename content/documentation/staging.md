@@ -1,11 +1,11 @@
 ---
-title: 'Site Stating'
+title: 'Site Staging'
 description: 'Stage your sites before making them live.'
 image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
 video: ''
 ---
 
-Site stating allows you to configure a site and then copy it to a production site when you are ready. 
+Site staging allows you to configure a site and then copy it to a production site when you are ready. 
 
 ## Staging Setup
 
