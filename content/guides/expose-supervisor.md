@@ -32,4 +32,4 @@ password=password
 
 Save the file, restart supervisor, and then access the domain you set up the Generic Port App with. 
 
-![Supervisor UI in port 9001](/images/app/expose-supervisor.png)
+![Supervisor UI in port 9001](/images/app/supervisor-ui.png)
