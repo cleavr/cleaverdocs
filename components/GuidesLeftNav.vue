@@ -247,6 +247,13 @@
       >
         Expose Local Sites
       </nuxt-link>
+      <nuxt-link
+        to="guides/expose-supervisor"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('expose-supervisor')"
+      >
+        Expose Supervisor
+      </nuxt-link>
     </div>
 
     <div class="text-base">
