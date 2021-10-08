@@ -31,3 +31,30 @@ We go through great lengths to ensure your information is secured as much as pos
 - Never saving important server access information, including sudo password, database password, environment variables, and SSH keys. Cleavr is used as an interface to create and distribute this information to your provisioned servers; however, this information is not stored in Cleavr’s databases.
 - Encrypting sensitive data in our database
 - Not displaying back-end identifiers in URLs
+
+## HSTS
+
+If you'd like to lock down and deter eavesdroppers listening over HTTP, you can enable the NGINX HSTS directives. 
+
+Before undertaking the tasks to enable, make sure you have SSL applied to your sites on the server. Also, make sure that you indeed
+want to enable it. 
+
+### Step one
+
+SSH into your server and open the following file. 
+
+```
+/etc/nginx/h5bp/directive-only/ssl.conf
+```
+
+### Step two
+
+Scroll down until you see the following commented out section. 
+
+![hsts](/images/server/hsts.png)
+
+Uncomment the lines you want to enable and then save the file. 
+
+### Step three
+
+In Cleavr, restart NGINX service. 
