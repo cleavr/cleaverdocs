@@ -5,7 +5,7 @@ image: 'https://docs.cleavr.io/images/gatsby.png'
 video: 'https://youtu.be/cDIRuzsnB5w'
 ---
 
-<you-tube video="cDIRuzsnB5w" />
+<you-tube video="cDIRuzsnB5w"></you-tube>
 
 [Gatsby](https://www.gatsbyjs.com/) is a static front-end generator and is popular with React framework developers. 
 
