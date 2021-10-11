@@ -24,7 +24,8 @@ Configure as follows:
 - **App Type**: PHP
 - **Domain Name**: use your own custom domain or a free Cleavr domain
 
-Under **Advanced Options** 
+Under **Advanced Options**: 
+ 
 - **Web Directory**: `web`
 - Enable **Setup Database**
 - **Database Type**: MySQL 8.0
@@ -34,11 +35,11 @@ Under **Advanced Options**
 
 Click to **Add** site. 
 
-Once site installs, go to the Web App section to configure the web app. 
+Once the site installs, go to the Web App section to configure the web app. 
 
 ## Step 2: Connect Repository
 
-In the Web App > Settings > Code Repository section, select a GitHub VS profile and configure the repo as follows: 
+In the Web App > Settings > Code Repository section, select a GitHub VC profile and configure the repo as follows: 
 
 - **Repository**: `craftcms/happy-lager`
 - **Branch to Deploy**: `main`
@@ -128,3 +129,8 @@ Expect to see a warning after running the above command as it will complain abou
 ## Step 7: Deploy!
 
 You should now be good to deploy! 🚀
+
+To log in, go to append `/admin` to your domain and then user the following credentials: 
+
+- Username: admin
+- Password: password
