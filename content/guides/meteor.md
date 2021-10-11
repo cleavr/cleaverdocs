@@ -17,11 +17,11 @@ Flash deployments won't fully work for Meteor apps as we'll need to add addition
 then update the server and web-app with the required additional configs afterwards. 
 </base-info>
 
-## Provision server and add site
+## Step 1: Provision Server And Add Site
 
 Provision a new server and add a NodeJS SSR site (make sure NodeJS v12 is installed over v14).
 
-## Install Meteor on your server and add Env Variables
+## Step 2: Install Meteor On Your Server And Add Env Variables
 
 Add your [SSH key](/ssh-keys) to the server on the server > ssh keys page and then SSH into the server. 
 
@@ -46,7 +46,7 @@ that is because Meteor doesn't read from .env file but reads from the server env
 and cannot be added via child shells used for deployment hook scripts. 
 </base-info>
 
-## Configure your web app
+## Step 3: Configure Your Web App
 
 In the web app section, click on **Complete Setup** for the web app created after adding the new NodeJS site. 
 
@@ -105,7 +105,7 @@ Ensure the web deployment hooks are in the following order -
 - Activate New Deployment
 - Clean Old Deployments
 
-## Deploy! 
+## Step 4: Deploy! 
 
 This will be a two step process for the initial deploy. 
 

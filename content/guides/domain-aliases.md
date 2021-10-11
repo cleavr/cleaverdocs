@@ -13,11 +13,11 @@ domains.
 This will mask the domain so that the site visitor will view the alias domain in their web browser.
 </base-info>
 
-## Step 1 - Add a new site
+## Step 1 - Add A New Site
 
 In [Cleavr](https://cleavr.io), add a new site to a server. When you add a new site, you will include the main domain that will be used for the site. 
 
-## Step 2 - Add aliases
+## Step 2 - Add Aliases
 
 After the new site is finished installing, click on the **Settings** tab in the site section. 
 
@@ -30,14 +30,14 @@ of the domain and the ability to update the DNS A records for this to work prope
 Comma seperate multiple aliases. 
 </base-info>
 
-## Step 4 - Point DNS records to the server's public IP
+## Step 3 - Point DNS Records To The Server's Public IP
 
 If using Cleavr for DNS record management, go to the DNS Records section and create new or update existing records and point them to the server's public IP that the site
 is hosted on. 
 
 You'll want to make sure each alias domain / sub-domain you applied is pointing to the correct server. 
 
-## Step 5 - Update SSL certs
+## Step 4 - Update SSL Certs
 
 You'll likely want to update the SSL certs for the site so that if a user accesses an alias, that they aren't presented a certificate error warning.
 

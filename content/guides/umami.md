@@ -11,7 +11,7 @@ properties.
 Umami uses the Next.js framework and is easy to deploy to your server using Cleavr without deviating much from their instructions on their
 [readme file on GitHub](https://github.com/mikecao/umami). 
 
-## Add new SSR App
+## Step 1: Add New SSR App
 On a new server, add a new site, selecting **Node JS SSR** as the app type. 
 
 ![Add new SSR app](/images/umami/new-ssr.png)
@@ -31,7 +31,7 @@ automatically assigned. This won't impact deploying Umami.
 
 Click **Update**
 
-## Add a database
+## Step 2: Add A database
 
 On the same server you added the site, click on the database section to install a new MySQL (or optionally Postgres) database. 
 
@@ -39,7 +39,7 @@ Once the database server is installed, add a new database. Remember the database
 
 ![Add database](/images/umami/database.png)
 
-## Setup the web app
+## Step 3: Configure Web App
 In the web app section, select **Complete Setup** for the web app that was created for the site created earlier. 
 
 ### Enter repository
@@ -113,7 +113,7 @@ You can optionally choose to run the command via SSH if you wish.
 
 Place the migrate database hook directly following the build assets hook. 
 
-## Deploy!
+## Step 4: Deploy!
 Once you have everything configured, deploy! 🚀
 
 Select the URL for the site, and then enter the default user credentials: 

@@ -17,7 +17,7 @@ In the `index.js` file, update the following:
 options.port = process.env.PORT || 8000;
 ```
 
-## Add a NodeJS SSR site
+## Step 1: Add A NodeJS SSR Site
 
 On an existing server, click **Add Site** to add a new site to your server. 
 
@@ -26,7 +26,7 @@ Select the **NodeJS SSR** option and enter the remainder site details and click 
 Cleavr will automatically install NodeJS on your server if NodeJS has not already been installed.  
 
 
-## Add a Web App
+## Step 2: Configure Web App
 
 After the site has successfully installed, you'll now need to create a web app and deploy out your application. 
 
@@ -47,5 +47,5 @@ The above works for the standard defaults.
 
 In the Deployment Hooks section, you may need to disable the **build** hook if you do not have anything to build for production. 
 
-## Deploy! 
+## Step 3: Deploy! 
 If everything looks good, go to the deployments section and deploy! 🚀

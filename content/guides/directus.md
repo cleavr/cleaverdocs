@@ -9,7 +9,7 @@ video: ''
 
 Directus mirrors your custom database, with your schema and content stored pure and unaltered. When it comes time to ingest, fetch, or update your data, you can use its REST+GraphQL API, JavaScript SDK, or even pure SQL. Directus gives you plenty of access options to choose from.
 
-## Prepare the Directus package
+## Step 1: Prepare The Directus Package
 
 You may either do the below steps or use the `direcvit/directus` GitHub repo. If using `direcvit/directus`, skip this step.
 
@@ -59,13 +59,13 @@ The package.json content will look like this:
 
 Push the package.json to your GitHub repository.
 
-## Add new NodeJS SSR app
+## Step 2: Add New NodeJS SSR Site
 
 On a new server, add a new site and select **NodeJS SSR** as the app type, expand **Advanced Options** and enter **8055** for **Port Number**.
 
 ![Add new NodeJS SSR](/images/directus/new-ssr.png)
 
-## Add a database
+## Step 3: Add A Database
 
 On the same server you added the site, click on the database section to install a new MySQL or Postgres database.
 
@@ -73,7 +73,7 @@ Once the database server is installed, add a new database. Remember the database
 
 ![Add database](/images/directus/database.png)
 
-## Setup the web app
+## Step 4: Setup The Web App
 
 In the web app section, select **Complete Setup** for the web app that was created for the site.
 
@@ -158,7 +158,7 @@ See [Directus Environment Variables](https://docs.directus.io/reference/environm
 
 Click on **Sync**.
 
-## Deploy!
+## Step 5: Deploy!
 
 Once you have everything configured, deploy! 🚀
 

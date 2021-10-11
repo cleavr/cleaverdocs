@@ -16,19 +16,19 @@ Even though October CMS is built using Laravel, they formatted the package to wo
 don't need to have Node installed on our server. 
 </base-info>
 
-## Step 1: Provision new server
+## Step 1: Provision New Server
 
 Provision a new server with Cleavr. 
 
 You may optionally install a version of PHP during provisioning. 
 
-## Step 2: Add new site
+## Step 2: Add New Site
 
 Once your server has finished provisioning, add a new site. 
 
 Select **PHP** as the site's web app type. 
 
-## Step 3: Configure the web app
+## Step 3: Configure The Web App
 
 Click on the web app section, and the click **Complete Setup** for the web app that was added after adding the new site. 
 
@@ -67,7 +67,7 @@ This new hook will setup the database.
 
 If everything looks to be configured correctly, deploy! 🚀
 
-## Step 5: Grab the admin password
+## Step 5: Grab The Admin Password
 
 After the app deploys, you'll want to grab the admin password that was generated during the October Install deployment step. Click
 into the deployment details, then click on the October Install step. This will bring up the deployment log for this step. Scroll down and

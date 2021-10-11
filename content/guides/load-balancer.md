@@ -16,7 +16,7 @@ We'll create the following architecture:
 - 1 database server that both app servers will connect to
 - 1 Load Balancer created and configured on CloudFlare
 
-## Step 1: Set up App Servers in Cleavr
+## Step 1: Set Up App Servers In Cleavr
 
 In Cleavr, we'll provision 3 servers. Two (2) of the servers will be dedicated to our app while the third server will run our
 database. 
@@ -31,7 +31,7 @@ You'll also use the same hostname. In our example, we are adding `balance.cleavr
 When you add a site, Cleavr will automatically any required environment dependencies to run your app type. In our example case, Cleavr
 will install NodeJS on our servers. 
 
-## Step 2: Set up Database in Cleavr
+## Step 2: Set Up Database In Cleavr
 
 In this step, we'll simply provision a server with Cleavr and then install a database server on it. 
 
@@ -40,7 +40,7 @@ For our example, in the **server > database** section, we'll click to install My
 Once MySQL is installed, we'll add a new database, database user, and add our other two server IP addresses into the Host text box. 
 This last part is so the database server will whitelist requests from our app servers. 
 
-## Step 3: Set up Load Balancer in Cloudflare
+## Step 3: Set Up Load Balancer In Cloudflare
 
 <base-info>
 This step assumes that you use Cloudflare to manage your domain as this is required in order to set up a Load Balancer with Cloudflare.
@@ -68,7 +68,7 @@ Continue to make the necessary configurations for your origin servers, monitorin
 
 Once you have your Load Balancer setup according to your preferences, we'll move on to the next step. 
 
-## Step 4: Create Origin Server SSL certs in Cloudflare and add to Cleavr
+## Step 4: Create Origin Server SSL Certs In Cloudflare And Add To Cleavr
 
 For our app servers, we'll want to apply SSL certs. Cloudflare offers free Origin SSL certs that we'll create and apply to our app servers. 
 
@@ -80,7 +80,7 @@ Once created, go to each app server > site > SSL in Cleavr and apply the Origin 
 
 For more detailed instructions on this process, refer to [Apply a Cloudflare SSL Cert instructions](/ssl#apply-a-cloudflare-ssl-cert).
 
-## Step 5: Set Up Web App in Cleavr
+## Step 5: Set Up Web App In Cleavr
 
 In the Web App section of Cleavr, you'll notice that there are shell Web Apps from when you added the new sites in the earlier steps. You can
 ignore or remove these shell apps. 
@@ -98,7 +98,7 @@ Click **Add** to add the new app.
 Assuming your app relies on .env variables, we'll go to the **web app > environment** section and for each of the app servers, add in the
 necessary env variables and sync them to the server. 
 
-## Step 6: Configure deployment hooks and then deploy!
+## Step 6: Configure Deployment Hooks And Then Deploy!
 
 In the **web app > deployment** hooks sections, we'll need to make sure that the correct operations are going to occur for each app server. 
 

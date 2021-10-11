@@ -18,7 +18,7 @@ server. If so, SSH into your server and run the following:
 npm i -g @loopback/cli
 ```
 
-## Add a NodeJS SSR site
+## Step 1: Add A NodeJS SSR Site
 
 On an existing server, click **Add Site** to add a new site to your server. 
 
@@ -26,7 +26,7 @@ Select the **NodeJS SSR** option and enter the remainder site details and click 
 
 Cleavr will automatically install NodeJS on your server if NodeJS has not already been installed.  
 
-## Add a Web App
+## Step 2: Configure Web App
 
 After the site has successfully installed, you'll now need to create a web app and deploy out your application. 
 
@@ -46,5 +46,5 @@ You may need to update the entry point, arguments, build command, and/or artifac
 The above works for the standard defaults.
 </base-info>
 
-## Deploy! 
+## Step 3: Deploy! 
 If everything looks good, go to the deployments section and deploy! 🚀

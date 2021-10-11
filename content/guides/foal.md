@@ -30,7 +30,7 @@ const port = Config.get('port', 'number', 3001);
   });
 ```
 
-## Add a NodeJS SSR site
+## Step 1: Add A NodeJS SSR Site
 
 On an existing server, click **Add Site** to add a new site to your server. 
 
@@ -38,14 +38,14 @@ Select the **NodeJS SSR** option and enter the remainder site details and click 
 
 Cleavr will automatically install NodeJS on your server if NodeJS has not already been installed.  
 
-## Add a Database
+## Step 2: Add A Database
 
 You'll likely need a MySQL 5.7 or PostgreSQL database for your app. On your server, install your preferred database type and add a 
 database and database user. You can add the configurations for your database in a myriad of ways; Foal will look for .env files for 
 the database config settings. If this is how you are adding your database connections configs, be sure to also add them in the Web App 
 Environment section when you configure your web app. 
 
-## Add a Web App
+## Step 3: Add A Web App
 
 After the site has successfully installed, you'll now need to create a web app and deploy out your application. 
 
@@ -76,5 +76,5 @@ npm run migrations
 Place the run migration deployment hook after the build hook. 
 
 
-## Deploy! 
+## Step 4: Deploy! 
 If everything looks good, go to the deployments section and deploy! 🚀

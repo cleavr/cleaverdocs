@@ -22,17 +22,17 @@ Cleavr supports installing and managing Docker! In the server > services section
 
 To get started with the example, first, provision a server and have it ready. 
 
-## Add Docker Service
+## Step 1: Add Docker Service
 
 In the server > services section, select **Install** for the Docker service. This will install Docker onto your server. 
 
-## Add a new site
+## Step 2: Add A New Site
 
 For our example, we'll use a Nest JS sample project. 
 
 First, we'll need to add a new **NodeJS SSR** site to the server. 
 
-## Add and configure web app
+## Step 3: Add And Configure Web App
 
 Once the site has been added to the server, in the Web App section, select **Complete Setup** for the web app that was created after the new
 NodeJS SSR site was added to the server. 
@@ -71,7 +71,7 @@ Another option is to setup and run the Mongo Database in a container via the com
 The Docker Compose Up deployment hook only needs to be enabled on the initial run. As long as the container is running, we don't need to run this hook.
 </base-info>
 
-## Deploy! 
+## Step 4: Deploy! 
 If everything looks good, go to the deployments section and deploy! 🚀
 
 You can now interact with the cat API using `https://example.com/cats`. 

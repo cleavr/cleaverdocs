@@ -13,7 +13,7 @@ Cleavr sets PM2 to run in cluster mode to take advantage of available cores for 
 You can add your Nuxt app either in one fell-swoop with flash-deploy or add your app to an existing server. In this guide, we'll 
 add a Nuxt app to an existing server. 
 
-## Add a Nuxt site
+## Step 1: Add a Nuxt site
 
 On an existing server, click **Add Site** to add a new site to your server. 
 
@@ -44,7 +44,7 @@ dependencies based on the new app type you've added.
 </base-point>
 
 
-## Add a Web App
+## Step 2: Configure Web App
 
 After the site has successfully installed, you'll now need to create a web app and deploy out your app. 
 
@@ -64,6 +64,7 @@ From here, you may have additional configurations to make depending on how you s
 - If you are using GitHub for the VC Provider, consider enabling the GitHub Actions integration in the settings area so that you can use GitHub to build your app, which frees up your server's resources during deployments
 - The Hooks section has default deployment hooks to deploy your SSR and Static apps. If you have additional commands to run during deployment, create a custom deployment hook and add it to the correct order placement that it should run in during deployments
 
+## Step 3: Deploy!
 If everything looks good, go to the deployments section and deploy! 🚀
 
 <base-info>

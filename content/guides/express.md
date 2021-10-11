@@ -7,7 +7,7 @@ video: ''
 [Express JS](http://expressjs.com/) doesn't need much of an introduction. It is one of the first and most well known frameworks that begets many other Node JS
 frameworks.  
 
-## Prerequisite - ensure Port is not hardcoded
+## Prerequisite - Ensure Port Is Not Hardcoded
 
 Make sure to update your code to check `process.env.PORT` for the port number as Cleavr will randomly assign a port number during site creation. 
 
@@ -19,7 +19,7 @@ var server = app.listen( process.env.PORT || 3000, function(){
 });
 ```
 
-## Add a NodeJS SSR site
+## Step 1: Add A NodeJS SSR Site
 
 On an existing server, click **Add Site** to add a new site to your server. 
 
@@ -28,7 +28,7 @@ Select the **NodeJS SSR** option and enter the remainder site details and click 
 Cleavr will automatically install NodeJS on your server if NodeJS has not already been installed.  
 
 
-## Add a Web App
+## Step 2: Add A Web Site
 
 After the site has successfully installed, you'll now need to create a web app and deploy out your application. 
 
@@ -49,5 +49,5 @@ The above works for the standard defaults.
 
 In the Deployment Hooks section, you may need to disable the **build** hook if you do not have anything to build for production. 
 
-## Deploy! 
+## Step 3: Deploy! 
 If everything looks good, go to the deployments section and deploy! 🚀

@@ -15,7 +15,7 @@ You may programmatically create and expose a view for these use cases or even op
 However, Cleavr makes it a cinch with the **Generic Port App** site type. 
 
 
-### Add Generic Port App
+## Step 1: Add Generic Port App
 
 Add a new site and select the **Generic Port App** app type. 
 
@@ -30,7 +30,7 @@ There may be the prerequisite that you need to first deploy an app where part of
 a queue processor. 
 </base-info>
 
-### Enable authentication for the site (optional - but encouraged)
+## Step 2: Enable Authentication For The Site (optional - but encouraged)
 If the app doesn't already have an authentication method, then we encourage you to add one. The quickest way would be to 
 utilize Cleavr's site authentication feature. 
 

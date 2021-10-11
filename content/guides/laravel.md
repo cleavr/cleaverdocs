@@ -17,14 +17,14 @@ You may choose to use Flash Deploy to provision, create a new site, and deploy y
 
 However, these instructions will go through the more scenic route. 
 
-## Step 1: Provision a new server
+## Step 1: Provision A New Server
 
 Provision a new server in your Cleavr account with your favorite VPS provider. 
 
 When navigating through the new server setup, you can choose to add a version of PHP, Node, and a database. However, 
 this isn't necessary and Cleavr will automatically add these dependencies for you when you add the new site. 
 
-## Step 2: Add a new site
+## Step 2: Add A New Site
 
 Once the server has completed provisioning, click into the server and add a new site. 
 
@@ -37,7 +37,7 @@ Cleavr will automatically install PHP, NodeJS, and a database server if one has 
 Cleavr will automatically configure a base .env file for your application and fill in the database connection information. 
 </base-point>
 
-## Step 3: Configure web app 
+## Step 3: Configure Web App 
 
 In the Web App section, click **Complete Setup** for the web app that was automatically added after your site is successfully created. 
 

@@ -11,7 +11,7 @@ Deploying Symfony apps with [Cleavr](https://cleavr.io) is quick and painless.
 
 In this guide, we will setup and deploy the [demo blog application](https://github.com/symfony/demo). 
 
-## Step 1: Install demo project on your local
+## Step 1: Install Demo Project On Your Local
 
 First, work through the instructions on the [demo project's readme file](https://github.com/symfony/demo) to copy the project
 to your local environment. 
@@ -20,17 +20,17 @@ Run the app on your local to make sure it runs as expected.
  
 Add the project to your favorite Git repo; make sure to not save the `.env` file to your repo. 
 
-## Step 2: Provision new server
+## Step 2: Provision New Server
 
 In Cleavr, provision a new server. Make sure to install a version of **PHP** as well as **NodeJS**. 
 
-## Step 3: Add a PHP site
+## Step 3: Add A PHP Site
 
 Once the server is finished provisioning, add a new PHP site to the server. 
 
 When adding the PHP site, set the **Web Directory** to point to the `public` folder.
 
-## Step 4: Set up database (optional)
+## Step 4: Set Up Database (optional)
 
 The demo app, by default, is configured to use a sqlite db. However, you can set up the app to use MySQL or Postgres. 
 
@@ -43,7 +43,7 @@ Once installed, add a new database with a corresponding user and password.
 Remember the credentials as we'll use these later when setting up the environment variables. 
 
 
-## Step 5: Configure web app
+## Step 5: Configure Web App
 
 Once the site has been added, go to the Web App section and click **Complete Setup** for the web app that was just added
 after creating the new site. 
@@ -114,7 +114,7 @@ npm run build
 ```
 Place the hook below **Install Yarn Packages**.
 
-## Step 6: deploy! 
+## Step 6: Deploy! 
 
 If everything is configured and looks good, deploy! 🚀
 

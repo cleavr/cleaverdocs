@@ -11,18 +11,18 @@ Multi-package repositories, also known as monorepos, have become a popular way t
 
 Lerna not only assists with the organization, but can also be used to streamline building multiple packages, which makes it helpful to use when deploying monorepos using [Cleavr](https://cleavr.io).
 
-## Example Node deployment
+# Example Node deployment
 
 In this example, assume NodeJS backend and frontend packages are being used. This is just an example for deploying a NodeJS app monorepo using Lerna and is meant to give you an idea of how you might do the same as well as help troubleshoot issues you may run across. 
 
-### Add a new NodeJS SSR site
+## Step 1: Add A New NodeJS SSR Site
 Set up a NodeJS SSR site in Cleavr. Once the site is setup, go to the Webapp section and continue setting up the web application. 
 
 <base-info>
 When adding the new site, you may need to enter a port number. Many front-end NodeJS frameworks will hard code the port to 3000.
 </base-info>
 
-### Configure Web App Build Settings
+## Step 2: Configure Web App Build Settings
 
 In `settings > build`, set the Entry Point as `npm` and Arguments as `start`. 
 
@@ -58,11 +58,11 @@ On activation, this will run a chain reaction that will start the front-end and 
 
 Take note of the `--parallel` flag as this will be required to run processes in parallel. 
 
-### Configure Deployment Hooks
+## Step 3: Configure Deployment Hooks
 
 You'll need to add some custom deployment hooks as well as disable the `Install NPM Packages` and `Build` hooks. 
 
-#### Add Install Hook
+### Add Install Hook
 
 Add the following custom install deployment hook. 
 
@@ -71,7 +71,7 @@ cd {{ releasePath }}/<front-end-app-directory>
 npx lerna bootstrap
 ```
 
-#### Add Build Hook
+### Add Build Hook
 
 Add the following custom build deployment hook. 
 
@@ -80,7 +80,7 @@ cd {{ releasePath }}/<front-end-app-directory>
 npx lerna run build
 ```
 
-#### Add Env Hook
+### Add Env Hook
 
 Add the following custom .env link deployment hook. 
 
@@ -96,7 +96,7 @@ if [[  -f "$ENV_SRC_PATH" && ! -f "$ENV_PATH" ]]; then
 fi
 ```
 
-#### Order Hooks
+### Order Hooks
 
 Order as follows: 
 1. Copy Project
@@ -106,7 +106,7 @@ Order as follows:
 1. Activate New Deployment
 1. Clean Old Deployments 
 
-### Deploy! 🚀
+## Step 4: Deploy! 🚀
 
 You show now be good to deploy!
 
