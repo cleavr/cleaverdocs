@@ -82,6 +82,13 @@
         Strapi CMS
       </nuxt-link>
       <nuxt-link
+        to="guides/craft-cms"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('craft-cms')"
+      >
+        Craft CMS
+      </nuxt-link>
+      <nuxt-link
         to="guides/october-cms"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('october-cms')"
