@@ -7,7 +7,7 @@ video: ''
 
 If you use a free Cleavr domain, you have an opportunity to change the domain to one of your own. 
 
-To change the domain, navigate to the site in Cleavr, click **Danger Zone**, and then add the new domain in the rename domain section. 
+To change the domain, navigate to the site in Cleavr, click **Rename site**, and then fill the input field with the new domain.
 
 Be sure not add `http`, `https`, or `www` as an A record. Just type in the hostname and any non-www A record. 
 
