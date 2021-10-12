@@ -61,3 +61,10 @@ This will create a root access key which gives users full access to your account
 granular access, you can create a new user under the IAM section and then apply the <b>AmazonEC2FullAccess</b> policy to the user 
 and then use the provided access key and secret key for that user role. 
 </base-alert>
+
+## Custom 
+
+You may connect to a custom, bring your own server, provider so long that the server runs Ubuntu 20.04. 
+
+We recommend to use a fresh server and not a server that has existing sites, NGINX, and other web services running on it as they 
+may interfere with Cleavr. 

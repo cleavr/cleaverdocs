@@ -16,6 +16,11 @@ When selecting the **Custom** server option -
 4. Optionally, select server **environment**
 5. Click **Start Provisioning**
 
+<base-alert>
+We recommend to use a fresh server and not a server that has existing sites, NGINX, and other web services running on it as they 
+may interfere with Cleavr. 
+</base-alert>
+
 ## Custom Server Considerations
 When connecting to a custom server, Cleavr will not have connectivity that Cleavr has with integrated VPS providers. There are some
 additional considerations to be aware of when using the Custom Server option. 
