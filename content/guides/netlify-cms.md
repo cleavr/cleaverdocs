@@ -32,7 +32,7 @@ The solution that we're walking through will also work for GitLab; however, thes
 GitHub. 
 </base-info>
 
-Once your site is created, take note of the URL you've assigned to your site.  
+Once your site is created, take note of the URL you've assigned to your site and save it for later.  
 
 ## Step 2: Add Project To GitHub
 
