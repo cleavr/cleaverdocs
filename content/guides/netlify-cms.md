@@ -1,9 +1,12 @@
 ---
 title: 'Netlify CMS'
 description: 'Deploy Netlify CMS on your own Cleavr-managed server.'
-image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
+image: 'https://docs.cleavr.io/images/netlify/netlify-cms.png'
 video: ''
 ---
+
+<you-tube video="Pz-kQJxZx3w">
+</you-tube>
 
 [Netlify CMS](https://www.netlifycms.org/) is a light-weight content management system created by Netlify. 
 
@@ -74,6 +77,8 @@ Fill in the form as follows:
 - **Application Name**: Fill in with whatever you want to call this OAuth app
 - **Homepage URL**: Use the url from step 1
 - **Authorization callback URL**: append `/callback` to the url you used above (ie: `https://example.com/callback`)
+
+![GitHub OAuth Application](/images/netlify/oauth.png)
 
 Register the application. 
 
