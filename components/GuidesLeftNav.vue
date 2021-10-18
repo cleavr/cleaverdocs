@@ -357,6 +357,20 @@
       >
         Load Balancing
       </nuxt-link>
+      <nuxt-link
+        to="guides/bedrock"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('bedrock')"
+      >
+        Roots Bedrock
+      </nuxt-link>
+      <nuxt-link
+        to="guides/wordplate"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('wordplate')"
+      >
+        WordPlate
+      </nuxt-link>
     </div>
     <div class="text-base">
       <h3 class="uppercase text-gray-700 font-bold py-3">
