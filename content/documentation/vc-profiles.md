@@ -32,3 +32,11 @@ GitLab is another great git repository provider and is perfect for teams and sol
 ### [Bitbucket](https://bitbucket.org/)
 
 Bitbucket is a product of Atlassian and as such, integrates well with their other line of products such as JIRA.
+
+## Setting Up Org Account
+
+If your projects are in an organization account, be sure to sign into the provider (GitHub, GitLab, Bitbucket) before adding the new VC profile
+in Cleavr. Adding a new VC profile will add the provider account you are currently logged into.
+
+When adding a GitHub profile, the GitHub verification screen will ask you to select which accounts to give Cleavr access to. If you don't grant Cleavr access in this screen, you 
+can grant permission for Cleavr in GitHub, under your account settings > applications > authorized OAuth apps, locate Cleavr and then manage access.
