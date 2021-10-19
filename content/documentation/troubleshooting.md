@@ -7,13 +7,13 @@ video: ''
 
 Having trouble with your deployment? 
 
-Check the following guides for hints: 
+### Check the following guides for hints:
 
 - [Node Deployments](/nodejs-deployments)
 - [Laravel Deployments](/laravel-deployments)
 - [Adonis Deployments](/adonis-deployments)
 
-Check out the various logs, which can be found in: 
+### Check out the various logs, which can be found in: 
 
 - Node JS app logs in web apps section display PM2 app logs
 - PM2 logs in deployment detail page provides additional high level logs for NodeJS apps 
