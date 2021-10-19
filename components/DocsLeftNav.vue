@@ -311,7 +311,7 @@
       </nuxt-link>
       <nuxt-link
         to="/adonis-deployments"
-        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        class="text-gray-600 hover:text-gray-700 group flex items-center py-3 pr-5"
         :class="highlight('adonis-deployments')"
       >
         Adonis Deployments
