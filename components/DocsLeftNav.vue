@@ -303,9 +303,12 @@
     </div>
 
     <div class="text-base mt-3">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
+      <nuxt-link
+        to="/troubleshooting"
+        class="uppercase text-gray-700 font-bold py-3"
+      >
         Troubleshooting
-      </h3>
+      </nuxt-link>
       <nuxt-link
         to="/adonis-deployments"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
