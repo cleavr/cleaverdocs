@@ -10,11 +10,8 @@ video: ''
 When selecting the **Custom** server option - 
 
 1. SSH into your custom server as root and run the provided script
-2. Add the **public IP**
-3. Optionally, enable **Server Monitoring**
-3. Optionally, select a **database**
-4. Optionally, select server **environment**
-5. Click **Start Provisioning**
+1. Add the **public IP**
+1. Click **Start Provisioning**
 
 <base-alert>
 We recommend to use a fresh server and not a server that has existing sites, NGINX, and other web services running on it as they 
@@ -22,7 +19,7 @@ may interfere with Cleavr.
 </base-alert>
 
 ## Custom Server Considerations
-When connecting to a custom server, Cleavr will not have connectivity that Cleavr has with integrated VPS providers. There are some
+When connecting to a custom server, Cleavr will not have the same connectivity that Cleavr has with integrated VPS providers. There are some
 additional considerations to be aware of when using the Custom Server option. 
 
 - To add a custom server, you must have Ubuntu 20.04x64 installed on the server and you must be able to SSH into the server as root user to run a command prior to Cleavr imaging the server.

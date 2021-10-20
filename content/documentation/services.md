@@ -7,16 +7,11 @@ video: ''
 
 The services section displays the services that have been installed on the server. 
 
-If you forget to add a database or environment while provisioning a server, you can go to this section and install 
-additional services to your server. 
-
-You may also choose to stop or remove some services installed during provisioning if they are not applicable for your needs. 
-
 ## Add services
 If you need to install a service for your website or application, you can add the additional service here. 
 
-## Services Pulse 
-You can check the status and recent stats for your services by clicking on the pulse icon. This comes in handy if you want to check 
+## Services Heartbeat 
+You can check the status and recent stats for your services by clicking on the ellipsis and then **Heatbeat**. This comes in handy if you want to check 
 if the service is running properly or not. 
 
 ### NGINX 
@@ -27,10 +22,10 @@ NGINX is literally the server engine and is the key component for your server co
 suspect an issue with your server, first go to the services section and: 
     <ul>
         <li>
-            Check the NGINX pulse
+            Check the NGINX heartbeta
         </li>
         <li>
-            Resolve any issues if NGINX is down by referring to the pulse report
+            Resolve any issues if NGINX is down by referring to the heartbeat report
         </li>
         <li>
             Try stop/start or refresh NGINX (as they say, turning it off and on again seems to fix 90% of the issues)
@@ -52,11 +47,5 @@ Be careful when removing a service as your apps may be utilizing the service and
 
 ## Configure services
 Some services allow you to configure settings, such as **PHP** and **NGINX**. To edit, click on the wrench icon. 
-This section is often used for PHP as PHP's default settings are set low and may block certain things - such as uploading 
-files sizes larger than 2 mb. 
-
-## Repair Server
-
-If you're running into issues with your server, you can try the **Repair Server** option which will
-run through checks and update settings, such as file permission settings, to make sure Cleavr has
-appropriate permissions to perform basic operations on your server. 
+This section is often used for PHP as PHP's default settings are set low and may block certain things - such as [uploading 
+files sizes larger than 2 mb](/guides/wordpress-upload-limits). 

@@ -30,7 +30,9 @@ scheduled in clear words. See the following wikipedia article on how you can wor
 
 ### Laravel Schedule
 
-`/usr/bin/php /home/<server user>/<site name>/current/artisan schedule:run > /dev/null 2>&1`
+```
+/usr/bin/php /home/<server user>/<site name>/current/artisan schedule:run > /dev/null 2>&1
+```
 
 Where `/usr/bin/php` is the path to where PHP is installed. Run `which php` command on your server to find exact path. 
 

@@ -23,3 +23,7 @@ Be very careful using root user as this may produce unintended consequences.
 Optionally, you can configure advanced options such as the directory where the command will run, any applicable environment variables, 
 the number of attempts a monitor should make to run the command, whether or not to start the monitor on system boot, and 
 whether or not to attempt to restart the process if it stops unexpectedly.  
+
+## Manage process monitors
+
+Click on the process monitor ellipsis icon to stop/start process monitors and to view logs. 

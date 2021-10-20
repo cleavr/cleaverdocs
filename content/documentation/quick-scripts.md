@@ -9,6 +9,10 @@ video: ''
 Think of Quick Scripts as a way to automate server tasks that you only need to periodically run. This can be used for additional config tweaks
 that you typically run after provisioning a new server or periodic tasks that you run for one of your web apps. 
 
+<base-info>
+Have scripts to run at the application level? <a href="/quick-commands">Check out Quick Commands</a>.
+</base-info>
+
 ## Library
 
 We have a library of Quick Script available on our [Quick Scripts Repository](https://github.com/cleavr/quick-scripts).

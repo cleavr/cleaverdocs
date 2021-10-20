@@ -12,17 +12,20 @@ A VPS, or Virtual Private Server, is essentially your slice of the cloud. Cleavr
 you to provision your VPS with. 
 
 Cleavr currently integrates with the following hosting providers - 
-- DigitalOcean
-- AWS EC2
-- Hetzner
-- Vultr
-- Linode
+
+- [Vultr](https://vultr.grsm.io/cleavr)
+- [Linode](https://linode.gvw92c.net/7mOMer)
+- [DigitalOcean](https://m.do.co/c/d32ff825abb2)
+- [AWS EC2](https://aws.amazon.com/)
+- [Hetzner](https://hetzner.cloud/?ref=6UbiqpRc9BFG)
+- [UpCloud](https://upcloud.com/signup/?promo=38D8TP)
+
 
 You may also hook up to a <nuxt-link to="/custom-servers">custom provider</nuxt-link>. 
 
 <base-info>
 Before Cleavr can provision a server, you must have an account created with your VPS provider of choice. You can then create a VPS profile
-in the providers section or while going through the provisioning steps.  
+in the Connections section.  
 </base-info>
 
 ## Why use Cleavr to provision servers? 
@@ -38,24 +41,13 @@ some 1-click-installs to get you going. That's typically not enough to run your 
 
 ## How to Provision
 
-If you have an app ready-to-go, then you can use <nuxt-link to="/flash-deployments">Flash Deploy</nuxt-link> to quickly provision a server
-and deploy your app. 
-
-1. From the **Servers** page, click **Add Server**. 
-2. Select the **cloud provider** to provision a server with
-3. Select your desired **VPS profile**
-4. Add a server **name** - a default server name is pre-populated
-5. Select a server **plan**; to see the server specs, check the show specs box
-6. Select a server **region**
-7. Optionally, enable **Install Monitoring**
-8. Optionally, select a **database**
-9. Optionally, select server **environment**
-10. Select **Start Provisioning** to start provisioning your new server
-
-<base-info>
-If you don't know which database or environments to install, don't worry about it! You can install them later. Better yet, 
-Cleavr automatically installs any missing environment dependencies based on app types you add to the server. 
-</base-info>
+1. From the **Dashboard** or **Servers** pages, click **Create Server** or **Provision New Server**. 
+1. Select a **VPS Profile**
+1. Select a **Server Region**
+1. Select a **Server Plan**
+1. Select a **Server Type** - Cleavr will optimize the server based on the selected type
+1. Add a **Server Name** - a default server name is pre-populated
+1. Select **Start Provisioning** to start provisioning your new server
 
 Feel free to navigate away from the page while it's provisioning. You will receive an email once the provisioning is complete. 
 
