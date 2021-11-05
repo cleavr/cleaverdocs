@@ -33,6 +33,13 @@
         Laravel
       </nuxt-link>
       <nuxt-link
+        to="guides/plausible"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('plausible')"
+      >
+        Plausible Analytics
+      </nuxt-link>
+      <nuxt-link
         to="guides/next"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('next')"
