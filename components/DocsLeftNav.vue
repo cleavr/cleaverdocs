@@ -386,6 +386,13 @@
         Enable Dark Mode
       </nuxt-link>
       <nuxt-link
+        to="/smtp"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('smtp')"
+      >
+        SMTP
+      </nuxt-link>
+      <nuxt-link
         to="/delete-account"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('delete-account')"

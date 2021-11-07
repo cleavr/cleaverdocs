@@ -67,3 +67,8 @@ After the script finishes running, you will likely get a false error. Verify the
 Once the script run is complete, navigate to the url you configured Plausible with and verify the login page shows. 
 
 From here, log in and set up Plausible for your sites! 
+
+<base-info>
+Plausible includes an email system. Please be aware that many VPS providers close port 25 by default. If you want Plausible to send emails, you may need to 
+contact your provider to request port 25 to be open or use an alternate method. 
+</base-info>
