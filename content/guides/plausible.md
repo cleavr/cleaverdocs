@@ -72,3 +72,92 @@ From here, log in and set up Plausible for your sites!
 Plausible includes an email system. Please be aware that many VPS providers close port 25 by default. If you want Plausible to send emails, you may need to 
 contact your provider to request port 25 to be open or use an alternate method. 
 </base-info>
+
+
+## Worried About Missing Data? 
+
+With the above setup, you are adding Plausible Analytics to a domain and server that you own. However, client script blockers may still block usage analytics tracking since the domain for your Analytics will be different than the site's. 
+
+Plausible allows you to get around this by proxying the script and the events API so that they use your site's domain. This will prevent most script blockers from blocking usage data collection on your site, giving you more accurate usage data. 
+
+### Step 1: Create NGINX Cache Directory
+
+For this setup, we'll follow [Plausible's instructions](https://kaytaabemwznss9o2787.cleaver.rocks/) and will create a new directory to cache the Plausible js script. 
+
+In Quick Scripts, add a new Quick Script with the following script: 
+
+```
+mkdir -p /var/run/nginx-cache
+```
+
+Run the script on the server your site is on. 
+
+### Step 2: Adjust Site's NGINX Configuration
+
+For the site you want to enable the proxy for, go to the **NGINX Confg** section. 
+
+Directly above `server {`, add the following for the cache path: 
+
+```
+proxy_cache_path /var/run/nginx-cache/jscache levels=1:2 keys_zone=jscache:100m inactive=30d  use_temp_path=off max_size=100m;
+```
+
+Now, find the `location / { ... }` directive and add the following two directives below it: 
+
+```
+location = /js/script.js {
+    # replace your.plausible.domain with your plausible domain, don't include http/https
+    proxy_set_header Host your.plausible.domain;
+    proxy_ssl_name your.plausible.domain;
+    proxy_ssl_server_name on;
+    proxy_ssl_session_reuse off;
+
+    # replace your.plausible.domain with your plausible domain
+    proxy_pass https://your.plausible.domain/js/plausible.js;
+
+    # Tiny, negligible performance improvement. Very optional.
+    proxy_buffering on;
+
+    # Cache the script for 6 hours, as long as plausible.io returns a valid response
+    proxy_cache jscache;
+    proxy_cache_valid 200 6h;
+    proxy_cache_use_stale updating error timeout invalid_header http_500;
+
+    # Optional. Adds a header to tell if you got a cache hit or miss
+    add_header X-Cache $upstream_cache_status;
+}
+
+location = /api/event {
+    # replace your.plausible.domain with your plausible domain, don't include http/https
+    proxy_set_header Host your.plausible.domain;
+    proxy_ssl_name your.plausible.domain;
+    proxy_ssl_server_name on;
+    proxy_ssl_session_reuse off;
+
+    # replace your.plausible.domain with your plausible domain
+    proxy_pass https://your.plausible.domain/api/event;
+
+    proxy_buffering on;
+    proxy_http_version 1.1;
+
+    proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-Host  $host;
+}
+```
+
+Be sure to replace `your.plausible.domain` instances above with the domain that you are hosting your plausible instance at. 
+
+**Save** the new NGINX configuration for your site. 
+
+### Step 3: Update Your Tracking Script
+
+Lastly, in your site's code, adjust your tracking script as follows: 
+
+```
+<script defer data-api="/api/event" data-domain="yourwebsite.com" src="/js/script.js"></script>
+```
+
+Replace `yourwebsite.com` with the domain that you added to Plausible. 
+
+That's it! Your site will now proxy the tracking scripts and api domains with your site's domain. 
