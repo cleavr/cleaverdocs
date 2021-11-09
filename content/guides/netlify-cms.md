@@ -3,6 +3,7 @@ title: 'Netlify CMS'
 description: 'Deploy Netlify CMS on your own Cleavr-managed server.'
 image: 'https://docs.cleavr.io/images/netlify/netlify-cms.png'
 video: ''
+canonical: https://cleavr.io/cleavr-slice/how-to-deploy-netlify-cms-to-your-own-self-hosted-server
 ---
 
 <you-tube video="Pz-kQJxZx3w">
