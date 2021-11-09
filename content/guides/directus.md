@@ -5,6 +5,8 @@ image: 'https://docs.cleavr.io/images/directus/directus.png'
 video: ''
 ---
 
+<you-tube video="FJ5HNqHScgw"></you-tube>
+
 [Directus](https://directus.io/) is an open source app that wraps your new, or existing, SQL database with a realtime GraphQL+REST API for developers and an intuitive admin app for non-technical users. It supports PostgreSQL, MySQL, SQLite, Microsoft SQL Server, OracleDB, MariaDB, AWS Aurora and more.
 
 Directus mirrors your custom database, with your schema and content stored pure and unaltered. When it comes time to ingest, fetch, or update your data, you can use its REST+GraphQL API, JavaScript SDK, or even pure SQL. Directus gives you plenty of access options to choose from.
@@ -65,6 +67,10 @@ On a new server, add a new site and select **NodeJS SSR** as the app type, expan
 
 ![Add new NodeJS SSR](/images/directus/new-ssr.png)
 
+<base-info>
+You can choose a different Port Number, we just add 8055 here as we use it in the environment variables section below.
+</base-info>
+
 ## Step 3: Add A Database
 
 On the same server you added the site, click on the database section to install a new MySQL or Postgres database.
@@ -73,7 +79,7 @@ Once the database server is installed, add a new database. Remember the database
 
 ![Add database](/images/directus/database.png)
 
-## Step 4: Setup The Web App
+## Step 4: Set Up The Web App
 
 In the web app section, select **Complete Setup** for the web app that was created for the site.
 
@@ -103,7 +109,7 @@ Entry Point: npm
 
 Arguments: start
 
-Build Command: npm run build
+Build Command: npm run build --production
 
 ![Add repo](/images/directus/entry.png)
 
@@ -117,9 +123,12 @@ Click on the Environments section and add in the following environment variables
 PORT=8055
 PUBLIC_URL=**enter your project's url**
 
-DB_CLIENT=mysql #Or, pg if using postgres
+#Or, pg if using postgres
+DB_CLIENT=mysql 
 DB_HOST=127.0.0.1
-DB_PORT=3306 #Or, 5432 if using postgres
+
+#Or, 5432 if using postgres
+DB_PORT=3306 
 DB_DATABASE=**database name** 
 DB_USER=**database username**
 DB_PASSWORD=**database password**
@@ -152,7 +161,7 @@ EMAIL_SENDMAIL_PATH=/usr/sbin/sendmail
 
 ![Env Variables](/images/directus/env-variables.png)
 
-Replace the environment variables with the appropriate information for your database that you set up earlier as well as the random key and secret.
+Replace the environment variables with the appropriate information for your database that you set up earlier as well as the random `key` and `secret`.
 
 See [Directus Environment Variables](https://docs.directus.io/reference/environment-variables/) for all available variables.
 
