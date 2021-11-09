@@ -1,9 +1,14 @@
 <template>
   <div>
-    <h1 class="text-3xl font-semibold text-gray-900 pb-8 capitalize">{{ doc.title }}</h1>
-    <NuxtContent :document="doc" class="prose" />
+    <h1 class="text-3xl font-semibold text-gray-900 pb-8 capitalize">
+      {{ doc.title }}
+    </h1>
+    <NuxtContent
+      :document="doc"
+      class="prose"
+    />
     <div class="mt-24">
-      <github-edit :page="this.currentPage"/>
+      <github-edit :page="this.currentPage" />
       <cleavr-deploy />
     </div>
   </div>
@@ -43,6 +48,12 @@ export default {
         {hid: 'twitter:description', name: 'twitter:description', content: this.doc.description},
         {hid: 'twitter:image', name: 'twitter:image', content: this.doc.image},
         {hid: 'twitter:player', name: 'twitter:player', content: this.doc.video}
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: this.doc.canonical
+        }
       ]
     }
   }

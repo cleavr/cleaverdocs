@@ -3,6 +3,7 @@ title: 'Deploy Directus'
 description: 'How to deploy Directus to your server.'
 image: 'https://docs.cleavr.io/images/directus/directus.png'
 video: ''
+canonical: https://cleavr.io/cleavr-slice/how-to-deploy-directus
 ---
 
 <you-tube video="FJ5HNqHScgw"></you-tube>
