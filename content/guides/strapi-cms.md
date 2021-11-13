@@ -24,6 +24,7 @@ free to use one of the more economic plans.
 ## Set up
 
 1. Add a new `NodeJS SSR` app to your server
+1. Make sure that an even version of NodeJS is installed on the server. You can check in the server > services section. Strapi only supports even major version of NodeJS (ex: v12.x, 14.x, etc)
 2. Install a database server and add a database that Strapi will connect to
 3. In the **Web App** section, click to complete the setup
 4. On the **Code Repository** tab, select the **VC Provider** and **Repository** your project is located at
