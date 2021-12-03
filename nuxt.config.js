@@ -13,7 +13,7 @@ export default {
     script: [
       {
         hid: 'plausible',
-        src: 'https://plausible.cleavr.cloud/js/plausible.js',
+        src: 'https://plausible.cleaver.rocks/js/plausible.js',
         'data-domain': 'docs.cleavr.io',
         defer: true
       },
