@@ -46,21 +46,70 @@ The following are specific or important to know for DigitalOcean backups.
 
 ## SFTP 
 
-To set up an SFTP connection, you will first need to generate a new SSH private / public key pair to use.
+Setting up an SFTP server is a little more involved than the other backup methods. 
+
+Let's go through a step-by-step process for setting up SFTP backups. 
+
+### Step 1 - Create a private / public key pair
+
+We need to set up a new key pair. We'll perform this step using a terminal command. 
+
+Open your terminal and run the following command.  
 
 ```
 ssh-keygen -t rsa -b 4096 -C "{enter your email}" -f ~/Desktop/id_rsa_backup
 ```
 
-The above command when ran on your terminal will generate a new SSH key pair and output files to your desktop for easy access. 
+Be sure replace `{enter your email}` with your actual email within quotes. When running the above command, we are also bypassing the catchphrase entry. 
 
-The following are specific or important to know for SFTP backups. 
+Running the command will output the key pairs on your desktop. 
 
-- Host - enter the public IP or domain for the target SFTP server
-- Username - enter the username that Cleavr will use to SFTP into target server
-- If target server is Cleavr managed, you will need to add the public key to the target server and assign to a username. 
-The username to assign will typically be cleavr by default but may also be a web app user if you are enforcing site isolation. 
-- Private key - enter the private key 
-- Default Destination Path - enter the default path on the target server that you want backups to be stored
-- The username that you use must have access to write to the directory you enter; for example, if using **cleavr** username for a 
-Cleavr managed target server, then the path must at least be **/home/cleavr/**
+![ssh key pair](/images/backups/key-pair.png)
+
+In the next step, we'll use the `id_rsa_backup` private key and add it to the Backup Profile. 
+
+Later, the `id_rsa_backup.pub` key will be added to the target server where our backups will be loaded to. 
+
+### Step 2 - Add new SFTP backup profile
+
+In Cleavr > connection profiles > backups, click **Add New Backup Profile**. 
+
+For **Provider**, select **SFTP**. 
+
+Add a **Profile Name**. 
+
+For **Host**, add in the target server's public IP address.
+
+For **Username**, add in the username that the backup will use to access the SFTP server via an SSH connection. As an example, we'll use the **cleavr** username in this example.
+
+On your desktop, locate the `id_rsa_backup` private key, open the file and copy the contents. You'll then paste to the **Private Key** field. 
+
+![new sftp backup](/images/backups/new-sftp-backup.png)
+
+<base-info>
+Include the header and foot for the key, ie: ---- BEGIN/END PRIVATE KEY ----
+</base-info>
+
+Add a **Default Destination Path**. If you are using a system user, such as cleavr, be sure that the path at least include a path that is accessible by the system user. Such as `/home/cleavr/backups`.
+
+Include and folders and files to ignore, comma separated. 
+
+Click **Create** to add the new profile. 
+
+### Step 3 - Add public key to target server 
+
+To complete the SFTP setup, you'll also need to make sure to add the public key to the target server. For the host server, assuming it is a Cleavr managed server, navigate to the server > SSH keys section. 
+
+Click **Add New Key**. 
+
+Add a **Name** to refer to the key by. 
+
+Open the `id_rsa_backup.pub` public key on your desktop, copy the contents, and paste it into **Public Key**. 
+
+Lastly, apply the same username to the key that you applied to the SFTP Backup profile in the previous step. 
+
+Click **Add Key**. 
+
+![ssh key pair](/images/backups/new-ssh-key.png)
+
+You should be ready to create a new backup using the SFTP profile. 
