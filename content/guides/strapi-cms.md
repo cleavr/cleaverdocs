@@ -5,56 +5,80 @@ image: 'https://docs.cleavr.io/images/strapi-cms.png'
 video: ''
 ---
 
-<you-tube video="VTflJbYUob8"></you-tube>
+[Cleavr](https://cleavr.io) provides a first-class experience for setting up your servers and deploying your [Strapi CMS](https://strapi.io/) apps. 
 
-## Server selection
+<base-point>
+Cleavr also offers a GitHub Action integration so that you can build Strapi apps on GitHub as opposed to your server. This saves server resources during the deployment process, plus allows you to 
+deploy Strapi to a lower-cost server, which may typically experience out-of-memory errors when building Strapi applications. 
+</base-point>
 
-Deploying a Strapi CMS with [Cleavr](https://cleavr.io) is straightforward and painless. 
+This guide will walk you through setting up your Strapi app as well as provide some pointers if using our GitHub Actions integration to build your apps. 
 
-However, to successfully deploy a Strapi CMS, you'll need to consider an appropriate server option up front. 
+## Prerequisites
 
-If you want your server to also build the Strapi application, then you'll want to avoid the cheapest / basic options that
-VPS providers offer. The build process for Strapi takes a lot of processing power. More so, than the lowest cost options will be able
-to handle. You'll also need to take into consideration how many other apps are being hosted on the server as they will impact 
-available processing power during the build run as well. 
+Have a server provisioned and ready to go. 
 
-Luckily, another option is to utilize Cleavr's [GitHub Actions](/github-actions) integration to have GitHub build Strapi for you. This way, you can then be 
-free to use one of the more economic plans. 
+When provisioning the server, select server type **App Server** or **NodeJS Optimized**. 
 
-## Set up
+<base-info>
+If using Node Optimized, make sure to select an even version of NodeJS. Also, Node v16 can be used for Strapi v4 or later.
+</base-info>
 
-1. Add a new `NodeJS SSR` app to your server
-1. Make sure that an even version of NodeJS is installed on the server. You can check in the server > services section. Strapi only supports even major version of NodeJS (ex: v12.x, 14.x, etc)
-2. Install a database server and add a database that Strapi will connect to
-3. In the **Web App** section, click to complete the setup
-4. On the **Code Repository** tab, select the **VC Provider** and **Repository** your project is located at
-5. On the **NPM Build** tab, set **Entry Point** to `npm`, **Arguments** to `start`, **Build Commands** to `npm run build --production`, and **Artifacts Path** to `build`
-6. If you selected GitHub as your VC Provider and want to utilize GitHub Actions to build your app, then click **GitHub Actions** tab and click to enable 
-7. In **Environment**, add the env variables for your project, including the database details added in step 2
-8. Deploy!
 
-## Start Production mode via PM2
+## Step 1 - Add Strapi site to your server
 
-If you are not keying off an environment variable in the `.env` file for production, you can use PM2 to start Strapi in production mode. 
+In Cleavr, navigate to the server you want to add your Strapi app to and click the **Add Site** button. 
 
-In the web app > settings > build tab, update the PM2 Ecosystem section by adding `"NODE_ENV":"production"` to the `env` section. 
+For **App Type**, select **Strapi**. 
 
-It should look something like the following: 
+Fill out the domain info. 
 
-```
-{
-  "name": "<site-name>",
-  "script": "npm",
-  "args": "start",
-  "log_type": "json",
-  "cwd": "/home/<server-user-name>/<site-name>/current",
-  "instances": "max",
-  "exec_mode" : "cluster",
-  "env": {
-    "NODE_ENV":"production",
-    "PORT": <port number>,
-    "CI": 1,
-  }
-}
-```
-After updating the PM2 Ecosystem, you'll need to redeploy the app for the changes to take effect. 
+![New Strapi Site](/images/strapi/new-strapi-site.png)
+
+Expand the **Advanced Options** section. If NodeJS has not already been installed on the server, select which version you want installed. 
+
+For Strapi v3, select either Node v12 or v14. If you are using Strapi v4, then you may use Node v16. 
+
+Under advanced options, you can also choose to install a database server as well as add a database and database user. If you enabled this option, Cleavr will automatically add the db connection variables to the `.env`.
+
+![Strapi Advanced Options](/images/strapi/strapi-advanced-options.png)
+
+Click **Add** to add the site.  
+
+## Step 2 - Configure Web App repository
+
+Once the site installs successfully, click on the **Setup and deploy** link. This will take you to the web app settings for the new web app. 
+
+![Setup and deploy](/images/strapi/setup-deploy.png)
+
+Select your VC profile and then enter the **Repository** and **Branch to Deploy** info for your project. 
+
+![Strapi Repo](/images/strapi/code-repo.png)
+
+Click **Update**. 
+
+## Step 3 - Make additional configurations
+
+Your web app may need additional configurations. 
+
+Three likely places for further configuration are:
+ 
+1. In settings > build where you can edit build and PM2 Ecosystem settings if needed
+1. In the Environment section if you need to adjust your `.env` variables
+1. In the deployment hooks section if you need to run additional commands during deployment
+
+## Step 4 - Deploy! 
+
+You are now set to deploy your app! 🚀
+
+## GitHub Action Integration
+
+If your code is on GitHub, you can enable GitHub Actions to build your project using GitHub Actions. 
+
+To enable GitHub Actions, go to the web app settings and click the GitHub Actions tab. Enable GitHub Actions and then click the **Update** button. 
+
+This will add a workflow file to your project. You may edit this file to add additional tests if you'd like. This will also trigger an initial build and deployment for your app. 
+
+If you are connecting to a database, there is one modification you should make. The GitHub Actions process doesn't pull from the `.env` file once everything is deployed so you will need to add the db connection information to the **PM2 Ecosystem** configuration located in settings > build.
+Add your connect variables to the `env` section of the PM2 Ecosystem. 
+
