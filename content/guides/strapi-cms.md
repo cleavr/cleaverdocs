@@ -79,6 +79,6 @@ To enable GitHub Actions, go to the web app settings and click the GitHub Action
 
 This will add a workflow file to your project. You may edit this file to add additional tests if you'd like. This will also trigger an initial build and deployment for your app. 
 
-If you are connecting to a database, there is one modification you should make. The GitHub Actions process doesn't pull from the `.env` file once everything is deployed so you will need to add the db connection information to the **PM2 Ecosystem** configuration located in settings > build.
+If your app needs Environment variables, such as db connection variables, there is one modification you should make. The GitHub Actions process doesn't pull from the `.env` file once everything is deployed so you will need to add the db connection information to the **PM2 Ecosystem** configuration located in settings > build.
 Add your connect variables to the `env` section of the PM2 Ecosystem. 
 
