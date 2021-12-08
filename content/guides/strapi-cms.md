@@ -3,6 +3,7 @@ title: "Deploy a Strapi CMS backend"
 description: 'Deploy a Strapi backend and use GitHub Actions to build so you can host on a lower cost server.'
 image: 'https://docs.cleavr.io/images/strapi-cms.png'
 video: ''
+canonical: https://cleavr.io/cleavr-slice/how-to-deploy-strapi-cms
 ---
 
 <you-tube video="Mo8JiOwNIzM"></you-tube>
