@@ -5,7 +5,7 @@ image: 'https://docs.cleavr.io/images/strapi-cms.png'
 video: ''
 ---
 
-<you-tube video="https://youtu.be/Mo8JiOwNIzM"></you-tube>
+<you-tube video="Mo8JiOwNIzM"></you-tube>
 
 [Cleavr](https://cleavr.io) provides a first-class experience for setting up your servers and deploying your [Strapi CMS](https://strapi.io/) apps. 
 
