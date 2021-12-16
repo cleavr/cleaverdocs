@@ -26,5 +26,5 @@ additional considerations to be aware of when using the Custom Server option.
 - If you delete a custom server from Cleavr, this will not also destroy the server from the custom provider. Cleavr does not gain
   that level of access. If you remove a server from Cleavr you will also need to remove it from your custom server provider. 
 - Some providers may block HTTPS access (Google Cloud, Lightsail) by default and you'll need to enable HTTPS for sites with SSL to render. 
-
+- Some providers rotate SSH keys periodically and/or during a server reboot. This will sever Cleavr's connection to the server and you will need to [update Cleavr's connection](/guides/cleavr-connection).
 

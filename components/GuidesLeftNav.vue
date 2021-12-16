@@ -214,6 +214,13 @@
         Load Balancers
       </nuxt-link>
       <nuxt-link
+        to="guides/cleavr-connection"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('cleavr-connection')"
+      >
+        Cleavr Connection
+      </nuxt-link>
+      <nuxt-link
         to="guides/ssh-server"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('ssh-server')"
