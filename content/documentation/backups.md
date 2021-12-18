@@ -34,3 +34,17 @@ If you have a backup scheduled, from the list view you can also:
 - Select plus button to trigger one-off backup
 - Select pause button to pause backup schedule; or select play to resume
 - Select trashcan button to delete backup schedule
+
+## Clear old local backups periodically
+Sometimes your server's disk space may be full because of the large old backup files. But you can set up a cron job that runs periodically in order to clear older files.
+
+Go to Server > Cron Jobs and click **Add New Cron Job** and then add the following command:
+
+`find pathToBackupFiles *.tar.gz -mtime +days -type f -delete`
+
+_pathToBackupFiles_: is the location where your backup files are located
+
+_days_: files older than the specified days are removed. 
+
+To clear files older than 30 days you need to specify 29 days since -mtime counts 24 hours period.
+
