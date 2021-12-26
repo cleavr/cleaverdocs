@@ -26,3 +26,11 @@ location ~* /mydirectory {
 
 The above will allow access to only a requester with IP address equal to `1.2.3.4` and will deny access to the directory
 for all other IPs. 
+
+## NGINX Config for WSS (Web Socket) to work
+
+```
+  proxy_http_version 1.1;
+  proxy_set_header Upgrade $http_upgrade;
+  proxy_set_header Connection "Upgrade";
+```
