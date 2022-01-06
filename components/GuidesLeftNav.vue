@@ -54,6 +54,13 @@
         Directus
       </nuxt-link>
       <nuxt-link
+        to="guides/astro"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('astro')"
+      >
+        Astro
+      </nuxt-link>
+      <nuxt-link
         to="guides/express"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('express')"
