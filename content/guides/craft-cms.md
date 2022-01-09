@@ -30,8 +30,10 @@ Under **Advanced Options**:
 - Enable **Setup Database**
 - **Database Type**: MySQL 8.0
 - **Database Name**: `happylager`
-- **Database User**: `admin`
-- **Database Password**: `password`
+- **Database User**: <db username>
+- **Database Password**: <password>
+
+Be sure to update database user and password with your own username and password. 
 
 Click to **Add** site. 
 
@@ -76,8 +78,8 @@ DB_DRIVER=mysql
 DB_SERVER=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=happylager
-DB_USER=admin
-DB_PASSWORD=password
+DB_USER=<db-username>
+DB_PASSWORD=<password>
 DB_SCHEMA=public
 DB_TABLE_PREFIX=
 
@@ -117,7 +119,7 @@ Let's create a Quick Command for this as well.
 Click **Add New Quick Commands** and add in the following command: 
 
 ```
-mysql --user=admin --password=password happylager < happylager.sql
+mysql --user=<db-username> --password=<password> happylager < happylager.sql
 ```
 
 Save and run the command. 
