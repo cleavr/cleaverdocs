@@ -122,6 +122,13 @@
       >
         PHP-FPM Settings
       </nuxt-link>
+      <nuxt-link
+        to="/gitlab-ee"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('gitlab-ee')"
+      >
+        GitLab EE
+      </nuxt-link>
     </div>
 
     <div class="text-base mt-3">

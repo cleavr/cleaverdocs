@@ -29,6 +29,12 @@ access priveleges in GitHub, under your account settings > applications > author
 
 GitLab is another great git repository provider and is perfect for teams and solo devs.
 
+Do you use the self-hosted GitLab Enterprise Edition? Use the GitLab Self Hosted option to connect to your self-host GitLab repository. 
+
+<base-info>
+You can even use Cleavr to set up your own self hosted instance of GitLab EE. 
+</base-info>
+
 ### [Bitbucket](https://bitbucket.org/)
 
 Bitbucket is a product of Atlassian and as such, integrates well with their other line of products such as JIRA.
