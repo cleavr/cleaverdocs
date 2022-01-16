@@ -49,3 +49,30 @@ You can now connect to your GitLab EE instance in Cleavr by adding a new VC Prof
 Be sure to add in the personal access token created in the previous step and the URL for your GitLab EE instance. 
 
 If you need support for GitLab EE, please refer to their [documentation](https://docs.gitlab.com/ee/).
+
+
+## Changing The Domain
+
+There may likely come the time where you need to change the domain. 
+
+If this happens, you can SSH into your server to make the change. 
+
+Edit the following file: 
+
+```
+/etc/gitlab/gitlab.rb
+```
+
+Find the `external_url` and update it to the new one you want to apply. 
+
+Then, run the command to reconfigure Gitlab EE: 
+
+```
+sudo gitlab-ctl reconfigure
+```
+
+Lastly, restart the service: 
+
+```
+sudo gitlab-ctl restart
+```
