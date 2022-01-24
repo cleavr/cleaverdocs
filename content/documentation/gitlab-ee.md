@@ -2,8 +2,11 @@
 title: 'GitLab Enterprise Edition'
 description: 'Setup your own self-hosted GitLab EE repository.'
 image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
-video: ''
+video: '0nydCAS_eHo'
+canonical: https://cleavr.io/cleavr-slice/how-to-self-host-gitlab
 ---
+
+<you-tube video="0nydCAS_eHo"></you-tube>
 
 Do you want to maintain your code repositories on your own servers? The [GitLab Enterprise Edition](https://about.gitlab.com/install/ce-or-ee/) is a popular self-hosted code repository option. Cleavr helps you setup your own GitLab EE edition. 
 
