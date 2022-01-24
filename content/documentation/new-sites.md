@@ -68,7 +68,7 @@ target="_blank">rate limits</a>
 
 #### Wildcard subdomains
 
-**Before proceeding with enabling wildcard subdomains, you must first have a [DNS Profile](/providers#dns-profiles) setup in Cleavr.**
+**Before proceeding with enabling wildcard subdomains, you must first have a [DNS Profile](/dns-profiles) setup in Cleavr.**
 
 In your DNS Records, you must also have a the hostname and a wildcard (*) A-record that points to your server's public IP address. 
 
