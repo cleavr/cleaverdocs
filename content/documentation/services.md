@@ -49,3 +49,15 @@ Be careful when removing a service as your apps may be utilizing the service and
 Some services allow you to configure settings, such as **PHP** and **NGINX**. To edit, click on the wrench icon. 
 This section is often used for PHP as PHP's default settings are set low and may block certain things - such as [uploading 
 files sizes larger than 2 mb](/guides/wordpress-upload-limits). 
+
+If a service has an associated configuration file available on the server, you can also pull the raw configuration file and make edits directly from Cleavr. 
+
+## Firewall
+
+Cleavr installs Uncomplicated Firewall (UFW) during server provisioning. You can check the heartbeat, stop, start the firewall from the services list. 
+
+You may also manage rules from the **Firewall** section of the services page.  
+
+![manage firewall rules](/images/firewall/firewall.png)
+
+Click **Add New Rule** to add new firewall rules. 
