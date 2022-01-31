@@ -1,9 +1,9 @@
 ---
 title: Deploy Remix JS
-description: 'How to deploy Remix JS apps to your server.
+description: How to deploy Remix JS apps to your server.
 image: https://docs.cleavr.io/images/remix/remix.png
 video: 
-canonical: 
+canonical: https://cleavr.io/cleavr-slice/how-to-deploy-remix-apps
 ---
 
 [Remix](https://remix.run/) is quickly becoming a popular NodeJS, full-stack web framework that aims to put your focus into crafting delightful user experiences. 
