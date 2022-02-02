@@ -6,6 +6,8 @@ video:
 canonical: https://cleavr.io/cleavr-slice/how-to-deploy-remix-apps
 ---
 
+<you-tube video="cfiARc4DAz4"></you-tube>
+
 [Remix](https://remix.run/) is quickly becoming a popular NodeJS, full-stack web framework that aims to put your focus into crafting delightful user experiences. 
 
 In this guide we'll walk through deploying an example blog application built using Remix. 
