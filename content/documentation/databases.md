@@ -63,3 +63,24 @@ process will not work.
 
 ## What database should I use for WordPress?
 MySQL 5.7, MySQL 8.0, and MariaDB 10.4 will work with your WordPress site.
+
+## Database Troubleshooting
+
+### MySQL / MariaDB SUPER privelege and binary logging error
+
+Have you ran into the following error?
+
+```
+ERROR 1419 (HY000): You do not have the SUPER privilege and
+binary logging is enabled (you *might* want to use the less safe
+log_bin_trust_function_creators variable)
+```
+
+To move past this error, you'd have to either assign super priveleges to the user, which should be done with caution, or, more preferebly, run the following command in mysql terminal: 
+
+```
+mysql -u USERNAME -p
+set global log_bin_trust_function_creators=1;
+```
+
+Replace `USERNAME` with the MySQL user you want to modify. You can then set to `0` after you've made the necessary modifications to your database. 
