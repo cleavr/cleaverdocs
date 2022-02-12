@@ -116,6 +116,13 @@
         Process Monitors
       </nuxt-link>
       <nuxt-link
+        to="/clean-disk-space"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('clean-disk-space')"
+      >
+        Clean Disk Space
+      </nuxt-link>
+      <nuxt-link
         to="/php-fpm"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('php-fpm')"
