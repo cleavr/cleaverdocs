@@ -14,6 +14,8 @@ To run disk clean up, from the Dahboard or Servers page, click on the ellipsis i
 
 A modal will display where you can select which cleanup options you want to run. You can learn more about the options in the sections below. 
 
+![cleavr server clean disk space](/images/clean-disk/clean-disk-space.png)
+
 ### Clean cache
 
 This operation runs `apt-get clean` which clears downloaded package files. This removes everything except the partials folder and lock file from the `/var/cache/apt/archives` directory. 
