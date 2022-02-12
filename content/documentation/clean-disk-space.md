@@ -28,7 +28,7 @@ This operation clears systemd journal entries that are older than 3 days.
 
 ### Clean MySQL bin logs
 
-This operation clears the MySQL bin logs, which are logs that contain event information, such as table changes. [Click her to learn more about MySQL bin logs](https://dev.mysql.com/doc/refman/8.0/en/binary-log.html).
+This operation clears the MySQL bin logs, which are logs that contain event information, such as table changes. [Click here to learn more about MySQL bin logs](https://dev.mysql.com/doc/refman/8.0/en/binary-log.html).
 
 <base-info>
     MySQL bin logs can populate pretty quickly when you are first spinning up an app and working with  database tables. 
