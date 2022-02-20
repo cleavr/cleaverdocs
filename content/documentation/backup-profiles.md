@@ -19,7 +19,7 @@ The following are specific or important to know for Backblaze backups.
 - Endpoint - enter the endpoint URL for the bucket
 
 <base-info>
-When adding a new Application Key in Backblaze, if you select a specific bucket for the 'Allow access to Bitbucket' instead of selecintg the 'all' option, the you will also need to enable the 'Allow listing all bucket names including bucket creation dates (required for S3 List Bucket API)' checkbox option.
+When adding a new Application Key in Backblaze, if you select a specific bucket under the 'Allow access to Bitbucket' dropdown instead of selecintg the 'all' option, the you will also need to enable the 'Allow listing all bucket names including bucket creation dates (required for S3 List Bucket API)' checkbox option.
 </base-info>
 
 ## [Wasabi](https://wasabi.com/)
