@@ -62,6 +62,40 @@ granular access, you can create a new user under the IAM section and then apply 
 and then use the provided access key and secret key for that user role. 
 </base-alert>
 
+### [Oracel Cloud](https://www.oracle.com/cloud/)
+We have a limited integration with Oracle Cloud. At the moment, our integration allows for provisioning their free VPS server offering. 
+
+Connecting to your Oracle Cloud account is quite a bit more involved than with the other VPS providers. Here are the steps: 
+
+#### 1. Create an account on oraclecloud.com
+To connect to your new Oracle account, we'll need to collect some info in Oracle that we'll use to create a VPS profile in Cleavr. Continue on in Oracle and gather the following:
+
+#### 2. Locate your tenant OCID
+Located in the /tenancy section, you can copy the OCID from the Tenancy Information tab.
+
+![](https://docs.cleavr.io/images/oracle/tenant-ocid.png)
+
+#### 3. Locate your user OCID
+Under your avatar menu, click on the first link, which is your profile. Copy the OCID from the User Information tab.
+
+![](https://docs.cleavr.io/images/oracle/user-ocid.png)
+
+#### 4. Add a new API key
+On your profile page, scroll down to the Resources section and click API Keys and then click the Add API Key button. Generate a new key pair, download the private key to your device, and then click Add and then close the modal.
+
+![](https://docs.cleavr.io/images/oracle/api-keys.png)
+
+Copy the Fingerprint. Open the private key you downloaded to your device and copy all of the contents.
+
+![](https://docs.cleavr.io/images/oracle/fingerprint.png)
+
+#### 5. Create Oracle VPS Profile in Cleavr
+In Cleavr, add a new VPS Profile and paste the above values into their corresponding sections. Once you've added your Oracle Cloud VPS profile, you can now provision a free Oracle Cloud server!
+
+<base-info>
+In the future we may opt to make their paid server plans available as well. 
+</base-info>
+
 ## Custom 
 
 You may connect to a custom, bring your own server, provider so long that the server runs Ubuntu 20.04. 
