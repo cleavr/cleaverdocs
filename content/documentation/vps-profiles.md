@@ -62,7 +62,7 @@ granular access, you can create a new user under the IAM section and then apply 
 and then use the provided access key and secret key for that user role. 
 </base-alert>
 
-### [Oracel Cloud](https://www.oracle.com/cloud/)
+### [Oracle Cloud](https://www.oracle.com/cloud/)
 We have a limited integration with Oracle Cloud. At the moment, our integration allows for provisioning their free VPS server offering. 
 
 Connecting to your Oracle Cloud account is quite a bit more involved than with the other VPS providers. Here are the steps: 
