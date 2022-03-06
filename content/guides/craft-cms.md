@@ -122,6 +122,10 @@ Click **Add New Quick Commands** and add in the following command:
 mysql --user=<db-username> --password=<password> happylager < happylager.sql
 ```
 
+<base-info>
+  Remember to change <db-username> and <password> to the username and password that you applied when adding the database.
+</base-info>
+
 Save and run the command. 
 
 <base-alert>
