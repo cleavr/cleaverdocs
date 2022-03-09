@@ -54,9 +54,7 @@ The plugin is called [Cleavr Clear Cache](https://wordpress.org/plugins/cleavr-c
 
 One of the key features is that it allows for clearing cache for sites assigned to server users in addition to the **cleavr** user. 
 
-You'll need to provide the **Clear Cache Trigger Hook** when setting up this plugin. 
-
-Contact us at hello@cleavr.io for the plugin. 
+You'll need to provide the [Clear Cache Trigger Hook](/nginx-cache#clear-cache-trigger-hook) when setting up this plugin. 
 
 ### NGINX Cache
 Several users in the Cleavr community have recommended [NGINX Cache](https://wordpress.org/plugins/nginx-cache/).
