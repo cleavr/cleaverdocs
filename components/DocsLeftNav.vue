@@ -317,6 +317,33 @@
     </div>
 
     <div class="text-base mt-3">
+      <h3 class="uppercase text-gray-700 font-bold py-3">
+        Company / Teams
+      </h3>
+      <nuxt-link
+        to="/company-account"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('company-account')"
+      >
+        Company Account
+      </nuxt-link>
+      <nuxt-link
+        to="/manage-users"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('manage-users')"
+      >
+        Manage Users
+      </nuxt-link>
+      <nuxt-link
+        to="/manage-resources"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('manage-resources')"
+      >
+        Manage Resources
+      </nuxt-link>
+    </div>
+
+    <div class="text-base mt-3">
       <nuxt-link
         to="/troubleshooting"
         class="uppercase text-gray-700 font-bold py-3"
