@@ -5,6 +5,8 @@ image: 'https://docs.cleavr.io/images/laravel.png'
 video: ''
 ---
 
+<you-tube video="hZUbL3P-z40"></you-tube>
+
 [Laravel](https://laravel.com/) is a popular PHP-based MVC web framework. 
 
 We love Laravel at [Cleavr](https://cleavr.io) and provide a first-class experience for managing Laravel apps on your
