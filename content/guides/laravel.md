@@ -15,8 +15,6 @@ production environment.
 This guide may be minimal as Cleavr makes provisioning servers and deployments for your Laravel apps painless, but we'll point
 out some features that we've built specifically for Laravel. 
 
-You may choose to use Flash Deploy to provision, create a new site, and deploy your Laravel app in one-fell-swoop. 
-
 However, these instructions will go through the more scenic route. 
 
 ## Step 1: Provision A New Server
@@ -76,10 +74,6 @@ you likely will want to disable the 'Migrate Database' hook after the first run.
 Once you have your web app configured how you need it, deploy! 🚀
 
 ## Additional Laravel info
-
-### Production Logs Report
-The Web App section has a Log Report tab where you can view production logs for your app. This is a great spot
-to view your log reports in an aesthetic interface. 
 
 ### Deployment Troubleshooting
 [Laravel Deployments Troubleshooting](https://docs.cleavr.io/laravel-deployments)
