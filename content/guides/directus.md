@@ -12,161 +12,33 @@ canonical: https://cleavr.io/cleavr-slice/how-to-deploy-directus
 
 Directus mirrors your custom database, with your schema and content stored pure and unaltered. When it comes time to ingest, fetch, or update your data, you can use its REST+GraphQL API, JavaScript SDK, or even pure SQL. Directus gives you plenty of access options to choose from.
 
-## Step 1: Prepare The Directus Package
+## Step 1: Add New NodeJS SSR Site
 
-You may either do the below steps or use the `direcvit/directus` GitHub repo. If using `direcvit/directus`, skip this step.
+On a new server in your [cleavr.io account](https://cleavr.io), add a new site and select **Directus** as the app type.
 
-Create a new directory on your local environment and add a package.json by running the following command:
-```
-npm init -y
-```
+Expand **Advanced Options** and enable the option to **Setup Database**. Select MySQL for your database server type. 
 
-Add the `build` and `start` aliases script to the package.json:
-```
-{
-  ...
-  "scripts": {
-    "start": "directus start",
-    "build": "npx directus bootstrap",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
-  ...
-}
-```
+![Add database](https://docs.cleavr.io/images/directus/database.png)
 
-Install Directus by running the following command:
-```
-npm install directus
-```
 
-The package.json content will look like this:
-```
-{
-  "name": "directus-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "directus start",
-    "build": "npx directus bootstrap",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "directus": "^9.0.0-rc.51"
-  }
-}
-```
-
-Push the package.json to your GitHub repository.
-
-## Step 2: Add New NodeJS SSR Site
-
-On a new server, add a new site and select **NodeJS SSR** as the app type, expand **Advanced Options** and enter **8055** for **Port Number**.
-
-![Add new NodeJS SSR](/images/directus/new-ssr.png)
-
-<base-info>
-You can choose a different Port Number, we just add 8055 here as we use it in the environment variables section below.
-</base-info>
-
-## Step 3: Add A Database
-
-On the same server you added the site, click on the database section to install a new MySQL or Postgres database.
-
-Once the database server is installed, add a new database. Remember the database name and database user credentials.
-
-![Add database](/images/directus/database.png)
-
-## Step 4: Set Up The Web App
+## Step 2: Connect code repository
 
 In the web app section, select **Complete Setup** for the web app that was created for the site.
-
-### Enter repository
 
 On the **Code Repository** tab, enter the following:
 
 **Version Control Provider**: GitHub
 
-**Repository**: direcvit/directus (or your repository you created in previous step)
+**Repository**: `cleavr/directus-example`
 
-**Branch**: main
-
-![Add repo](/images/directus/repo.png)
+**Branch**: `master`
 
 Click **Update**.
 
 <base-info>
-You will need a GitHub VC provider account created for this step. Select the repository that you set up earlier.
+Make sure to use a GitHub account for this example. This is a public repository that you retrieve from and deploy on your own server. 
 </base-info>
 
-### Set up NPM Build
-
-Click on the NPM Build tab and fill in the following:
-
-Entry Point: npm
-
-Arguments: start
-
-Build Command: npm run build --production
-
-![Add repo](/images/directus/entry.png)
-
-Click **Update**.
-
-### Add env variables
-
-Click on the Environments section and add in the following environment variables:
-
-```
-PORT=8055
-PUBLIC_URL=**enter your project's url**
-
-#Or, pg if using postgres
-DB_CLIENT=mysql 
-DB_HOST=127.0.0.1
-
-#Or, 5432 if using postgres
-DB_PORT=3306 
-DB_DATABASE=**database name** 
-DB_USER=**database username**
-DB_PASSWORD=**database password**
-
-RATE_LIMITER_ENABLED=true
-RATE_LIMITER_STORE=memory
-RATE_LIMITER_POINTS=50
-RATE_LIMITER_DURATION=1
-
-CACHE_ENABLED=false
-
-STORAGE_LOCATIONS=local
-STORAGE_LOCAL_DRIVER=local
-STORAGE_LOCAL_ROOT=./uploads
-
-KEY=**random key**
-SECRET=**random secret**
-ACCESS_TOKEN_TTL=15m
-REFRESH_TOKEN_TTL=7d
-REFRESH_TOKEN_COOKIE_SECURE=false
-REFRESH_TOKEN_COOKIE_SAME_SITE=lax
-
-EXTENSIONS_PATH=./extensions
-
-EMAIL_FROM=no-reply@directus.io
-EMAIL_TRANSPORT=sendmail
-EMAIL_SENDMAIL_NEW_LINE=unix
-EMAIL_SENDMAIL_PATH=/usr/sbin/sendmail
-```
-
-![Env Variables](/images/directus/env-variables.png)
-
-Replace the environment variables with the appropriate information for your database that you set up earlier as well as the random `key` and `secret`.
-
-See [Directus Environment Variables](https://docs.directus.io/reference/environment-variables/) for all available variables.
-
-Click on **Sync**.
 
 ## Step 5: Deploy!
 
@@ -174,10 +46,10 @@ Once you have everything configured, deploy! 🚀
 
 After deployment, check the `Build Assets` logs. You will get the initial email and password to login to your Directus app.
 
-![Initial Directus Admin Details](/images/directus/initial-directus-admin.png)
+![Initial Directus Admin Details](https://docs.cleavr.io/images/directus/initial-directus-admin.png)
 
 Use the email and password to login to your Directus App. You can change the credentials later.
 
-![Directus Admin Login](/images/directus/directus-admin-login.png)
+![Directus Admin Login](https://docs.cleavr.io/images/directus/directus-admin-login.png)
 
-![Directus Collections](/images/directus/directus-collections.png)
+![Directus Collections](https://docs.cleavr.io/images/directus/directus-collections.png)
