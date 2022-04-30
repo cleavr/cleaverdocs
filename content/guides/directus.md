@@ -12,7 +12,7 @@ canonical: https://cleavr.io/cleavr-slice/how-to-deploy-directus
 
 Directus mirrors your custom database, with your schema and content stored pure and unaltered. When it comes time to ingest, fetch, or update your data, you can use its REST+GraphQL API, JavaScript SDK, or even pure SQL. Directus gives you plenty of access options to choose from.
 
-## Step 1: Add New NodeJS SSR Site
+## Step 1: Add New Directus Site
 
 On a new server in your [cleavr.io account](https://cleavr.io), add a new site and select **Directus** as the app type.
 
