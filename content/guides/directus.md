@@ -40,7 +40,7 @@ Make sure to use a GitHub account for this example. This is a public repository 
 </base-info>
 
 
-## Step 5: Deploy!
+## Step 3: Deploy!
 
 Once you have everything configured, deploy! 🚀
 
