@@ -29,7 +29,7 @@ Make the following configs when adding the new site:
 - Set app type to **NodeJS SSR** 
 - Set **Entry Point** to `npm`
 - Set **Arguments** to `start`
-- Set **Artifact Path** to `build`
+- Append **CWD Path** with `/build`
 - Select **NodeJS Version** of v14 or v16
 
 ![add new remix nodejs ssr site to your server](/images/remix/node-ssr-site-new.png)
