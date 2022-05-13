@@ -21,7 +21,7 @@ video: 'https://www.youtube.com/embed/ierMKUKQ0b4'
 3. Set Entry Point to `index.js`
 4. Leave Arguments empty
 5. Set Build Command to `npx quasar build --mode ssr`
-6. Set Artifact Path to `dist/ssr`
+6. Append CWD Path with `/dist/ssr`
 7. Then, deploy!
 
 If your code is in GitHub, enable GitHub Actions integration for your web app to build your project using GitHub and to 

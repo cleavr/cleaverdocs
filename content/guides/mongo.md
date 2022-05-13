@@ -49,7 +49,7 @@ Click on the **NPM Build** tab and fill in the following:
 
 - **Entry Point:** main.js
 - **Build Command:** npm run build --production
-- **Artifact Path:** dist
+- **CWD Path:** append `/dist` to the end
 
 Click **Update**. 
 

@@ -38,11 +38,11 @@ Configure the **VC Provider**, **Repository**, and **Branch To Deploy** fields o
 Next, on the **NPM Build** tab, add the following: 
 - **Entry Point:** index.js
 - **Build Command:** npm run build --production
-- **Artifact Path:** dist
+- **CWD Path:** append `/dist` to the end
 Click **Update**. 
 
 <base-info>
-You may need to update the entry point, arguments, build command, and/or artifact path fields based on your package.json file settings. 
+You may need to update the entry point, arguments, build command, and/or cwd path fields based on your package.json file settings. 
 The above works for the standard defaults.
 </base-info>
 

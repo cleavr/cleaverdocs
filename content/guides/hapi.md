@@ -47,7 +47,7 @@ Next, on the **NPM Build** tab, add the following:
 Click **Update**. 
 
 <base-info>
-You may need to update the entry point, arguments, build command, and/or artifact path fields based on your package.json file settings. 
+You may need to update the entry point, arguments, build command, and/or cwd path fields based on your package.json file settings. 
 The above works for the standard defaults.
 </base-info>
 

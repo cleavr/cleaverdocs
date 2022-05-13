@@ -18,7 +18,7 @@ The following are the most common reasons for 502 errors:
 
 - PORT Address in code is hard coded
 - Database connection not established
-- Entry point and artifact paths not correctly defined
+- Entry point or CWD paths not correctly defined
 - Not using correct version of NodeJS 
 - Environment variables missing values or using incorrect values (be sure to triple check because it can be easy to miss)
 
