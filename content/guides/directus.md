@@ -12,11 +12,16 @@ canonical: https://cleavr.io/cleavr-slice/how-to-deploy-directus
 
 Directus mirrors your custom database, with your schema and content stored pure and unaltered. When it comes time to ingest, fetch, or update your data, you can use its REST+GraphQL API, JavaScript SDK, or even pure SQL. Directus gives you plenty of access options to choose from.
 
-## Step 1: Add New Directus Site
+Using Cleavr to setup your Directus app is easy and it works in essentially a two-step progression: 
+
+1. 1-click install - when adding a new Directus site, you're essentially performing a 1-click install to add and configure Directus
+2. Deploy your custom Directus project - already have a Directus app you're working on locally? No problem! The 1-click install also created a web app that you can connect to your code repo and then deploy out your project using your code
+
+## Step 1: Add New Directus Site (1-click install) 
 
 On a new server in your [cleavr.io account](https://cleavr.io), add a new site and select **Directus** as the app type.
 
-Expand **Advanced Options** and enable the option to **Setup Database**. Select MySQL for your database server type. 
+Expand **Advanced Options** and enable the option to **Setup Database**. Select MySQL for your database server type. You can also configure the default admin username and password. 
 
 ![Add database](https://docs.cleavr.io/images/directus/database.png)
 
