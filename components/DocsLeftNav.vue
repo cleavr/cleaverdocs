@@ -1,9 +1,7 @@
 <template>
   <div>
     <div class="text-base">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
-        Connections
-      </h3>
+      <h3 class="uppercase text-gray-700 font-bold py-3">Connections</h3>
       <nuxt-link
         to="/vps-profiles"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
@@ -42,9 +40,7 @@
     </div>
 
     <div class="text-base mt-3">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
-        Servers
-      </h3>
+      <h3 class="uppercase text-gray-700 font-bold py-3">Servers</h3>
       <nuxt-link
         to="/provision"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
@@ -139,9 +135,7 @@
     </div>
 
     <div class="text-base mt-3">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
-        Sites
-      </h3>
+      <h3 class="uppercase text-gray-700 font-bold py-3">Sites</h3>
       <nuxt-link
         to="/new-sites"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
@@ -194,9 +188,7 @@
     </div>
 
     <div class="text-base mt-3">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
-        Web Apps
-      </h3>
+      <h3 class="uppercase text-gray-700 font-bold py-3">Web Apps</h3>
       <nuxt-link
         to="/web-apps"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
@@ -277,9 +269,7 @@
     </div>
 
     <div class="text-base mt-3">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
-        DNS Records
-      </h3>
+      <h3 class="uppercase text-gray-700 font-bold py-3">DNS Records</h3>
       <nuxt-link
         to="/new-domain"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
@@ -297,9 +287,7 @@
     </div>
 
     <div class="text-base mt-3">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
-        Quick Scripts
-      </h3>
+      <h3 class="uppercase text-gray-700 font-bold py-3">Quick Scripts</h3>
       <nuxt-link
         to="/quick-scripts"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
@@ -317,9 +305,7 @@
     </div>
 
     <div class="text-base mt-3">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
-        Company / Teams
-      </h3>
+      <h3 class="uppercase text-gray-700 font-bold py-3">Company / Teams</h3>
       <nuxt-link
         to="/company-account"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
@@ -402,9 +388,7 @@
     </div>
 
     <div class="text-base mt-3">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
-        FAQ
-      </h3>
+      <h3 class="uppercase text-gray-700 font-bold py-3">FAQ</h3>
       <nuxt-link
         to="/security-measures"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
@@ -425,6 +409,13 @@
         :class="highlight('update-avatar')"
       >
         Update Avatar
+      </nuxt-link>
+      <nuxt-link
+        to="/cleavr-ip"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('cleavr-ip')"
+      >
+        Cleavr IP
       </nuxt-link>
       <nuxt-link
         to="/dark-mode"
@@ -454,12 +445,12 @@
 <script>
 export default {
   methods: {
-    highlight (section) {
-      const current = this.$nuxt._route.params.doc
+    highlight(section) {
+      const current = this.$nuxt._route.params.doc;
       if (section === current) {
-        return 'text-pink-400 hover:text-pink-500'
+        return "text-pink-400 hover:text-pink-500";
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
