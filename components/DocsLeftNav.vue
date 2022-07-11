@@ -432,6 +432,13 @@
         SMTP
       </nuxt-link>
       <nuxt-link
+        to="/subscription-invoices"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('subscription-invoices')"
+      >
+        Subscription and Invoices
+      </nuxt-link>
+      <nuxt-link
         to="/delete-account"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('delete-account')"
