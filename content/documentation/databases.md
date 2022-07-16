@@ -47,6 +47,19 @@ In some cases, you may need to make a postgres databases user a superuser. To do
 It's not recommended that you keep a user as a superuser. When you are done with the task where a superuser is required, we recommend that you then demote the user. 
 </base-alert>
 
+<base-alert>
+Some extensions like ** postgis ** requires their supporting files to be installed before installing the extension.
+
+If the installation fails, SSH into the server and install the extension's
+supporting files, and try re-installing the extension.
+</base-alert>
+
+To install `postgis` extension's supporting files you can SSH into the server and run 
+`sudo apt install postgis postgresql-{postgresVersion}-postgis-{postgisVersion}`.
+
+The command to install extension's supporting files may differ between extensions. Please consult the documentation 
+site for your desired extension.
+
 ## Open database hosts to outside servers
 When creating a new PostgreSQL database, enter the IP for the outside server that will access the database. 
 
