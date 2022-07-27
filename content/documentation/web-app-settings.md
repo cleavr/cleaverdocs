@@ -34,7 +34,7 @@ Designate which **Branch to deploy**.
 Enable **Push to Deploy** if you'd like to have your web app automatically deploy when changes are committed to the repo / branch.
 
 <base-alert>
-To enable push to deploy, you must be an admin on the repository. Per Github: Only members with owner privileges for an organization or admin privileges for a repository can manage webhooks for an organization.
+To enable push to deploy, you must be an admin on the repository. Per Github: Only members with owner privileges for an organization or admin privileges for a repository can manage webhooks for an organization. If you get a permission error when enabling push-to-deploy, check your VC account and check to see if you've reach a maximum of allowed webhooks. For example, GitHub allows 20 webhooks per repository. 
 </base-alert>
 
 ### Monorepo
