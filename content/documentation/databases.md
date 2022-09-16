@@ -55,15 +55,13 @@ Click on the elipsis icon for a postgres database to add a PostgreSQL extension.
 In some cases, you may need to make a postgres databases user a superuser. To do so, click on the elipsis for the postgres user and then select the **Make Superuser** option.
 
 <base-alert>
-It's not recommended that you keep a user as a superuser. When you are done with the task where a superuser is required, we recommend that you then demote the user. 
+It's not recommended that you keep a user as a superuser. When you are done with the task where a superuser is required, we recommend that you then demote the user.
 </base-alert>
 
-<base-alert>
 Some extensions like postgis requires their supporting files to be installed before installing the extension.
 
 If the installation fails, SSH into the server and install the extension's
 supporting files, and try re-installing the extension.
-</base-alert>
 
 To install `postgis` extension's supporting files you can SSH into the server and run
 `sudo apt install postgis postgresql-{postgresVersion}-postgis-{postgisVersion}`.
