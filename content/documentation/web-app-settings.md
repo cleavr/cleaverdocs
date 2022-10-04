@@ -17,6 +17,12 @@ The deployment trigger hook can be used in external tools to trigger deployments
 
 For example, if you have your own GitHub Actions workflow, you can use this hook to trigger the deployment when action is completed.
 
+You can try out the deployment hook using a curl command:
+
+```
+curl -X POST https://deploy-trigger-hook-url
+```
+
 ## Code Repository
 
 You'll need to designate the code repository for Cleavr to pull the code for your web app from.
