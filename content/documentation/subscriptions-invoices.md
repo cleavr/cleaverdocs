@@ -14,3 +14,5 @@ To manage your subscription, click on your user Avatar in Cleavr, select **Subsc
 ## View Invoices
 
 You can also view your historical invoices from the Stripe Customer Portal. You'll see historical invoices on the main page where you can view them and print/save them.
+
+To get to the subscription portal, click on your user avatar to show the sub menu, then click on 'Subscription' then click on 'Manage'. The invoices will display at the bottom of the page.

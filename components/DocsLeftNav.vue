@@ -432,9 +432,9 @@
         SMTP
       </nuxt-link>
       <nuxt-link
-        to="/subscription-invoices"
+        to="/subscriptions-invoices"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
-        :class="highlight('subscription-invoices')"
+        :class="highlight('subscriptions-invoices')"
       >
         Subscription and Invoices
       </nuxt-link>
