@@ -93,9 +93,23 @@ On your profile page, scroll down to the Resources section and click API Keys an
 
 Copy the Fingerprint. Open the private key you downloaded to your device and copy all of the contents.
 
+![](https://docs.cleavr.io/images/oracle/region.png)
+
+#### 5. Locate your server region ID
+
+To find the region identifier, click on the region name on the top nav, then click **Manage Regions** on the submenu.
+
+You will see the list of regions you are subscribed to along with the region identifier. Reference the ID for the region in which you'll be provisioning servers under with the VPS Profile you'll be creating in the next step.
+
 ![](https://docs.cleavr.io/images/oracle/fingerprint.png)
 
-#### 5. Create Oracle VPS Profile in Cleavr
+You can also locate the region id in the URL.
+
+```
+https://cloud.oracle.com/?region=us-sanjose-1  // Region ID is us-sanjose-1
+```
+
+#### 6. Create Oracle VPS Profile in Cleavr
 
 In Cleavr, add a new VPS Profile and paste the above values into their corresponding sections. Once you've added your Oracle Cloud VPS profile, you can now provision a free Oracle Cloud server!
 
