@@ -1,15 +1,15 @@
 ---
-title: "Web App Settings"
-description: "Configure your web apps."
+title: "Deployment Workflow Settings"
+description: "Configure your deployment workflows."
 image: "https://docs.cleavr.io/images/cleavr-twitter.png"
 video: ""
 ---
 
-Configuring your web app's settings is one of the first things you'll want to do to setup your web app.
+Configuring your deployment workflow's settings is one of the first things you'll want to do to setup your web app.
 
 ## Basic Settings
 
-On the basic settings tab, you can find and update some information for you web app, including changing web app's name and add tags.
+On the basic settings tab, you can find and update some information for your workflow, including changing the workflow's name and add tags.
 
 ### Deployment Trigger Hook
 
@@ -25,7 +25,7 @@ curl -X POST https://deploy-trigger-hook-url
 
 ## Code Repository
 
-You'll need to designate the code repository for Cleavr to pull the code for your web app from.
+You'll need to designate the code repository for Cleavr to pull the code for your deployment from.
 
 Select the **Version Control Provider** to use, which is the VC Profile.
 
@@ -49,7 +49,7 @@ To enable push to deploy, you must be an admin on the repository. Per Github: On
 
 Include an **App Folder** location if your app is in a sub-directory of the main repository.
 
-You will need to create a new site & web app for each app that is under a sub-subdirectoy. For example, if one sub-directory is for the 'frontend' and another for the 'backend', then you'd create a site and web app for both the frontend and backend.
+You will need to create a new site & deployment workflow for each app that is under a sub-subdirectoy. For example, if one sub-directory is for the 'frontend' and another for the 'backend', then you'd create a site and deployment workflow for both the frontend and backend.
 
 <base-info>
 You can add a custom deployment hook to the backend deployment's list of hooks and use the deployment trigger hook to automatically trigger the frontend after the backend deployment is completed. 

@@ -188,13 +188,13 @@
     </div>
 
     <div class="text-base mt-3">
-      <h3 class="uppercase text-gray-700 font-bold py-3">Web Apps</h3>
+      <h3 class="uppercase text-gray-700 font-bold py-3">Deployments</h3>
       <nuxt-link
-        to="/web-apps"
+        to="/deployment-workflows"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
-        :class="highlight('web-apps')"
+        :class="highlight('deployment-workflows')"
       >
-        Adding New Web App
+        Adding New Workflow
       </nuxt-link>
       <nuxt-link
         to="/deployments"
@@ -246,16 +246,16 @@
         Rollbacks
       </nuxt-link>
       <nuxt-link
-        to="/web-app-servers"
+        to="/workflow-servers"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
-        :class="highlight('web-app-servers')"
+        :class="highlight('workflow-servers')"
       >
         Servers
       </nuxt-link>
       <nuxt-link
-        to="/web-app-settings"
+        to="/workflow-settings"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
-        :class="highlight('web-app-settings')"
+        :class="highlight('workflow-settings')"
       >
         Settings
       </nuxt-link>
