@@ -1,13 +1,14 @@
 ---
-title: 'Deploy a Quasar SSR App'
-description: 'Deploy a Quasar SSR app with Cleavr.'
-image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
-video: 'https://www.youtube.com/embed/ierMKUKQ0b4'
+title: "Deploy a Quasar SSR App"
+description: "Deploy a Quasar SSR app with Cleavr."
+image: "https://docs.cleavr.io/images/cleavr-twitter.png"
+video: "https://www.youtube.com/embed/ierMKUKQ0b4"
 ---
 
 <you-tube video="ierMKUKQ0b4"></you-tube>
 
 ## For flash deployment mode
+
 1. Select NodeJS SSR as app type
 2. Set Entry Point to `index.js`
 3. Leave Arguments empty
@@ -16,6 +17,7 @@ video: 'https://www.youtube.com/embed/ierMKUKQ0b4'
 6. Fill out the remainder of options for your app and deploy!
 
 ## For adding new sites and web apps
+
 1. Add a new site to your server, selecting `NodeJS SSR` as app type
 2. In Web App Settings:
 3. Set Entry Point to `index.js`
@@ -24,5 +26,5 @@ video: 'https://www.youtube.com/embed/ierMKUKQ0b4'
 6. Append CWD Path with `/dist/ssr`
 7. Then, deploy!
 
-If your code is in GitHub, enable GitHub Actions integration for your web app to build your project using GitHub and to 
+If your code is in GitHub, enable GitHub Actions integration for your deployment workflow to build your project using GitHub and to
 keep your server resources freed up for your users.

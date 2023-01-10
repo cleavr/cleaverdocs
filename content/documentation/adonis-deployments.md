@@ -31,7 +31,7 @@ One of the first steps in troubleshooting is to look at the logs. If the site sh
 
 Here are the applicable logs to look at in Cleavr:
 
-- **Logs Report** in the Deployments section display web app specific logs
+- **Logs Report** in the Deployments section displays web app specific logs
 - **PM2 Logs** is typically the most helpful for 502 errors and can be found in:
   - In the deployment details page, click **View PM2 Logs**
   - In the server > logs > select PM2 Logs

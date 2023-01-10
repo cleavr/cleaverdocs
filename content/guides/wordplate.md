@@ -1,24 +1,24 @@
 ---
-title: 'Deploy WordPlate Wordpress Sites'
-description: 'Deploy WordPlate WordPress sites with Cleavr.'
-image: 'https://docs.cleavr.io/images/wordplate.png'
-video: ''
+title: "Deploy WordPlate Wordpress Sites"
+description: "Deploy WordPlate WordPress sites with Cleavr."
+image: "https://docs.cleavr.io/images/wordplate.png"
+video: ""
 ---
 
-[WordPlate](https://github.com/wordplate/wordplate) is a WordPress boiler plate that is a great for development-minded WordPress users. 
+[WordPlate](https://github.com/wordplate/wordplate) is a WordPress boiler plate that is a great for development-minded WordPress users.
 
-With WordPlate, you can update WordPress locally on your device, and then deploy the finished product out using the web app deployment method in Cleavr. 
+With WordPlate, you can update WordPress locally on your device, and then deploy the finished product out using the deployment workflow deployment method in Cleavr.
 
-Another benefit of WordPlate is that you can benefit from some of the enhancements and more modern development methods that they've introduced. Such as, you can 
+Another benefit of WordPlate is that you can benefit from some of the enhancements and more modern development methods that they've introduced. Such as, you can
 make use of a `.env` file to maintain environment variables, such as database connections.
 
 ## Step 1: Install WordPlate
 
-The first step is to install WordPlate on your local device. 
+The first step is to install WordPlate on your local device.
 
 Follow the [WordPlate instructions on their READNE file to get going](https://github.com/wordplate/wordplate).
 
-Once installed, build your WordPress site on your local environment and continue on to the following instructions when ready to deploy. 
+Once installed, build your WordPress site on your local environment and continue on to the following instructions when ready to deploy.
 
 ## Step 2: Commit Your Code To A Version Control Repository
 
@@ -26,26 +26,26 @@ Add your code to [GitHub](https://github.com/), [Bitbucket](https://bitbucket.or
 
 ## Step 3: Add Server And Site
 
-In Cleavr, provision a new server. 
+In Cleavr, provision a new server.
 
-Once the server has completed setup, add a new **PHP** site to the server and enter `public` for the **Web Directory**. 
+Once the server has completed setup, add a new **PHP** site to the server and enter `public` for the **Web Directory**.
 
-Also, select the advance option to also create a database during site creation. Remember the database details as you'll need to add them later to the environment section. 
+Also, select the advance option to also create a database during site creation. Remember the database details as you'll need to add them later to the environment section.
 
-### Step 4: Configure Web App Code Repository
+### Step 4: Configure Deployment Workflow Code Repository
 
-Navigate to the web app section. You'll notice that a new web app has been added after adding the site. This is the master web app that we'll configure to deploy the WordPlate site to the 
- server. 
+Navigate to the deployment workflow section. You'll notice that a new deployment workflow has been added after adding the site. This is the master deployment workflow that we'll configure to deploy the WordPlate site to the
+server.
 
-Click into the web app, then go to `Settings > Code Repository` and select the **VC Provider** for where your code is and then enter the **Repository** and **Branch To Deploy** info. 
+Click into the deployment workflow, then go to `Settings > Code Repository` and select the **VC Provider** for where your code is and then enter the **Repository** and **Branch To Deploy** info.
 
 ![wordpress-optimized-server](/images/wp-lb/setup-wordplate-repo.png)
 
 ### Step 5: Add Environment Variables
 
-On the **Environment** tab, add in the `.env` variables. 
+On the **Environment** tab, add in the `.env` variables.
 
-They should look something like the following. 
+They should look something like the following.
 
 ```
 WP_ENV=production
@@ -69,12 +69,11 @@ LOGGED_IN_SALT=e5035645134537babf04473773108a056513c51c99281c7da80752633a63d409
 NONCE_SALT=c99c4ecae2a722fa70fccb918cc5757327bc9e5897ed42c7eb4852bbd37a5bd3
 ```
 
-Click sync to save variables. 
-
+Click sync to save variables.
 
 ## Step 6: Verify deployment hooks
 
-Go to the **Deployment Hooks** section and enable **Install Composer Dependencies** hook. 
+Go to the **Deployment Hooks** section and enable **Install Composer Dependencies** hook.
 
 ![wordpress-optimized-server](/images/wp-lb/wordplate-deployment-hooks.png)
 

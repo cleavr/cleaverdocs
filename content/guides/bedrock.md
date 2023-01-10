@@ -1,25 +1,24 @@
 ---
-title: 'Deploy Bedrock Wordpress Sites'
-description: 'Deploy Bedrock WordPress sites with Cleavr.'
-image: 'https://docs.cleavr.io/images/bedrock.png'
-video: ''
+title: "Deploy Bedrock Wordpress Sites"
+description: "Deploy Bedrock WordPress sites with Cleavr."
+image: "https://docs.cleavr.io/images/bedrock.png"
+video: ""
 ---
 
+[Bedrock by Roots](https://roots.io/bedrock/) is a WordPress boiler plate that is a great for development-minded WordPress users.
 
-[Bedrock by Roots](https://roots.io/bedrock/) is a WordPress boiler plate that is a great for development-minded WordPress users. 
+With Bedrock, you can update WordPress locally on your device, and then deploy the finished product out using the deployment workflow method in Cleavr.
 
-With Bedrock, you can update WordPress locally on your device, and then deploy the finished product out using the web app deployment method in Cleavr. 
-
-Another benefit of Bedrock is that you can benefit from some of the enhancements and more modern development methods that they've introduced. Such as, you can 
+Another benefit of Bedrock is that you can benefit from some of the enhancements and more modern development methods that they've introduced. Such as, you can
 make use of a `.env` file to maintain environment variables, such as database connections.
 
 ## Step 1: Create New Bedrock Project
 
-The first step is to add a new Bedrock project to your local machine. 
+The first step is to add a new Bedrock project to your local machine.
 
 Follow the [Bedrock installation instructions to get going](https://roots.io/docs/bedrock/master/installation/).
 
-Once installed, build your WordPress site on your local environment and continue on to the following instructions when ready to deploy. 
+Once installed, build your WordPress site on your local environment and continue on to the following instructions when ready to deploy.
 
 ## Step 2: Commit Your Code To A Version Control Repository
 
@@ -27,24 +26,24 @@ Add your code to [GitHub](https://github.com/), [Bitbucket](https://bitbucket.or
 
 ## Step 3: Add Server And Site
 
-In Cleavr, provision a new server. 
+In Cleavr, provision a new server.
 
-Once the server has completed setup, add a new **PHP** site to the server and enter `web` for the **Web Directory**. 
+Once the server has completed setup, add a new **PHP** site to the server and enter `web` for the **Web Directory**.
 
-Also, select the advance option to also create a database during site creation. Remember the database details as you'll need to add them later to the environment section. 
+Also, select the advance option to also create a database during site creation. Remember the database details as you'll need to add them later to the environment section.
 
-### Step 4: Configure Web App Code Repository
+### Step 4: Configure Deployment Workflow Code Repository
 
-Navigate to the web app section. You'll notice that a new web app has been added after adding the site. This is the master web app that we'll configure to deploy the Bedrock site to the 
- server. 
+Navigate to the Deployments section. You'll notice that a new deployment workflow has been added after adding the site. This is the master deployment workflow that we'll configure to deploy the Bedrock site to the
+server.
 
-Click into the web app, then go to `Settings > Code Repository` and select the **VC Provider** for where your code is and then enter the **Repository** and **Branch To Deploy** info. 
+Click into the workflow, then go to `Settings > Code Repository` and select the **VC Provider** for where your code is and then enter the **Repository** and **Branch To Deploy** info.
 
 ### Step 5: Add Environment Variables
 
-On the **Environment** tab, add in the `.env` variables. 
+On the **Environment** tab, add in the `.env` variables.
 
-They should look something like the following. 
+They should look something like the following.
 
 ```
 DB_NAME='bedrock database name'
@@ -77,14 +76,13 @@ LOGGED_IN_SALT='generateme'
 NONCE_SALT='generateme'
 ```
 
-Fill in the database connection info, `WP_HOME`, and add in your salts using https://roots.io/salts.html. 
+Fill in the database connection info, `WP_HOME`, and add in your salts using https://roots.io/salts.html.
 
-Click sync to save variables. 
-
+Click sync to save variables.
 
 ## Step 6: Verify deployment hooks
 
-Go to the **Deployment Hooks** section and enable **Install Composer Dependencies** hook. 
+Go to the **Deployment Hooks** section and enable **Install Composer Dependencies** hook.
 
 ![wordpress-optimized-server](/images/wp-lb/wordplate-deployment-hooks.png)
 

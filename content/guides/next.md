@@ -34,12 +34,12 @@ Select **Add** to add the new site to your server.
 
 Next defaults to port 3000 and so you will either need to explicity configure the site to point to port 3000 as in the above step, or you can modify your code to accept a random port, `process.env.PORT`, assigned by Cleavr.
 
-### Add a Web App
+### Add a Deployment Workflow
 
-After the site has successfully installed, you'll now need to create a web app and deploy out your application.
+After the site has successfully installed, you'll now need to create a deployment workflow and deploy out your application.
 
-In the web app section, you'll notice that a new web app was automatically created after the NodeJS site was created. This is a basic web app shell
-that you can use to complete the setup of your web app. Click on **Complete Setup** on the web app.
+In the deployment workflow section, you'll notice that a new deployment workflow was automatically created after the NodeJS site was created. This is a basic deployment workflow shell
+that you can use to complete the setup of your deployment workflow. Click on **Complete Setup** on the deployment workflow.
 
 Configure the **VC Provider**, **Repository**, and **Branch To Deploy** fields on the Settings > Code Repository tab and then click **Update**.
 
@@ -67,12 +67,12 @@ Select the **NodeJS SSR** option and enter the remainder site details and click 
 
 Cleavr will automatically install NodeJS on your server if NodeJS has not already been installed.
 
-### Add a Web App
+### Add a Deployment Workflow
 
-After the site has successfully installed, you'll now need to create a web app and deploy out your application.
+After the site has successfully installed, you'll now need to create a deployment workflow and deploy out your application.
 
-In the web app section, you'll notice that a new web app was automatically created after the NodeJS site was created. This is a basic web app shell
-that you can use to complete the setup of your web app. Click on **Complete Setup** on the web app.
+In the deployment workflow section, you'll notice that a new deployment workflow was automatically created after the NodeJS site was created. This is a basic deployment workflow shell
+that you can use to complete the setup of your deployment workflow. Click on **Complete Setup** on the deployment workflow.
 
 Configure the **VC Provider**, **Repository**, and **Branch To Deploy** fields on the Settings > Code Repository tab and then click **Update**.
 

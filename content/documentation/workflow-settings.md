@@ -5,7 +5,7 @@ image: "https://docs.cleavr.io/images/cleavr-twitter.png"
 video: ""
 ---
 
-Configuring your deployment workflow's settings is one of the first things you'll want to do to setup your web app.
+Configuring your deployment workflow's settings is one of the first things you'll want to do to setup your deployment workflow.
 
 ## Basic Settings
 

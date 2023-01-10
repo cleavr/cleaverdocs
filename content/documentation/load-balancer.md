@@ -46,7 +46,7 @@ Select the **App Type** for your site.
 The selected app type will be used to:
 
 1. Automatically select sites when associating a server to the load balancer
-1. Create a web app that will be optimized to deploy the app
+1. Create a deployment workflow that will be optimized to deploy the app
 
 Enter the **Domain Name** for the website or use a free Cleavr temporary domain.
 

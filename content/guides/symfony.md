@@ -1,62 +1,61 @@
 ---
-title: 'Deploy a Symfony app'
-description: 'How to deploy a Symfony app with Cleavr.'
-image: 'https://docs.cleavr.io/images/symfony.png'
-video: ''
+title: "Deploy a Symfony app"
+description: "How to deploy a Symfony app with Cleavr."
+image: "https://docs.cleavr.io/images/symfony.png"
+video: ""
 ---
 
-[Symfony](https://symfony.com/) is a PHP web framework that helps you speed up the development of your PHP-based web apps. 
+[Symfony](https://symfony.com/) is a PHP web framework that helps you speed up the development of your PHP-based web apps.
 
-Deploying Symfony apps with [Cleavr](https://cleavr.io) is quick and painless. 
+Deploying Symfony apps with [Cleavr](https://cleavr.io) is quick and painless.
 
-In this guide, we will setup and deploy the [demo blog application](https://github.com/symfony/demo). 
+In this guide, we will setup and deploy the [demo blog application](https://github.com/symfony/demo).
 
 ## Step 1: Install Demo Project On Your Local
 
 First, work through the instructions on the [demo project's readme file](https://github.com/symfony/demo) to copy the project
-to your local environment. 
+to your local environment.
 
-Run the app on your local to make sure it runs as expected. 
- 
-Add the project to your favorite Git repo; make sure to not save the `.env` file to your repo. 
+Run the app on your local to make sure it runs as expected.
+
+Add the project to your favorite Git repo; make sure to not save the `.env` file to your repo.
 
 ## Step 2: Provision New Server
 
-In Cleavr, provision a new server. Make sure to install a version of **PHP** as well as **NodeJS**. 
+In Cleavr, provision a new server. Make sure to install a version of **PHP** as well as **NodeJS**.
 
 ## Step 3: Add A PHP Site
 
-Once the server is finished provisioning, add a new PHP site to the server. 
+Once the server is finished provisioning, add a new PHP site to the server.
 
 When adding the PHP site, set the **Web Directory** to point to the `public` folder.
 
 ## Step 4: Set Up Database (optional)
 
-The demo app, by default, is configured to use a sqlite db. However, you can set up the app to use MySQL or Postgres. 
+The demo app, by default, is configured to use a sqlite db. However, you can set up the app to use MySQL or Postgres.
 
-In this example, we'll setup a MySQL server. 
+In this example, we'll setup a MySQL server.
 
-In Cleavr > Server > click the database tab and install MySQL 8.0. 
+In Cleavr > Server > click the database tab and install MySQL 8.0.
 
-Once installed, add a new database with a corresponding user and password. 
+Once installed, add a new database with a corresponding user and password.
 
-Remember the credentials as we'll use these later when setting up the environment variables. 
+Remember the credentials as we'll use these later when setting up the environment variables.
 
+## Step 5: Configure Deployment Workflow
 
-## Step 5: Configure Web App
-
-Once the site has been added, go to the Web App section and click **Complete Setup** for the web app that was just added
-after creating the new site. 
+Once the site has been added, go to the deployment workflow section and click **Complete Setup** for the web app that was just added
+after creating the new site.
 
 ### Configure Code Repository
 
 Configure the app to pull from the **repository** you are storing your code on and also identify the **branch to deploy**.
 
-Click **Update**. 
+Click **Update**.
 
-### Configure .env 
+### Configure .env
 
-Select the **Environment** tab and then add in the environment variables for the app. 
+Select the **Environment** tab and then add in the environment variables for the app.
 
 Below is the default added to the project. Use it as reference to add in the required variables.
 
@@ -97,6 +96,7 @@ DATABASE_URL=mysql://user:password@127.0.0.1:3306/db_name
 # MAILER_DSN=smtp://localhost
 ###< symfony/mailer ###
 ```
+
 <base-info>
 If you added the MySQL database in the previous steps, replace <b>user</b>, <b>password</b>, and <b>db_name</b> on the 
 <b>DATABASE_URL</b> string. 
@@ -104,27 +104,28 @@ If you added the MySQL database in the previous steps, replace <b>user</b>, <b>p
 
 ### Configure deployment hooks
 
-In the **Hooks** section, enable **Install Composer Dependencies** and **Install Yarn Packages** hooks. 
+In the **Hooks** section, enable **Install Composer Dependencies** and **Install Yarn Packages** hooks.
 
-We'll also need to add a new hook with the build command. 
+We'll also need to add a new hook with the build command.
 
 ```
 cd {{ releasePath }}
 npm run build
 ```
+
 Place the hook below **Install Yarn Packages**.
 
-## Step 6: Deploy! 
+## Step 6: Deploy!
 
 If everything is configured and looks good, deploy! 🚀
 
 ## Troubleshooting and Resources
 
-Look for additional deployment tips? Check out the [How to Deploy a Symfony Application](https://symfony.com/doc/current/deployment.html) Symfony documentations. 
+Look for additional deployment tips? Check out the [How to Deploy a Symfony Application](https://symfony.com/doc/current/deployment.html) Symfony documentations.
 
-Looking for the Symfony error logs? 
+Looking for the Symfony error logs?
 
-They are typically located in: 
+They are typically located in:
 
 ```
 /home/cleavr/<site-name>/current/var/log/prod.log
