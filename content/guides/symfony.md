@@ -44,7 +44,7 @@ Remember the credentials as we'll use these later when setting up the environmen
 
 ## Step 5: Configure Deployment Workflow
 
-Once the site has been added, go to the deployment workflow section and click **Complete Setup** for the web app that was just added
+Once the site has been added, go to the deployment workflow section and click **Complete Setup** for the deployment workflow that was just added
 after creating the new site.
 
 ### Configure Code Repository

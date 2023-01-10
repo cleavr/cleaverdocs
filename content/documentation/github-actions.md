@@ -58,10 +58,10 @@ GitHub Actions is only available for projects on your GitHub account. This integ
 that are not your own. 
 </base-info>
 
-Navigate to the **Web App** you want to enable GitHub Actions for and then go to the **Settings** section. 
+Navigate to the **Deployment Workflow** you want to enable GitHub Actions for and then go to the **Settings** section. 
 
-If you have not configured the settings for the web app, you will need to configure them first and click Update when completed. After 
-the web app has been configured, then enabling the integration will be available on the **GitHub Actions** tab. 
+If you have not configured the settings for the workflow, you will need to configure them first and click Update when completed. After 
+the workflow has been configured, then enabling the integration will be available on the **GitHub Actions** tab. 
 
 Select the **GitHub Actions** switch to enable. 
 
