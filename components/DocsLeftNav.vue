@@ -56,6 +56,13 @@
         Custom Servers
       </nuxt-link>
       <nuxt-link
+        to="/monitoring"
+        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
+        :class="highlight('monitoring')"
+      >
+        Monitoring
+      </nuxt-link>
+      <nuxt-link
         to="/load-balancer"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('load-balancer')"
