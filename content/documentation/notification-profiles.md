@@ -23,9 +23,9 @@ Enter a valid email address for Email.
 
 ## Telegram
 
-Bot Token and Chat ID are required for Telegram.
+In order to use Telegram notifications in Cleavr, you must first obtain a Bot Token and Chat ID.
 
-Before adding a Telegram notification profile in Cleavr, make sure that you've begun chatting with your bot. (The bot will not respond)
+Before setting up a Telegram notification profile in Cleavr, make sure that you have started a conversation with your bot.
 
 ### How to create a Telegram bot?
 
