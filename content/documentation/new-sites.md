@@ -24,25 +24,37 @@ first install the versions you'd like to use in the Services section.
 
 A JavaScript / Typescript framework. Runs with NodeJS. Cleavr is compatible with Adonis version 4 and 5.
 
+### [Laravel](https://laravel.com/)
+
+A PHP-based web-framework. Runs with PHP and NodeJS.
+
 ### [NuxtJS](https://nuxtjs.org/)
 
 A VueJS framework. Runs with NodeJS. You can set up either a Server Side Rendered app type or a Static / JAMstack app type.
+
+### [NextJS](https://nextjs.org/)
+
+A React framework. Runs with NodeJS and is Server Side Rendering (SSR).
+
+### [Directus](https://directus.io/)
+
+A Node-based back-end framework that fits on top of any SQL database and provides strong data management capabilities.
+
+### [Strapi](https://strapi.io/)
+
+A Node-based headless CMS that is powerful and productive.
 
 ### [NodeJS](https://nodejs.org/en/)
 
 A JavaScript runtime. Runs with NodeJS. You can set up either a Server Side Rendered app type or a Static / JAMstack app type.
 
-### [Laravel](https://laravel.com/)
-
-A PHP-based web-framework. Runs with PHP and NodeJS.
-
 ### [WordPress](https://wordpress.com/)
 
 WordPress is a free and open-source content management system (CMS) written in PHP and paired with a MySQL or MariaDB database. You will need a database and your preferred version of PHP installed on your server to create your WordPress site.
 
-### [Alpas](https://alpas.dev/)
+### [Soketi](https://soketi.app/)
 
-A Kotlin-based web-framework. Runs with NodeJS and JDK 11.
+Fast, real-time data.
 
 ### [PHP](https://www.php.net/)
 
@@ -51,6 +63,10 @@ A general-purpose scripting language. Runs with PHP.
 ### Static HTML
 
 Looking to rock pure vanilla HTML, CSS, and JavaScript? You don’t need to install any of the optional environments on your server to run static HTML sites.
+
+### Generic Port App
+
+If you have an app or dashboard that is running locally over a port on your server, you can add a Generic Port App to expose the dashboard with a custom a free-Cleavr domain.
 
 ## Add a site
 

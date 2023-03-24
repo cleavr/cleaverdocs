@@ -218,13 +218,6 @@
         Log Reports
       </nuxt-link>
       <nuxt-link
-        to="/canary"
-        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
-        :class="highlight('canary')"
-      >
-        Canary
-      </nuxt-link>
-      <nuxt-link
         to="/github-actions"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('github-actions')"
