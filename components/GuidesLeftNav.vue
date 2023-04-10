@@ -1,9 +1,7 @@
 <template>
   <div>
     <div class="text-base">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
-        Deploy
-      </h3>
+      <h3 class="uppercase text-gray-700 font-bold py-3">Deploy</h3>
       <!-- <nuxt-link
         to="/guides/meteor"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
@@ -217,16 +215,8 @@
     </div>
 
     <div class="text-base">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
-        Server
-      </h3>
-      <nuxt-link
-        to="/guides/load-balancer"
-        class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
-        :class="highlight('load-balancer')"
-      >
-        Load Balancers
-      </nuxt-link>
+      <h3 class="uppercase text-gray-700 font-bold py-3">Server</h3>
+
       <nuxt-link
         to="/guides/cleavr-connection"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
@@ -253,7 +243,7 @@
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
         :class="highlight('ftp-server')"
       >
-        Access via FTP
+        Access via SFTP
       </nuxt-link>
       <nuxt-link
         to="/guides/point-domain"
@@ -272,9 +262,7 @@
     </div>
 
     <div class="text-base">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
-        Site
-      </h3>
+      <h3 class="uppercase text-gray-700 font-bold py-3">Site</h3>
       <nuxt-link
         to="/guides/domain-aliases"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
@@ -306,9 +294,7 @@
     </div>
 
     <div class="text-base">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
-        Database
-      </h3>
+      <h3 class="uppercase text-gray-700 font-bold py-3">Database</h3>
       <nuxt-link
         to="/guides/ssh-database"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
@@ -333,9 +319,7 @@
     </div>
 
     <div class="text-base">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
-        WordPress
-      </h3>
+      <h3 class="uppercase text-gray-700 font-bold py-3">WordPress</h3>
       <nuxt-link
         to="/guides/wordpress-create"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
@@ -401,9 +385,7 @@
       </nuxt-link>
     </div>
     <div class="text-base">
-      <h3 class="uppercase text-gray-700 font-bold py-3">
-        NGINX
-      </h3>
+      <h3 class="uppercase text-gray-700 font-bold py-3">NGINX</h3>
       <nuxt-link
         to="/guides/cloudflare-proxy"
         class="text-gray-600 hover:text-gray-700 group flex items-center pb-3 pr-5"
@@ -425,12 +407,12 @@
 <script>
 export default {
   methods: {
-    highlight (section) {
-      const current = this.$nuxt._route.params.guide
+    highlight(section) {
+      const current = this.$nuxt._route.params.guide;
       if (section === current) {
-        return 'text-pink-400 hover:text-pink-500'
+        return "text-pink-400 hover:text-pink-500";
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>

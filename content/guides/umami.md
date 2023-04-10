@@ -15,8 +15,6 @@ Umami uses the Next.js framework and is easy to deploy to your server using Clea
 
 On a new server, add a new site, selecting **Node JS SSR** as the app type.
 
-![Add new SSR app](/images/umami/new-ssr.png)
-
 Once the site has been successfully added, go to the site's settings and click the **NGINX Config** tab.
 
 Since Umami is configured to run on port 3000, we'll need to update the `proxy_pass` setting to reflect that.
@@ -38,8 +36,6 @@ On the same server you added the site, click on the database section to install 
 
 Once the database server is installed, add a new database. Remember the database name and database user credentials.
 
-![Add database](/images/umami/database.png)
-
 ## Step 3: Configure Deployment Workflow
 
 In the deployment workflow section, select **Complete Setup** for the deployment workflow that was created for the site created earlier.
@@ -54,27 +50,11 @@ On the **Code Repository** tab, enter the following:
 
 **Branch:** master
 
-![Add repo](/images/umami/repo.png)
-
 Click **Update**.
 
 <base-info>
 You will need a GitHub VC provider account created for this step.
 </base-info>
-
-### Set up NPM Build
-
-Click on the **NPM Build** tab and fill in the following:
-
-**Entry Porint:** npm
-
-**Arguments:** start
-
-**Build Command:** npm run build --production
-
-![Add repo](/images/umami/entry.png)
-
-Click **Update**.
 
 ### Add env variables
 

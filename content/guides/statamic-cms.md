@@ -22,22 +22,13 @@ If you don’t have Valet installed and running, no worries. We’ll mainly be p
 
 Add your project to GitHub / Bitbucket / GitLab.
 
-## Deploy with Cleavr
+## Add a site and deployment worfklow
 
-Let's deploy using **Flash Deploy**.
+On one of your provisioned servers, add a new site and select **Laravel** as the App type and expand additional options to include a database.
 
-![Statmic CMS flash deployment](/images/statamic/flash.png)
+Once the site has been added, click on the **Configure deployment workflow** link and configure the workflow to point to your code repository for your project.
 
-When setting up the app type, be sure to select **Laravel** and, define the repository your project is at, and install a **MySQL** database server.
-
-Flash deploy, in fell-swoop, will -
-
-- Provision a new server
-- Install app dependencies
-- Create new site
-- Deploy the site
-
-Once completed, you should see the following -
+You can then deploy the project and you should see the following when you visit the associated URL.
 
 ![Statmic CMS flash deployment complete landing page](/images/statamic/landing.png)
 
