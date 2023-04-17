@@ -50,7 +50,7 @@ The following are specific or important to know for DigitalOcean backups.
 
 - Key - enter the key for the space
 - Secret - enter the secret for the space
-- Origin URL - enter the origin URL for the space; this is visible on the main page for your DO space
+- Origin URL - enter the origin URL for the space and exclude bucket name from URL; should look similar to `https://nyc3.digitaloceanspaces.com` where `nyc3` is the datacenter location. The origin URL is visible on the main page for your DO space.
 
 ## SFTP
 
