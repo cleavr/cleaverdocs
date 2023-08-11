@@ -83,8 +83,7 @@ If you intend to use a different site than what was automatically selected, clic
 ![Connect target sites](/images/balancer/load-balance-connect-sites.png)
 
 <base-point>
-You can create the sites on the associated servers before or after adding the main load balancing site. Also, you don't need to use any specific domain for the connected sites when setting them up, it can be a 
-free Cleavr domain, your own domain, or just a random name. Though, there is benefit in being able to hit the associated site separately via it's own live domain. 
+You can create the sites on the associated servers before or after adding the main load balancing site. Also, if you don't use the same domain on the target servers, then you will need to setup an Alias for selected sites on the target servers. If your sites on the target servers were created using your own custom domain, add the alias in the site's 'Domain Alias' section. If using a free Cleavr test domain, update the site's 'NGINX Config' and add the domain to the `server_name` rows; such as `server_name cleavr-free-domain.cleavr.rocks yourdomain.com`. 
 </base-point>
 
 ## Configure Balancer
