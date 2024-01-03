@@ -16,7 +16,7 @@ Cloudflare is a web infrastructure and security tool that assists with many valu
 DDoS mitigation, SSL certificate creation and management, and much more. Cloudflare is a great service to use in conjunction 
 with Cleavr if you are looking for even more layers of protection. 
 
-In your Cloudflare account, grab your API Key from your **Profile > API Tokens > View Global API Key** (or create a new one)
+In your Cloudflare account, grab your API Key from your **Profile > API Tokens > View Global API Key** 
 
 ### [DigitalOcean](https://www.digitalocean.com/)
 
