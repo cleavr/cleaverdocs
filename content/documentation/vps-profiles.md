@@ -34,6 +34,8 @@ If you are based in Europe, Hetzner has affordable cloud options for you.
 
 To create a key, go to your project that you created > **Access > API Tokens** and generate api token.
 
+The Hetzner integration supports IPv6 in addition to IPv4.
+
 ### [UpCloud](https://upcloud.com/signup/?promo=38D8TP)
 
 With a focus on small / medium businesses and with developer productivity in mind, UpCloud is a great VPS provider
@@ -47,6 +49,8 @@ need to enable the **Allow API connections** option in your user profile.
 DigitalOcean has plenty of global data centers and well-priced options that should meet most needs.
 
 To create a key, go to **API > personal access tokens** and generate a new key
+
+The DNS integration supports IPv6 in addition to IPv4.
 
 ### [AWS](https://aws.amazon.com/)
 
