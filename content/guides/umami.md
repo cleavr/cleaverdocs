@@ -42,15 +42,38 @@ In the deployment workflow section, select **Complete Setup** for the deployment
 
 ### Enter repository
 
+#### Option 1 - simple, but no automated updates
+
 On the **Code Repository** tab, enter the following:
 
 **Version Control Provider:** GitHub
 
-**Repository:** mikecao/umami
+**Repository:** umami-software/umami
 
 **Branch:** master
 
 Click **Update**.
+
+#### Option 2 - automated Updates
+
+Before making the settings in the **Code Repository** tab, open antoher browser tab and login to github. Clone the repository https://github.com/umami-software/umami.
+
+Back in cleavr.io:
+
+On the **Code Repository** tab, enter the following:
+
+**Version Control Provider:** Your GitHub Profile
+
+**Repository:** \<your-github-profile-name\>/umami
+
+**Branch:** master
+
+turn on **Deploy on Code Push to master**
+
+Click **Update**.
+
+We will add a github action to automatically sync the umami-software/umami repository with your fork at the end.   
+If you don't want to have the updates automated, ignore Step 5. Then you can alternatively trigger the cleavr.io deploment by syncing your fork in github manually.
 
 <base-info>
 You will need a GitHub VC provider account created for this step.
@@ -103,7 +126,47 @@ Once you have everything configured, deploy! 🚀
 
 Select the URL for the site, and then enter the default user credentials:
 
-**Username:** admin
+**Username:** admin   
 **Password:** umami
+
+## Step 5 (optional if you went for option 2 in step 3)
+
+Head over to the **Code**-Tab in you forked umami repository. 
+Change into the `.github/workflows` directory and add a new file `sync-to-fork.yml`:
+
+```
+name: Sync Fork
+
+on:
+  workflow_dispatch:
+  schedule:
+  # check for updates every Sunday at 1a.m.
+  - cron: "0 1 * * 0"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Sync and merge upstream repository with your current repository
+        # using dabreadman/sync-upstream-repo from the marketplace
+        # You may pin to the exact commit or the version.
+        # uses: dabreadman/sync-upstream-repo@fc5fe9952946b1daaafd9abd7fcd7e260b81ddbe
+        uses: dabreadman/sync-upstream-repo@v1.3.0
+        with:
+          # URL of gitHub public upstream repo
+          upstream_repo: "https://github.com/umami-software/umami.git"
+          # Branch to merge from upstream (defaults to downstream branch)
+          upstream_branch: "master"
+          # Branch to merge into downstream
+          downstream_branch: "master"
+          # GitHub Bot token
+          token: ${{ secrets.GITHUB_TOKEN }}
+```
+Commit this change. (This will start a deployment on cleavr, if "Deploy on Code Push to master" is turned on.)   
+Change to the **Actions**-Tab and select the "Sync Fork" Action on the left. Then run the workflow.   
+Now this action will look for updates at your scheduled time (cron). If there are changes the original repo will be synced and cleavr.io will run a deployment.
 
 ![Admin page](/images/umami/admin-page.png)
