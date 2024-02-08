@@ -9,7 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxt/content": "^1.11.1",
+    "@nuxt/content": "^1.15.1",
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/redirect-module": "^0.3.1",
     "@nuxtjs/tailwindcss": "^3.3.4",
@@ -19,7 +19,7 @@
     "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
     "instantsearch.css": "^7.4.5",
-    "nuxt": "^2.14.6",
+    "nuxt": "^2.17.2",
     "nuxt-content-algolia": "^0.1.0",
     "postcss": "^7.0.35",
     "remove-markdown": "^0.3.0",
