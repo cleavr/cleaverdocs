@@ -42,7 +42,7 @@ In the deployment workflow section, select **Complete Setup** for the deployment
 
 ### Enter repository
 
-#### Option 1 - simple, but no automated updates
+#### Option 1 - quick and simple but with no automatic updates
 
 On the **Code Repository** tab, enter the following:
 
@@ -54,7 +54,7 @@ On the **Code Repository** tab, enter the following:
 
 Click **Update**.
 
-#### Option 2 - automated Updates
+#### Option 2 - automatic updates
 
 Before making the settings in the **Code Repository** tab, open antoher browser tab and login to github. Clone the repository https://github.com/umami-software/umami.
 
