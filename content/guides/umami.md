@@ -129,10 +129,11 @@ Select the URL for the site, and then enter the default user credentials:
 **Username:** admin   
 **Password:** umami
 
-## Step 5 (optional if you went for option 2 in step 3)
+## Step 5: Optional if you went for option 2 in step 3 above
 
-Head over to the **Code**-Tab in you forked umami repository. 
-Change into the `.github/workflows` directory and add a new file `sync-to-fork.yml`:
+Head over to the **Code**-Tab in your forked umami repository. 
+
+Go into the `.github/workflows` directory and add a new file `sync-to-fork.yml` and add the following contents: 
 
 ```
 name: Sync Fork
@@ -165,8 +166,10 @@ jobs:
           # GitHub Bot token
           token: ${{ secrets.GITHUB_TOKEN }}
 ```
-Commit this change. (This will start a deployment on cleavr, if "Deploy on Code Push to master" is turned on.)   
-Change to the **Actions**-Tab and select the "Sync Fork" Action on the left. Then run the workflow.   
-Now this action will look for updates at your scheduled time (cron). If there are changes the original repo will be synced and cleavr.io will run a deployment.
+Commit the new file. This may start a deployment on Cleavr if GitHub Actions is enabled for the branch. 
+
+In the GitHub repo, go to the project's **Actions** tab and select the "Sync Fork" Action. Next, run the workflow.   
+
+This action will look for updates at your scheduled time (cron). Changes to the original repo will be synced and Cleavr will run a deployment.
 
 ![Admin page](/images/umami/admin-page.png)
