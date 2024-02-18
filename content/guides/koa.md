@@ -10,7 +10,7 @@ and in charge, Koa is built to be extremely light weight.
 
 ## Prerequisite - ensure Port is not hardcoded
 
-If you are working off one of the Koa boilerplates, they often have the port number hard coded. Make sure to update your code to check `process.env.PORT`
+If you are working off one of the Koa boilerplate's, they often have the port number hard coded. Make sure to update your code to check `process.env.PORT`
 for the port number as Cleavr will randomly assign a port number during site creation.
 
 In your Koa JS project, open the `app.js` file and update as follows:

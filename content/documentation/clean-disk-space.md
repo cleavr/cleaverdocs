@@ -1,28 +1,29 @@
 ---
-title: 'Clean Disk Space'
-description: 'Clean up disk space when your server is running low on space.'
-image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
-video: 
+title: "Clean Disk Space"
+description: "Clean up disk space when your server is running low on space."
+image: "https://docs.cleavr.io/images/cleavr-twitter.png"
+video:
 ---
 
-Clean your server's disk space when space is running low. This action will clean up old files that pile up over time and take up space on your disk. 
+Clean your server's disk space when space is running low. This action will clean up old files that pile up over time and take up space on your disk.
 
 ## Run Disk Clean Space
-To run disk clean up, from the Dahboard or Servers page, click on the ellipsis icon for the server you want to clear space on and then click the **Clean Disk Space** option on the menu. 
+
+To run disk clean up, from the Dashboard or Servers page, click on the ellipsis icon for the server you want to clear space on and then click the **Clean Disk Space** option on the menu.
 
 ![server menu clean disk space option](/images/clean-disk/menu-clean-disk.png)
 
-A modal will display where you can select which cleanup options you want to run. You can learn more about the options in the sections below. 
+A modal will display where you can select which cleanup options you want to run. You can learn more about the options in the sections below.
 
 ![cleavr server clean disk space](/images/clean-disk/clean-disk-space.png)
 
 ### Clean cache
 
-This operation runs `apt-get clean` which clears downloaded package files. This removes everything except the partials folder and lock file from the `/var/cache/apt/archives` directory. 
+This operation runs `apt-get clean` which clears downloaded package files. This removes everything except the partials folder and lock file from the `/var/cache/apt/archives` directory.
 
 ### Clear compressed log files
 
-This operation clears compressed archived files, `*.gz`, from the `/var/log` directory. 
+This operation clears compressed archived files, `*.gz`, from the `/var/log` directory.
 
 ### Clean systemd journal logs
 
@@ -38,8 +39,8 @@ This operation clears the MySQL bin logs, which are logs that contain event info
 
 ## Schedule Clean Disk Space Job
 
-Set a scheduled disk clean up job to automatically run on a set schedule. Enable the cleanup options you want to schedule and then configure what interval you want the job to run on. 
+Set a scheduled disk clean up job to automatically run on a set schedule. Enable the cleanup options you want to schedule and then configure what interval you want the job to run on.
 
-If you reschedule a job, this will overwrite any existing scheduled jobs. 
+If you reschedule a job, this will overwrite any existing scheduled jobs.
 
-To remove a scheduled job so that it no longer runs, click **Remove** to delete the job. 
+To remove a scheduled job so that it no longer runs, click **Remove** to delete the job.

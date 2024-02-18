@@ -15,4 +15,4 @@ Deleting your Cleavr account will remove all records from Cleavr's database. Thi
 
 After you make the request to delete your account, you will receive a confirmation email to verify that you want your account deleted. After selecting the confirmation button, your account will be removed from Cleavr.
 
-You may create a new account at any time using the same email previously tied to the account you removed. This includes eligibilty to the 5-day free trial as Cleavr will view you as a brand new user.
+You may create a new account at any time using the same email previously tied to the account you removed. This includes eligibility to the 5-day free trial as Cleavr will view you as a brand new user.

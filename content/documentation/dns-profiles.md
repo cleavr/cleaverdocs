@@ -20,7 +20,7 @@ In your Cloudflare account, grab your API Key from your **Profile > API Tokens >
 
 ### [AWS Route 53](https://aws.amazon.com/route53/)
 
-The Route 53 DNS profile requires an AWS API key that has priveleges for Route 53.
+The Route 53 DNS profile requires an AWS API key that has privileges for Route 53.
 
 ### [DigitalOcean](https://www.digitalocean.com/)
 

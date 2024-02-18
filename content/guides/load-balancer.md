@@ -45,7 +45,7 @@ This last part is so the database server will whitelist requests from our app se
 
 <base-info>
 This step assumes that you use Cloudflare to manage your domain as this is required in order to set up a Load Balancer with Cloudflare.
-Also, there is a minimum $5/month fee that Cloudflare charges for load lalance servers. 
+Also, there is a minimum $5/month fee that Cloudflare charges for load balance servers. 
 </base-info>
 
 First, click into the domain you are using and then on the **DNS** icon to make sure that you do not have any records for the domain that you'll assign to your Load Balancer.
@@ -60,7 +60,7 @@ Once you are completed with the purchase steps, you'll be asked to provide the h
 
 ![Add cloudflare load balancer](/images/load-balancer/setup1.png)
 
-Next, you'll need to create your Origin Pool and define the Origin Servers. Copy and paste the public IP from Cleavr to the Orgin Addresses for
+Next, you'll need to create your Origin Pool and define the Origin Servers. Copy and paste the public IP from Cleavr to the Origin Addresses for
 both of the app servers that you'll add here. Do not add the database server for this step as it is not necessary.
 
 ![Add cloudflare load balancer](/images/load-balancer/setup2.png)
@@ -106,7 +106,7 @@ In the **deployment workflow > deployment** hooks sections, we'll need to make s
 If you click into one of the deployment hooks, you'll notice that all of the servers are enabled. If you included the database server, then you'll want to
 disable the database server for each of the hooks as there is nothing we are directly doing on the database server during deployments,
 
-If you are doing something such as migrating databse, you'd only need to run that command on one of the app servers. Make sure to disable
+If you are doing something such as migrating database, you'd only need to run that command on one of the app servers. Make sure to disable
 one of the servers so that the action isn't ran more than required.
 
 Add any additional deployment hooks that your app may need.

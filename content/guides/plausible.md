@@ -1,42 +1,42 @@
 ---
-title: 'Plausible Analytics'
-description: 'How to get Plausible Analytics running on your server in a few minutes.'
-image: 'https://docs.cleavr.io/images/plausible/plausible.png'
-video: 'https://youtu.be/0U8FPHkYmV8'
+title: "Plausible Analytics"
+description: "How to get Plausible Analytics running on your server in a few minutes."
+image: "https://docs.cleavr.io/images/plausible/plausible.png"
+video: "https://youtu.be/0U8FPHkYmV8"
 ---
 
 <you-tube video="0U8FPHkYmV8"></you-tube>
 
-[Plausible Analytics](https://plausible.io) is a great alternative to Google Analyics. Hosting plausible on your own [Cleavr](https://cleavr.io) managed server gives you 
-even more control over the usage data that you collect. 
+[Plausible Analytics](https://plausible.io) is a great alternative to Google Analytics. Hosting plausible on your own [Cleavr](https://cleavr.io) managed server gives you
+even more control over the usage data that you collect.
 
-Plausible can be installed on your server in just a few minutes. 
+Plausible can be installed on your server in just a few minutes.
 
 [Here are the Plausible self-hosting instructions if you need to refer to them.](https://plausible.io/docs/self-hosting)
 
 ## Prerequisite
 
-Have a server provisioned and ready-to-go in Cleavr. 
+Have a server provisioned and ready-to-go in Cleavr.
 
-##  Step 1: Install Docker Service
+## Step 1: Install Docker Service
 
-In the **Services** section on the server you are installing Plausible on, install the **Docker** service. 
+In the **Services** section on the server you are installing Plausible on, install the **Docker** service.
 
 ![cleavr install docker service](/images/plausible/cleavr-install-docker.png)
 
-Plausible wraps up their program in a docker container and so we just need to first make sure Docker is installed on the server. 
+Plausible wraps up their program in a docker container and so we just need to first make sure Docker is installed on the server.
 
-##  Step 2: Add Generic Port App
+## Step 2: Add Generic Port App
 
-Add a new **Generic Port App** on the server. Add in the URL you want assign to Plausible Analytics. 
+Add a new **Generic Port App** on the server. Add in the URL you want assign to Plausible Analytics.
 
-For the port number, add in `8000`. If you have another app using the port, you can customize the port number. 
+For the port number, add in `8000`. If you have another app using the port, you can customize the port number.
 
 ![generic port app](/images/plausible/cleavr-generic-port-app.png)
 
-##  Step 3: Run Plausibe Quick Script
+## Step 3: Run Plausibe Quick Script
 
-In the **Quick Script** section of Cleavr, add a new quick script with the following script: 
+In the **Quick Script** section of Cleavr, add a new quick script with the following script:
 
 ```
 cd /home/cleavr
@@ -56,53 +56,52 @@ SECRET_KEY_BASE=$key
 docker-compose up -d
 ```
 
-Save the quick script and then run it as `cleavr` user. Add in the required variables for user name, email, password, and url. 
+Save the quick script and then run it as `cleavr` user. Add in the required variables for user name, email, password, and url.
 
 <base-info>
 After the script finishes running, you will likely get a false error. Verify the URL you used to make sure that Plausible was successfully installed. 
 </base-info>
 
-##  Step 3: Verify Installation And Set Up Plausible
+## Step 3: Verify Installation And Set Up Plausible
 
-Once the script run is complete, navigate to the url you configured Plausible with and verify the login page shows. 
+Once the script run is complete, navigate to the url you configured Plausible with and verify the login page shows.
 
-From here, log in and set up Plausible for your sites! 
+From here, log in and set up Plausible for your sites!
 
 <base-info>
 Plausible includes an email system. Please be aware that many VPS providers close port 25 by default. If you want Plausible to send emails, you may need to 
 contact your provider to request port 25 to be open or use an alternate method. 
 </base-info>
 
+## Worried About Missing Data?
 
-## Worried About Missing Data? 
+With the above setup, you are adding Plausible Analytics to a domain and server that you own. However, client script blockers may still block usage analytics tracking since the domain for your Analytics will be different than the site's.
 
-With the above setup, you are adding Plausible Analytics to a domain and server that you own. However, client script blockers may still block usage analytics tracking since the domain for your Analytics will be different than the site's. 
-
-Plausible allows you to get around this by proxying the script and the events API so that they use your site's domain. This will prevent most script blockers from blocking usage data collection on your site, giving you more accurate usage data. 
+Plausible allows you to get around this by proxying the script and the events API so that they use your site's domain. This will prevent most script blockers from blocking usage data collection on your site, giving you more accurate usage data.
 
 ### Step 1: Create NGINX Cache Directory
 
-For this setup, we'll follow [Plausible's instructions](https://kaytaabemwznss9o2787.cleaver.rocks/) and will create a new directory to cache the Plausible js script. 
+For this setup, we'll follow [Plausible's instructions](https://kaytaabemwznss9o2787.cleaver.rocks/) and will create a new directory to cache the Plausible js script.
 
-In Quick Scripts, add a new Quick Script with the following script: 
+In Quick Scripts, add a new Quick Script with the following script:
 
 ```
 mkdir -p /var/run/nginx-cache
 ```
 
-Run the script on the server your site is on. 
+Run the script on the server your site is on.
 
 ### Step 2: Adjust Site's NGINX Configuration
 
-For the site you want to enable the proxy for, go to the **NGINX Confg** section. 
+For the site you want to enable the proxy for, go to the **NGINX Config** section.
 
-Directly above `server {`, add the following for the cache path: 
+Directly above `server {`, add the following for the cache path:
 
 ```
 proxy_cache_path /var/run/nginx-cache/jscache levels=1:2 keys_zone=jscache:100m inactive=30d  use_temp_path=off max_size=100m;
 ```
 
-Now, find the `location / { ... }` directive and add the following two directives below it: 
+Now, find the `location / { ... }` directive and add the following two directives below it:
 
 ```
 location = /js/script.js {
@@ -146,18 +145,18 @@ location = /api/event {
 }
 ```
 
-Be sure to replace `your.plausible.domain` instances above with the domain that you are hosting your plausible instance at. 
+Be sure to replace `your.plausible.domain` instances above with the domain that you are hosting your plausible instance at.
 
-**Save** the new NGINX configuration for your site. 
+**Save** the new NGINX configuration for your site.
 
 ### Step 3: Update Your Tracking Script
 
-Lastly, in your site's code, adjust your tracking script as follows: 
+Lastly, in your site's code, adjust your tracking script as follows:
 
 ```
 <script defer data-api="/api/event" data-domain="yourwebsite.com" src="/js/script.js"></script>
 ```
 
-Replace `yourwebsite.com` with the domain that you added to Plausible. 
+Replace `yourwebsite.com` with the domain that you added to Plausible.
 
-That's it! Your site will now proxy the tracking scripts and api domains with your site's domain. 
+That's it! Your site will now proxy the tracking scripts and api domains with your site's domain.

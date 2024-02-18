@@ -70,7 +70,7 @@ Click **Update** to save.
 ### Deployment Hook Settings
 
 We'll need to add a couple of deployment hooks. When Meteor builds the app per the build command above, it packages the build in a .tar bundle.
-We'll need to unpackage the file, move the contents out to the public directory, and install required packages as well as declare required environment
+We'll need to package the file, move the contents out to the public directory, and install required packages as well as declare required environment
 variables.
 
 **Create the following custom deployment hooks**

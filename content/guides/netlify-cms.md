@@ -24,7 +24,7 @@ In this guide, we'll go through the steps of what it takes to accomplish this.
 
 In Cleavr, go to your provisioned server and add a new site with **App Type** set to **NodeJS SSR**.
 
-We need to add an app running on our server that will act as a GitHub OAuth Provider. The reason for this, is that Netlify CMS typically uses Netflify
+We need to add an app running on our server that will act as a GitHub OAuth Provider. The reason for this, is that Netlify CMS typically uses Netlify
 as an authenticator for their CMS. They do allow you to use a custom authenticator, such as GitHub. However, GitHub requires a server. Therefore, we'll be
 adding our own simple OAuth app to perform the magic act.
 
@@ -142,7 +142,7 @@ Navigate back to the main web app section and then click in the Nuxt Static site
 
 ### Configure Repo
 
-Navigate to Settings > Code Repostory.
+Navigate to Settings > Code Repository.
 
 Select your GitHub VC profile.
 

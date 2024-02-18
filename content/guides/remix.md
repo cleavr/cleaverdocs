@@ -16,7 +16,7 @@ In this guide we'll walk through deploying an example blog application built usi
 
 Of course, the first step is to build a Remix application that we can deploy.
 
-For this walkthough, we found a blog example by GitHub user [Deleteman](https://github.com/deleteman/remix-blog-example) that we'll fork the project and prep it for build.
+For this walkthrough, we found a blog example by GitHub user [Deleteman](https://github.com/deleteman/remix-blog-example) that we'll fork the project and prep it for build.
 
 [See our forked project here.](https://github.com/armgitaar/remix-blog-example)
 

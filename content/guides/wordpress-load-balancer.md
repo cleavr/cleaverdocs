@@ -9,7 +9,7 @@ Setting up your site on multiple servers behind a load balancer will provide fle
 
 <base-info> 
 Configuring a server cluster for your WordPress site is very doable with Cleavr. However, please be aware that WordPress isn't the most straightforward of apps to set up with Load Balancing and
-there will likely be some extra, often duplicative work, when keeping WordPress app servers in sync. 
+there will likely be some extra, often duplicate work, when keeping WordPress app servers in sync. 
 </base-info>
 
 This guide presents two methods to set up your WordPress site with load balancing.
@@ -22,7 +22,7 @@ The first is a more traditional, direct method, and we'll cover the following:
 - How to manually keep server files in sync, mainly regarding plugin maintenance
 
 For the second method, we'll look at [WordPlate](https://github.com/wordplate/wordplate), which will be a more comfortable method for developers used to working locally and deploying
-using Cleavr's deployment workflow feature from a Version Control system (GitHub, Bitbucket, GitLab). It will also help reduce duplicative tasks to maintain app servers.
+using Cleavr's deployment workflow feature from a Version Control system (GitHub, Bitbucket, GitLab). It will also help reduce duplicate tasks to maintain app servers.
 
 ## Method one - traditional set up
 
@@ -168,7 +168,7 @@ make use of a `.env` file to maintain environment variables, such as database co
 
 The first step in to install WordPlate on your local device.
 
-Follow the [WordPlate instructions on their READNE file to get going](https://github.com/wordplate/wordplate).
+Follow the [WordPlate instructions on their README file to get going](https://github.com/wordplate/wordplate).
 
 Once installed, build your WordPress site on your local environment and continue on to the following instructions when ready to deploy.
 

@@ -53,11 +53,11 @@ The following are the list of S3 Compatible backup providers that are verified t
 
 ![Create Cloudflare R2 Token](/images/s3-backups/r2-create-tokens.png)
 
-Once the token is created copy the `Access Key ID`, `Secret Access Key` and paste them to `Key` and `Secret` input fields respectively.   
+Once the token is created copy the `Access Key ID`, `Secret Access Key` and paste them to `Key` and `Secret` input fields respectively.
 
 ![R2 Access Keys](/images/s3-backups/r2-access-keys.png)
 
-- Bucket: To create a bucket navigate to `R2` > `Overview` > `Create Bucket`. Once the bucket is created enter the name of the buket to the `Bucket` input field in Cleavr.
+- Bucket: To create a bucket navigate to `R2` > `Overview` > `Create Bucket`. Once the bucket is created enter the name of the bucket to the `Bucket` input field in Cleavr.
 
 ![R2 Create Bucket](/images/s3-backups/r2-create-bucket.png)
 
@@ -69,13 +69,13 @@ Once the token is created copy the `Access Key ID`, `Secret Access Key` and past
 
 ### [OVHcloud](https://us.ovhcloud.com/)
 
-- Key and Secret: You can access this information in the `S3 users` tab in your OVHcloud Control Panel. Enter the details respectively on the `Key` and `Secret` 
-input fields.
+- Key and Secret: You can access this information in the `S3 users` tab in your OVHcloud Control Panel. Enter the details respectively on the `Key` and `Secret`
+  input fields.
 - Bucket: Enter the S3 bucket name you created from OVHcloud.
 - Endpoint: Click on the name of your bucket to view its details. On the details page you can find `Endpoint` of your bucket.
-- Region: Region is selected while creating `Object Container`. Make sure to use lowercase value for the region. For e.g.: if the region you've selected is `GRA` 
-make sure to provide `gra` as the value for region. You can also find region in your endpoint. If your endpoint is `https://s3.gra.perf.cloud.ovh.net` the region
-will be `gra`.
+- Region: Region is selected while creating `Object Container`. Make sure to use lowercase value for the region. For e.g.: if the region you've selected is `GRA`
+  make sure to provide `gra` as the value for region. You can also find region in your endpoint. If your endpoint is `https://s3.gra.perf.cloud.ovh.net` the region
+  will be `gra`.
 
 ## DigitalOcean Spaces
 
@@ -83,7 +83,7 @@ The following are specific or important to know for DigitalOcean backups.
 
 - Key - enter the key for the space
 - Secret - enter the secret for the space
-- Origin URL - enter the origin URL for the space and exclude bucket name from URL; should look similar to `https://nyc3.digitaloceanspaces.com` where `nyc3` is the datacenter location. The origin URL is visible on the main page for your DO space.
+- Origin URL - enter the origin URL for the space and exclude bucket name from URL; should look similar to `https://nyc3.digitaloceanspaces.com` where `nyc3` is the data center location. The origin URL is visible on the main page for your DO space.
 
 ## SFTP
 

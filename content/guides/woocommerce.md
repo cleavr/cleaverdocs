@@ -1,14 +1,14 @@
 ---
 title: "WooCommerce FastCGI Optimization"
-description: 'Instructions for optimizing FastCGI directives for WooCommerce sites.'
-image: 'https://docs.cleavr.io/images/cleavr-twitter.png'
-video: ''
+description: "Instructions for optimizing FastCGI directives for WooCommerce sites."
+image: "https://docs.cleavr.io/images/cleavr-twitter.png"
+video: ""
 ---
 
 If you plan on using [WooCommerce](https://woocommerce.com/) for your WordPress eCommerce site, you'll want to update the FastCGI directives to
-get the best performance and experience while using FastCGI for your caching solution. 
+get the best performance and experience while using FastCGI for your caching solution.
 
-To update, navigate to your site in [Cleavr](https://cleavr.io), click on **Cache**, click the action button, and then select **Tweak Cache Settings**. 
+To update, navigate to your site in [Cleavr](https://cleavr.io), click on **Cache**, click the action button, and then select **Tweak Cache Settings**.
 
 ```
 # Don't skip cache by default
@@ -34,7 +34,7 @@ To update, navigate to your site in [Cleavr](https://cleavr.io), click on **Cach
     set $skip_cache 1;
   }
 
-  # If we skip the cache it's likely customised for one user. Set the caching headers to match.
+  # If we skip the cache it's likely customized for one user. Set the caching headers to match.
   if ($skip_cache = 1) {
     set $cacheControl "private, max-age=0, s-maxage=0, no-cache, no-store";
   }

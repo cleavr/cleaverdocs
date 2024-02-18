@@ -44,13 +44,13 @@ To add a new database user, select **Add New Database User**. Once you add the n
 
 Select the ellipsis icon for databases and database users to remove the selected resource.
 
-## MySQL Plugins and Adminstrations
+## MySQL Plugins and Administrations
 
 If you need to add a plugin or modify roles, you can SSH into your server as root user and access MySQL by running `mysql` command in the terminal.
 
 ## Postgres Plugins and Admin Role
 
-Click on the elipsis icon for a postgres database to add a PostgreSQL extension. For example, you can add the popular `uuid-ossp` extension.
+Click on the ellipsis icon for a postgres database to add a PostgreSQL extension. For example, you can add the popular `uuid-ossp` extension.
 
 In some cases, you may need to make a postgres databases user a superuser. To do so, click on the elipsis for the postgres user and then select the **Make Superuser** option.
 
@@ -91,7 +91,7 @@ MySQL 5.7, MySQL 8.0, and MariaDB 10.4 will work with your WordPress site.
 
 ## Database Troubleshooting
 
-### MySQL / MariaDB SUPER privelege and binary logging error
+### MySQL / MariaDB SUPER privilege and binary logging error
 
 Have you ran into the following error?
 
@@ -101,7 +101,7 @@ binary logging is enabled (you *might* want to use the less safe
 log_bin_trust_function_creators variable)
 ```
 
-To move past this error, you'd have to either assign super priveleges to the user, which should be done with caution, or, more preferebly, run the following command in mysql terminal:
+To move past this error, you'd have to either assign super privileges to the user, which should be done with caution, or, more preferably, run the following command in mysql terminal:
 
 ```
 mysql -u USERNAME -p

@@ -19,7 +19,7 @@ appropriate hooks configured and enabled.
 
 There are several ways to trigger a deployment:
 
-- Cliking the **Deploy** button for the deployment workflow
+- Clicking the **Deploy** button for the deployment workflow
 - Push-to-deploy will deploy when new commits are submitted
 - GitHub Actions, available for NodeJS apps, will trigger a deployment with either method above
 - Using the [deployment trigger hook](/workflow-settings#deployment-trigger-hook)

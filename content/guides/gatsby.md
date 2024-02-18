@@ -59,5 +59,5 @@ You can now deploy your app!
 
 <base-point>
 The npm install and build times can take a while for Gatsby projects. If you are using GitHub for your code repo, we recommend enabling the GitHub Actions
-integreation in deployment workflow settings so that the project builds on GitHub, saving your server's resources. 
+integration in deployment workflow settings so that the project builds on GitHub, saving your server's resources. 
 </base-point>

@@ -24,7 +24,7 @@ The following are the most common reasons for 502 errors:
 
 <base-point>
 Check the <a href="/guides">guides</a> section to see if the app you are deploying has an associated guide. The guides will help you
-correctly delpoy your apps. 
+correctly deploy your apps. 
 </base-point>
 
 ## Check the logs
@@ -50,7 +50,7 @@ Here are the applicable logs to look at in Cleavr:
 
 #### Symptom(s): 502 Bad Gateway
 
-Cleavr automatically assigns a port number when you create a new site. You can see the assigned port number by clicking site the info box. You may also desiginate a custom port for the app to run on when creating a new NodeJS app.
+Cleavr automatically assigns a port number when you create a new site. You can see the assigned port number by clicking site the info box. You may also designate a custom port for the app to run on when creating a new NodeJS app.
 
 For many NodeJS frameworks, including NuxtJS, Cleavr is able to automatically assign the port to the app and successfully activate it.
 

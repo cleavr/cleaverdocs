@@ -16,7 +16,7 @@ make use of a `.env` file to maintain environment variables, such as database co
 
 The first step is to install WordPlate on your local device.
 
-Follow the [WordPlate instructions on their READNE file to get going](https://github.com/wordplate/wordplate).
+Follow the [WordPlate instructions on their README file to get going](https://github.com/wordplate/wordplate).
 
 Once installed, build your WordPress site on your local environment and continue on to the following instructions when ready to deploy.
 

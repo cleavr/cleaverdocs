@@ -25,7 +25,7 @@ Now, you can add alias domains to use for the site. You can add whatever domain 
 of the domain and the ability to update the DNS A records for this to work properly.
 
 <base-info>
-Comma seperate multiple aliases. 
+Comma separate multiple aliases. 
 </base-info>
 
 ## Step 3 - Point DNS Records To The Server's Public IP

@@ -96,7 +96,7 @@ If you want to use wildcard subdomains with your app, you must enable this featu
 Enabling wildcard allows you to handle wildcard domains with your application. For WordPress multi-site, you'll want to enable wildcards if you
 plan to use subdomains.
 
-Cleaver can also auto apply SSL certificates. If you enable both Let's Encrupt and Wildcard Subdomains, then you'll need to select a DNS Profile
+Cleaver can also auto apply SSL certificates. If you enable both Let's Encrypt and Wildcard Subdomains, then you'll need to select a DNS Profile
 to manage applying SSL certificates to wildcard subdomains.
 
 #### NGINX and FastCGI Caching

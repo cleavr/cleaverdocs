@@ -11,4 +11,4 @@ If you'd like to switch modes, you will need to go to you devices general settin
 
 For example, Mac users can change the appearance under System Preferences > General.
 
-You can also togle between light and dark mode from the Preferences section which you can get to from your Avatar menu.
+You can also toggle between light and dark mode from the Preferences section which you can get to from your Avatar menu.

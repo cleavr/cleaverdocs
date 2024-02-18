@@ -49,7 +49,7 @@ To enable push to deploy, you must be an admin on the repository. Per Github: On
 
 Include an **App Folder** location if your app is in a sub-directory of the main repository.
 
-You will need to create a new site & deployment workflow for each app that is under a sub-subdirectoy. For example, if one sub-directory is for the 'frontend' and another for the 'backend', then you'd create a site and deployment workflow for both the frontend and backend.
+You will need to create a new site & deployment workflow for each app that is under a sub-subdirectory. For example, if one sub-directory is for the 'frontend' and another for the 'backend', then you'd create a site and deployment workflow for both the frontend and backend.
 
 <base-info>
 You can add a custom deployment hook to the backend deployment's list of hooks and use the deployment trigger hook to automatically trigger the frontend after the backend deployment is completed. 

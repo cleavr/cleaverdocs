@@ -41,7 +41,7 @@ respond with a token to access the HTTP API.
 
 ### Where can I find my channel's chat ID?
 
-If you want the notifications to be delivered in the bot's messages, you'll not be requireed to provide the chat ID.
+If you want the notifications to be delivered in the bot's messages, you'll not be required to provide the chat ID.
 If you want the notifications to be delivered in Telegram Channels, you need to provide a chat ID of the channel.
 
 Your Telegram channel's chat ID can be obtained from the `url` of your channel.

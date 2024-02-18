@@ -26,13 +26,13 @@ Make sure to select the following configuration options:
 - **Artifact folder**: .next
 - **Port Number**: 3000
 
-![add a new neext js site using nodejs ssr app tyoe](/images/next/new-nextjs-site.png)
+![add a new next js site using nodejs ssr app type](/images/next/new-nextjs-site.png)
 
 Select **Add** to add the new site to your server.
 
 #### Port Number
 
-Next defaults to port 3000 and so you will either need to explicity configure the site to point to port 3000 as in the above step, or you can modify your code to accept a random port, `process.env.PORT`, assigned by Cleavr.
+Next defaults to port 3000 and so you will either need to explicitly configure the site to point to port 3000 as in the above step, or you can modify your code to accept a random port, `process.env.PORT`, assigned by Cleavr.
 
 ### Add a Deployment Workflow
 

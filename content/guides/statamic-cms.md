@@ -22,7 +22,7 @@ If you don’t have Valet installed and running, no worries. We’ll mainly be p
 
 Add your project to GitHub / Bitbucket / GitLab.
 
-## Add a site and deployment worfklow
+## Add a site and deployment workflow
 
 On one of your provisioned servers, add a new site and select **Laravel** as the App type and expand additional options to include a database.
 
@@ -30,11 +30,11 @@ Once the site has been added, click on the **Configure deployment workflow** lin
 
 You can then deploy the project and you should see the following when you visit the associated URL.
 
-![Statmic CMS flash deployment complete landing page](/images/statamic/landing.png)
+![Statamic CMS flash deployment complete landing page](/images/statamic/landing.png)
 
 ## Add a user
 
-Once you deploy the site, cick on the URL and you'll see the login screen. In order to log in, you'll need to add a user.
+Once you deploy the site, click on the URL and you'll see the login screen. In order to log in, you'll need to add a user.
 
 You'll need to SSH into the server and add a new user to login with.
 
@@ -58,7 +58,7 @@ Next, run the commands to create a new super user per the Quick Start commands.
 php please make:user
 ```
 
-![Statmic CMS terminal create new user](/images/statamic/terminal.png)
+![Statamic CMS terminal create new user](/images/statamic/terminal.png)
 
 Now, head back to the Statamic dashboard and log in.
 
@@ -66,7 +66,7 @@ Now, head back to the Statamic dashboard and log in.
 If you get a 500 error after attempting to login; it’s likely a cache issue. You can clear the cache by modifying the webapp > env and enabling clear cache option. Or, just redeploy. The deployment is pretty quick.
 </base-alert>
 
-![Statmic CMS admin screen](/images/statamic/admin.png)
+![Statamic CMS admin screen](/images/statamic/admin.png)
 
 🎉 That’s it! Pretty easy.
 

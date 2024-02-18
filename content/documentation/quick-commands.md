@@ -32,7 +32,7 @@ After running the command, you can view the results by expanding the Quick Comma
 
 ## Create a new Quick Command
 
-You may add a new Quick Command from the Quick Scripts section on the main menu as well as in the Quick Command menu in the Deployments seciton.
+You may add a new Quick Command from the Quick Scripts section on the main menu as well as in the Quick Command menu in the Deployments section.
 
 Click on the **Add New Quick Command** button.
 
