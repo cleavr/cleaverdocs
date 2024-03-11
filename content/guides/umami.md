@@ -130,6 +130,13 @@ Select the URL for the site, and then enter the default user credentials:
 **Password:** umami
 
 ## Step 5: Optional if you went for option 2 in step 3 above
+### Set up a Personal Access Token (PAT) in Github
+- Go to your github profile to [Settings/Developer Settings/Personal access tokens](https://github.com/settings/tokens?type=beta) and create a new token with the following Repositiory permissions:
+  - read: Metadata
+  - read and write: Contents, Workflows   
+- Copy the secret!
+- Go to the **Settings**-Tab in your forked umami repository
+  - Click on "Secrets and variables" - Actions and add a new Repository secret by clicking on "New repository secret". Call it WORKFLOW_TOKEN and paste in the secret into the "value"-field
 
 Head over to the **Code**-Tab in your forked umami repository. 
 
@@ -164,7 +171,7 @@ jobs:
           # Branch to merge into downstream
           downstream_branch: "master"
           # GitHub Bot token
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.WORKFLOW_TOKEN }}
 ```
 Commit the new file. This may start a deployment on Cleavr if GitHub Actions is enabled for the branch. 
 
