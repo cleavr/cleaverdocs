@@ -131,7 +131,7 @@ Select the URL for the site, and then enter the default user credentials:
 
 ## Step 5: Optional if you went for option 2 in step 3 above
 ### Set up a Personal Access Token (PAT) in Github
-- Go to your github profile to [Settings/Developer Settings/Personal access tokens](https://github.com/settings/tokens?type=beta) and create a new token with the following Repositiory permissions:
+- Go to your github profile to [Settings/Developer Settings/Personal access tokens](https://github.com/settings/tokens?type=beta) and create a new token, give it access to you repository and add the following repositiory permissions:
   - read: Metadata
   - read and write: Contents, Workflows   
 - Copy the secret!
