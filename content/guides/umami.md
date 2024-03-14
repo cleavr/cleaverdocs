@@ -135,10 +135,10 @@ Select the URL for the site, and then enter the default user credentials:
   - read: Metadata
   - read and write: Contents, Workflows   
 - Copy the secret!
-- Go to the **Settings**-Tab in your forked umami repository
-  - Click on "Secrets and variables" - Actions and add a new Repository secret by clicking on "New repository secret". Call it WORKFLOW_TOKEN and paste in the secret into the "value"-field
+- Go to the **Settings** tab in your forked Umami repository
+  - Click on "Secrets and variables" - Actions and add a new Repository secret by clicking on "New repository secret". Call it WORKFLOW_TOKEN and paste in the secret into the "value" field
 
-Head over to the **Code**-Tab in your forked umami repository. 
+Head over to the **Code** tab in your forked Umami repository. 
 
 Go into the `.github/workflows` directory and add a new file `sync-to-fork.yml` and add the following contents: 
 
