@@ -30,7 +30,7 @@ In Cleavr, provision a new server.
 
 Once the server has completed setup, add a new **PHP** site to the server and enter `web` for the **Web Directory**.
 
-Also, select the advance option to also create a database during site creation. Remember the database details as you'll need to add them later to the environment section.
+Also, select the advance option to also create a database during site creation. **Remember the database details as you'll need to add them later to the environment section**.
 
 ### Step 4: Configure Deployment Workflow Code Repository
 
@@ -46,6 +46,7 @@ On the **Environment** tab, add in the `.env` variables.
 They should look something like the following.
 
 ```
+# You created the DB, DB_USER, and DB_PASSWORD when you created the Site in Cleavr. Do not use your local Bedrock development database credentials.
 DB_NAME='bedrock database name'
 DB_USER='user'
 DB_PASSWORD='password'
@@ -60,7 +61,7 @@ DB_PREFIX='wp_'
 
 WP_ENV='development'
 WP_HOME='https://example.com'
-WP_SITEURL="${WP_HOME}"
+WP_SITEURL="${WP_HOME}/wp"
 
 # Specify optional debug.log path
 # WP_DEBUG_LOG='/path/to/debug.log'
