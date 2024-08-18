@@ -87,6 +87,37 @@ Go to the **Deployment Hooks** section and enable **Install Composer Dependencie
 
 ![wordpress-optimized-server](/images/wp-lb/wordplate-deployment-hooks.png)
 
+### [OPTIONAL] Step 6.1: Add a hook to copy the `..../web/app/uploads` from the prior release
+
+**NOTE:** This hook is useful only in specific situations and deployment scenarios. Use with caution and confirm that it provides the functionality you need before using. 
+
+If you are developing content locally or working with an extensive media library, it is not practical to keep the assets in Git. With this optional deploy hook, you can copy all the assets form your prior release/deployment into the new release. This will reduce the time you need to sync your content with tools like `WP DB Migrate` by configuring it to only sync Media since the last Sync instead of the entire Media library.
+
+The hook also excludes some common files you probably don't want copied. 
+
+Add a new deploy hook and name it `Copy .../web/app/uploads from Prior Release`
+
+Enter the below in the `BASH SCRIPT` field.
+
+```
+# You most probably want to run your hook in the context of current release.
+# The following line takes this hook inside the latest release folder.
+cd {{ releasePath }}
+#Start adding your custom script below this line
+
+# Find the previous release folder in the parent directory based on last modified time
+previousRelease=$(ls -dt ../*/ | sed -n '2p')
+
+# Copy contents of the previousRelease's uploads folder, excluding specific patterns
+rsync --archive --verbose --exclude='.DS_Store' --exclude='*.log' --exclude='*backup*/' --exclude='*cache*/' "$previousRelease/web/app/uploads/" ./web/app/uploads/
+```
+
+Click `Add`, and that's it!
+
+Move the hook just below the **Install Composer Dependencies** hook.
+
+The next time you deploy, your `uploads` assets from your previous release will be copied from your last release. 
+
 ## Step 7: Deploy! 🚀
 
 You can now deploy your app!
